@@ -30,10 +30,10 @@
 	align-items    : center;
 	justify-content: center;
 
-	--size       : 40px;
+	--size       : 48px;
 	height       : var(--size);
 	padding      : 0 calc(var(--size) / 2);
-	border-radius: var(--radius-small);
+	border-radius: var(--radius-middle);
 
 	font-size  : 14px;
 	font-family: var(--font-base);
@@ -73,14 +73,21 @@
 	}
 
 	// size
-	&-large {
-		--size   : 52px;
-		font-size: 16px;
-	}
+	@include AddMedia {
+		&-large {
+			--size   : 52px;
+			font-size: 16px;
+		}
 
-	&-small {
-		--size   : 28px;
-		font-size: 12px;
+		&-middle {
+			--size   : 48px;
+			font-size: 16px;
+		}
+
+		&-small {
+			--size   : 40px;
+			font-size: 14px;
+		}
 	}
 
 	// color

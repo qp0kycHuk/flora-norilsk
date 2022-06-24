@@ -3,8 +3,8 @@
 
 :root {
   --section-width     : calc(100vw - 30px);
-  --section-gap-top   : 20px;
-  --section-gap-bottom: 20px;
+  --section-gap-top   : 30px;
+  --section-gap-bottom: 30px;
 }
 
 
@@ -38,6 +38,6 @@ section {
 
 @media (min-width: $lg) {
   :root {
-    --section-width: 1024px;
+    --section-width: 1170px;
   }
 }

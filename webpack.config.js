@@ -73,7 +73,6 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: PUBLIC_PATH,
     compress: false,
     port: 9000,
     historyApiFallback: true,

@@ -11,8 +11,8 @@
 	@include getColors(#828A99, "icon");
 	@include getColors(#333333, "text");
 
-	--bg1: #E9EAEC;
-	--bg2: #F4F5F6;
+	--bg1: #F8F9FA;
+	--bg2: #F8F9FA;
 	--bg3: #FFFFFF;
 
 	--spacing: 4px;
@@ -52,9 +52,12 @@ body {
 	min-height    : 100vh;
 	display       : flex;
 	flex-direction: column;
+	background: var(--bg1);
 
 	* {
 		font-family: var(--font-base);
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		
 	}
 
 }
@@ -72,5 +75,14 @@ body {
 
 	.active-enabled {
 		display: flex !important;
+	}
+}
+
+.product-card{
+	&-img{
+		&:before{
+			padding-bottom: calc(100% * 271 / 254);
+
+		}
 	}
 }

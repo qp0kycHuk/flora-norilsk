@@ -31,6 +31,7 @@ function loadHandler() {
 	theme.init();
 
 	ripple.attach('.btn')
+	ripple.attach('.card-action')
 	ripple.attach('.waved')
 	ripple.deAttach('.btn--link')
 }

@@ -6,4 +6,11 @@
       var(--color-text-20) 60%,
       rgba(0, 0, 0, 0) calc(60% + 10px));
 
+  --riple-start-scale: 0.1;
+
+  &.show {
+    animation-duration       : .5s;
+    animation-timing-function: ease-out;
+  }
 }
+
