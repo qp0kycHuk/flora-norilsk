@@ -23,7 +23,7 @@ module.exports = {
   },
   output: {
     path: PUBLIC_PATH,
-    filename: 'index.js',
+    filename: 'js/index.js',
   },
   devtool: "source-map",
   module: {
