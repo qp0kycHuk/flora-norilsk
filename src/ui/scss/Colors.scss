@@ -11,8 +11,20 @@
 		color: var(--color-green);
 	}
 
+	&-green-light {
+		color: var(--color-green-light);
+	}
+
 	&-yellow {
 		color: var(--color-yellow);
+	}
+
+	&-yellow-light {
+		color: var(--color-yellow-light);
+	}
+
+	&-light {
+		color: var(--color-light);
 	}
 
 	&-red {
@@ -25,6 +37,10 @@
 
 	&-sec {
 		color: var(--color-sec);
+	}
+
+	&-purple {
+		color: var(--color-purple);
 	}
 
 	&-white {
@@ -61,10 +77,34 @@
 			}
 		}
 
+		&-green-light {
+			@media(hover) {
+				&:hover {
+					color: var(--color-green-light);
+				}
+			}
+		}
+
 		&-yellow {
 			@media(hover) {
 				&:hover {
 					color: var(--color-yellow);
+				}
+			}
+		}
+
+		&-yellow-light {
+			@media(hover) {
+				&:hover {
+					color: var(--color-yellow-light);
+				}
+			}
+		}
+
+		&-light {
+			@media(hover) {
+				&:hover {
+					color: var(--color-light);
 				}
 			}
 		}
