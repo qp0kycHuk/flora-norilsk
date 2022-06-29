@@ -32,8 +32,8 @@ module.exports = {
         test: /\.(png|jpg|jpeg|gif|svg)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'img/[name][ext]'
-        }
+          filename: 'img/pictures/[name][ext]'
+      }
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
@@ -62,7 +62,10 @@ module.exports = {
       new HtmlWebpackPlugin({
         ...htmlWebpackPluginDefaults,
         template: `./src/${name}`,
-        filename: name
+        filename: name,
+        minify: {
+          collapseWhitespace: false
+        }
       })
     ),
     new CopyPlugin({
