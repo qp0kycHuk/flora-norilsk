@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Отзывы</title>
+<link href="css/style.css" rel="stylesheet"><script src="js/index.js"></script></head>
+
+<body>
+
+  <section class="navigation flex flex-align-center fade-60">
+    <a class="navigation__item text-small link-hover mr-1" href="#">Главная</a>
+    <span class="text-small mr-1">></span>
+    <a class="navigation__item navigation__item--disabled text-small" href="#">Отзывы</a>
+  </section>
+
+  <section class="page-title">
+    <div class="page-title__block flex flex-align-center flex-justify-between bg-white py-4 px-10">
+      <div class="page-title__name text-h1 text--demibold font-alt">Отзывы</div>
+      <div class="page-title__bell flex flex-align-center">
+        <div class="page-title__tel bg-l1 py-3 px-2 brs-2 flex flex-align-center flex-justify-center mr-3 text-h6">
+          <svg class="icon color-icon">
+            <use xlink:href="img/icons.svg#tel-2"/>
+          </svg>
+        </div>
+        <div class="page-title__text text-body-1">
+          <span class="fade-60">
+            Если есть вопросы по наличию, стоимости, сроках <br>
+            поставки звоните
+          </span>
+          <br class="page-title__br">
+          <a class="text--demibold link-hover" href="tel: +7 (902) 550-00-99">+7 (902) 550-00-99</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner">
+    <div class="banner__block px-8 py-10">
+      <div class="banner__bg">
+        <picture>
+          <source srcset="img/pictures/banner-mob.png" media="(max-width: 1199px)">
+          <img class="banner__bg-img" src="img/pictures/banner.png" alt="">
+        </picture>
+      </div>
+      <div class="banner__content color-white">
+        <div class="banner__title text-h5 mb-2">Удивить близкого человека - это легко!</div>
+        <div class="banner__subtitle text-body-1">
+          Заказывайте букеты и подарки на нашем сайте и дарите<br>
+          позитивные эмоции людям, которые вам дороги!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews-feedback pt-1">
+    <div class="grid grid-spacing-6">
+      <div class="grid-col-12 grid-col-lg-7">
+        <form class="reviews-feedback__form h-100 bg-white">
+          <div class="grid grid-spacing-4">
+            <div class="grid-col-12 grid-col-md-6 grid-col-lg-6">
+              <label class="reviews-feedback__label">
+                <span class="text-body-1 text--demibold mb-2">Ваше имя</span>
+                <input class="reviews-feedback__input input input--white" type="text">
+              </label>
+            </div>
+            <div class="grid-col-12 grid-col-md-6 grid-col-lg-6">
+              <label class="reviews-feedback__label">
+                <span class="text-body-1 text--demibold mb-2">Оцените нашу работу</span>
+                <div class="rating flex flex-align-center flex-justify-center py-3 px-5">
+                  <input class="rating__val" type="radio" value="5" name="rating" id="rating-5">
+                  <label class="rating__item text-h5 color-yellow fade-30" for="rating-5">
+                      <svg class="rating__icon icon">
+                          <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                  </label>
+                  <input class="rating__val" type="radio" value="4" name="rating" id="rating-4">
+                  <label class="rating__item text-h5 color-yellow fade-30 pr-6" for="rating-4">
+                      <svg class="rating__icon icon">
+                          <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                  </label>
+                  <input class="rating__val" type="radio" value="3" name="rating" id="rating-3">
+                  <label class="rating__item text-h5 color-yellow fade-30 pr-6" for="rating-3">
+                      <svg class="rating__icon icon">
+                          <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                  </label>
+                  <input class="rating__val" type="radio" value="2" name="rating" id="rating-2">
+                  <label class="rating__item text-h5 color-yellow fade-30 pr-6" for="rating-2">
+                      <svg class="rating__icon icon">
+                          <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                  </label>
+                  <input class="rating__val" type="radio" value="1" name="rating" id="rating-1">
+                  <label class="rating__item text-h5 color-yellow fade-30 pr-6" for="rating-1">
+                      <svg class="rating__icon icon">
+                          <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                  </label>
+                </div>
+              </label>
+            </div>
+            <div class="grid-col-12">
+              <label class="reviews-feedback__label">
+                <span class="text-body-1 text--demibold mb-2">Отзыв</span>
+                <textarea class="reviews-feedback__input reviews-feedback__input--textarea input input--white"></textarea>
+              </label>
+            </div>
+            <div class="grid-col-12 grid-col-lg-4">
+              <button class="btn btn--primary btn--fill px-8">Отправить отзыв</button>
+            </div>
+            <div class="grid-col-12 grid-col-lg-8">
+              <div class="text-body-2 fade-40">
+                Отправляя форму Вы даете согласие на обработку<br class="reviews-feedback__br">
+                Ваших персональных данных
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="grid-col-12 grid-col-lg-5">
+        <div class="reviews-feedback__pic w-100 h-100">
+          <picture>
+            <source srcset="img/pictures/reviews-feedback-min.png" media="(max-width: 768px)">
+            <img class="reviews-feedback__img" src="img/pictures/reviews-feedback.png" alt="">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

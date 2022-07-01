@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Вакансии</title>
+<link href="css/style.css" rel="stylesheet"><script src="js/index.js"></script></head>
+
+<body>
+
+  <section class="navigation flex flex-align-center fade-60">
+    <a class="navigation__item text-small link-hover mr-1" href="#">Главная</a>
+    <span class="text-small mr-1">></span>
+    <a class="navigation__item navigation__item--disabled text-small" href="#">Вакансии</a>
+  </section>
+
+  <section class="page-title">
+    <div class="page-title__block flex flex-align-center flex-justify-between bg-white py-4 px-10">
+      <div class="page-title__name text-h1 text--demibold font-alt">Вакансии</div>
+      <div class="page-title__bell flex flex-align-center">
+        <div class="page-title__tel bg-l1 py-3 px-2 brs-2 flex flex-align-center flex-justify-center mr-3 text-h6">
+          <svg class="icon color-icon">
+            <use xlink:href="img/icons.svg#tel-2"/>
+          </svg>
+        </div>
+        <div class="page-title__text text-body-1">
+          <span class="fade-60">
+            Если есть вопросы по наличию, стоимости, сроках <br>
+            поставки звоните
+          </span>
+          <br class="page-title__br">
+          <a class="text--demibold link-hover" href="tel: +7 (902) 550-00-99">+7 (902) 550-00-99</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner">
+    <div class="banner__block px-8 py-10">
+      <div class="banner__bg">
+        <picture>
+          <source srcset="img/pictures/banner-mob.png" media="(max-width: 1199px)">
+          <img class="banner__bg-img" src="img/pictures/banner.png" alt="">
+        </picture>
+      </div>
+      <div class="banner__content color-white">
+        <div class="banner__title text-h5 mb-2">Удивить близкого человека - это легко!</div>
+        <div class="banner__subtitle text-body-1">
+          Заказывайте букеты и подарки на нашем сайте и дарите<br>
+          позитивные эмоции людям, которые вам дороги!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="job pt-1">
+    <div class="job__item card p-5 flex flex-align-center">
+      <div class="job__pic brs-2 mr-10">
+        <img class="job__img" src="https://picsum.photos/400/600?random=15" alt="">
+      </div>
+      <div class="job__content">
+        <div class="job__title flex flex-align-center mb-lg-7 mb-3">
+          <div class="job__title-text flex flex-align-center mr-5">
+            <span class="job__icon color-sec text-body-0 mr-2">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#user-2"/>
+              </svg>
+            </span>
+            <span class="text-h6 font-alt text--bold">Продавец срезанных цветов</span>
+          </div>
+          <span class="job__die color-sec py-3 px-4 text-body-2 text--demibold">Опыт работы приветствуется</span>
+        </div>
+        <div class="job__elems flex mb-lg-7 mb-3">
+          <div class="job__elem">
+            <div class="text-body-1 text--demibold mb-3">Критерии:</div>
+            <ul class="job__list list">
+              <li class="pl-5 mb-2">Возраст от 18 лет</li>
+              <li class="pl-5 mb-2">Стрессоустойчивость</li>
+              <li class="pl-5 mb-2">Грамотная речь</li>
+              <li class="pl-5">Выносливость</li>
+            </ul>
+          </div>
+          <div class="job__line bd-left bd-bottom mx-10"></div>
+          <div class="job__elem">
+            <div class="text-body-1 text--demibold mb-3">Критерии:</div>
+            <ul class="job__list list">
+              <li class="pl-5 mb-2">Обучение (испытательный срок 1 месяц)</li>
+              <li class="pl-5 mb-2">График работы: посменный</li>
+              <li class="pl-5">Официальное оформление (полный соц. пакет)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="job__salary brs-2 text-body-0 text--demibold py-3 px-6 mb-4">Зарплата: по итогам собеседования</div>
+        <div class="flex flex-align-center">
+          <div class="job__tel color-sec text-body-0 mr-2">
+            <svg class="icon">
+              <use xlink:href="img/icons.svg#tel"/>
+            </svg>
+          </div>
+          <div class="job__phone text-body-1">
+            <span>Чтобы откликнуться на вакансию звоните:</span><br class="job__br">
+            <a class="text--demibold link-hover" href="tel: +70000000000">+7 (000) 000-00-00</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
