@@ -607,7 +607,7 @@ body {
 	&__item {
 		justify-content: flex-start;
 		font-weight    : 400;
-		font-size: 16px;
+		font-size      : 16px;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -632,7 +632,7 @@ body {
 	}
 
 	&__vk,
-	&__tel{
+	&__tel {
 		justify-content: flex-start;
 	}
 }
@@ -1307,6 +1307,39 @@ body {
 		&__item:hover,
 		&__item:hover~&__item {
 			opacity: 1;
+		}
+	}
+}
+
+
+.nav {
+	display       : flex;
+	align-items   : center;
+	padding-top   : 12px;
+	padding-bottom: 12px;
+
+	&-list {
+		display: flex;
+	}
+
+	&-item {
+		font-weight: 400;
+		font-size  : 16px;
+		color      : var(--color-text);
+
+		&+& {
+			margin-left: 32px;
+		}
+	}
+
+	&-item,
+	&-lk {
+		position: relative;
+
+		&:before {
+			content : '';
+			position: absolute;
+			inset   : -16px;
 		}
 	}
 }
