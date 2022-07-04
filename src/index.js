@@ -35,3 +35,33 @@ function loadHandler() {
 	ripple.attach('.waved')
 	ripple.deAttach('.btn--link')
 }
+
+
+
+window.addEventListener('scroll', () => {
+	const header = document.querySelector('.header');
+	if (header.getBoundingClientRect().top <= -10) {
+		header.classList.add('header--fixed')
+	} else {
+		header.classList.remove('header--fixed')
+
+	}
+})
+
+window.addEventListener('toggleopen', (event) => {
+	if (event.detail.target.id == 'categories-form') {
+		document.body.classList.add('categories-search-open')
+	}
+	if (event.detail.target.classList.contains('-menu-')) {
+		document.body.classList.add('menu-open')
+	}
+})
+
+window.addEventListener('toggleclose', (event) => {
+	if (event.detail.target.id == 'categories-form') {
+		document.body.classList.remove('categories-search-open')
+	}
+	if (event.detail.target.classList.contains('-menu-')) {
+		document.body.classList.remove('menu-open')
+	}
+})

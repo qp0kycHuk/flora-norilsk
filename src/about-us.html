@@ -16,6 +16,118 @@
     <a class="navigation__item navigation__item--disabled text-small" href="#">О компании</a>
   </section>
 
+  <section class="categories categories--detail" data-toggle-cover>
+    <div class="container">
+      <button class="btn btn-small btn--primary bg-l1 w-100 d-none d-md-flex d-lg-none" data-toggle-link="search">
+        <svg class="icon text-body-0 mr-3">
+          <use xlink:href="img/icons.svg#search" />
+        </svg>
+        <div class="text-body-2 color-text mr-auto fade-60">Поиск</div>
+      </button>
+      <div class=" categories-inner">
+        <button class="categories-search btn btn-small btn--primary btn--white-bg d-none d-lg-flex" data-toggle-link>
+          <div class="categories-search-inner">
+            <svg class="icon text-body-0 mr-3">
+              <use xlink:href="img/icons.svg#search" />
+            </svg>
+            <div class="text-body-1 color-text text--demibold">Поиск</div>
+          </div>
+
+        </button>
+        <div class="categories-list">
+          <button class="categories-search btn btn-small btn--primary btn--white-bg d-md-none mr-2"
+            data-toggle-link="search">
+            <div class="categories-search-inner">
+              <svg class="icon text-body-0">
+                <use xlink:href="img/icons.svg#search" />
+              </svg>
+            </div>
+          </button>
+          <div class="categories-items">
+            <button class="categories-item btn btn-small btn--primary btn--white-bg">
+              <img src="img/pictures/categories-1.png" alt="" class="icon text-body-0 mr-3">
+              <div class="text-lg-body-1 color-text text--demibold">Монобукеты</div>
+            </button>
+            <button class="categories-item btn btn-small btn--primary btn--white-bg">
+              <img src="img/pictures/categories-2.png" alt="" class="icon text-body-0 mr-3">
+              <div class="text-lg-body-1 color-text text--demibold">Букеты</div>
+            </button>
+            <button class="categories-item btn btn-small btn--primary btn--white-bg">
+              <img src="img/pictures/categories-3.png" alt="" class="icon text-body-0 mr-3">
+              <div class="text-lg-body-1 color-text text--demibold">Праздники</div>
+            </button>
+            <button class="categories-item btn btn-small btn--primary btn--white-bg">
+              <img src="img/pictures/categories-4.png" alt="" class="icon text-body-0 mr-3">
+              <div class="text-lg-body-1 color-text text--demibold">Подарки</div>
+            </button>
+            <button class="categories-item btn btn-small btn--primary btn--white-bg">
+              <img src="img/pictures/categories-5.png" alt="" class="icon text-body-0 mr-3">
+              <div class="text-lg-body-1 color-text text--demibold">Горшечные растения</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="categories-form" data-toggle-content id="categories-form">
+      <div class="container">
+        <label class="categories-form-field">
+          <input class="categories-form-input" placeholder="Поиск" />
+          <div class="form-input-end">
+            <button type="button" class="btn btn-small btn--red btn-icon" data-toggle-link>
+              <svg class="icon color-text fade-40">
+                <use xlink:href="img/icons.svg#cross" />
+              </svg>
+            </button>
+          </div>
+        </label>
+      </div>
+
+    </div>
+  </section>
+  <div class="categories-shadow" data-toggle-link="categories-form"></div>
+
+  <div class="menu -menu-" id="search">
+    <div class="flex flex-align-center px-3 pt-3">
+      <button class="btn btn--primary btn-icon btn-small mr-1" data-toggle-link="search">
+        <svg class="icon text-subtitle-1">
+          <use xlink:href="img/icons.svg#arrow-left" />
+        </svg>
+      </button>
+      <label class="form-field flex-grow">
+        <div class="form-input-cover">
+          <input type="text" class="form-input bg-l1" placeholder="Поиск">
+        </div>
+      </label>
+    </div>
+    <div class="py-3">
+      <a href="" class="py-4 px-5 flex flex-align-center waved">
+        <svg class="icon text-body-0 fade-40 mr-4">
+          <use xlink:href="img/icons.svg#search" />
+        </svg>
+        <div class="fade-40">Розы</div>
+      </a>
+      <a href="" class="py-4 px-5 flex flex-align-center waved">
+        <svg class="icon text-body-0 fade-40 mr-4">
+          <use xlink:href="img/icons.svg#search" />
+        </svg>
+        <div class="fade-40">Хризантемы</div>
+      </a>
+      <a href="" class="py-4 px-5 flex flex-align-center waved">
+        <svg class="icon text-body-0 fade-40 mr-4">
+          <use xlink:href="img/icons.svg#search" />
+        </svg>
+        <div class="fade-40">Цитрус Лимон</div>
+      </a>
+      <a href="" class="py-4 px-5 flex flex-align-center waved">
+        <svg class="icon text-body-0 fade-40 mr-4">
+          <use xlink:href="img/icons.svg#search" />
+        </svg>
+        <div class="fade-40">Паслен</div>
+      </a>
+    </div>
+  </div>
+  <div class="menu-shadow"></div>
+
   <section class="page-title">
     <div class="page-title__block flex flex-align-center flex-justify-between bg-white py-4 px-10">
       <div class="page-title__name text-h1 text--demibold font-alt">О компании</div>
@@ -57,9 +169,14 @@
 
   <section class="page-info py-1">
     <div class="page-info__text text-body-1">
-      Интернет-магазин цветов «Флора» предлагает уникальные букеты живых цветов собранные по всем правилам флористики под распространенные поводы и индивидуальные торжества. У нас вы можете за 5 минут выбрать и заказать красивый монобукет или шикарную композицию в корзине. И в ближайшее время ваша покупка будет доставлена в любую точку Норильска нашими курьерами.<br>
+      Интернет-магазин цветов «Флора» предлагает уникальные букеты живых цветов собранные по всем правилам флористики
+      под распространенные поводы и индивидуальные торжества. У нас вы можете за 5 минут выбрать и заказать красивый
+      монобукет или шикарную композицию в корзине. И в ближайшее время ваша покупка будет доставлена в любую точку
+      Норильска нашими курьерами.<br>
       <br>
-      В нашем каталоге собраны уже готовые букеты для невест, а в комплексе мы предлагаем бутоньерки и цветочные композиции на столы. Мы с уважением относимся к пожеланиям наших клиентов, поэтому всегда готовы идти на встречу создавать индивидуальные букеты.
+      В нашем каталоге собраны уже готовые букеты для невест, а в комплексе мы предлагаем бутоньерки и цветочные
+      композиции на столы. Мы с уважением относимся к пожеланиям наших клиентов, поэтому всегда готовы идти на встречу
+      создавать индивидуальные букеты.
     </div>
   </section>
 
@@ -81,15 +198,21 @@
   </section>
 
   <section class="delivery">
-    <div class="text-h6 text-md-h3 text-lg-h4 mb-4 text--bold font-alt">Заказать цветы с доставкой - порадовать любимых и дорогих сердцу людей</div>
+    <div class="text-h6 text-md-h3 text-lg-h4 mb-4 text--bold font-alt">Заказать цветы с доставкой - порадовать любимых
+      и дорогих сердцу людей</div>
     <div class="delivery__text text-body-1 mb-5">
-      Наши услуги просто незаменимы в тех случаях, когда вы забыли поздравить любимую с годовщиной свадьбы, или хотите сделать неожиданный сюрприз родителям. Если вы находитесь далеко от дома, а у вашей жены День рождения. Находясь в тысячах километрах от Норильска, вам стоит только зайти к нам на сайт, выбрать и заказать букет с доставкой. И живой, благоухающий букет будет подарен от вашего имени. Вы можете добавить к букету открытку, которая будет подписана теми словами, что вы укажете.
+      Наши услуги просто незаменимы в тех случаях, когда вы забыли поздравить любимую с годовщиной свадьбы, или хотите
+      сделать неожиданный сюрприз родителям. Если вы находитесь далеко от дома, а у вашей жены День рождения. Находясь в
+      тысячах километрах от Норильска, вам стоит только зайти к нам на сайт, выбрать и заказать букет с доставкой. И
+      живой, благоухающий букет будет подарен от вашего имени. Вы можете добавить к букету открытку, которая будет
+      подписана теми словами, что вы укажете.
     </div>
     <div class="delivery__die bg-white flex flex-align-center py-5 px-6">
       <div class="delivery__image mr-6 text-h1">
         <img class="icon" src="img/icons/flower.svg" alt="">
       </div>
-      <div class="delivery__subtitle text-body-1 text--bold">Доставка цветов в Норильск – это уникальная возможность дарить своим близким тепло и любовь находясь на расстоянии</div>
+      <div class="delivery__subtitle text-body-1 text--bold">Доставка цветов в Норильск – это уникальная возможность
+        дарить своим близким тепло и любовь находясь на расстоянии</div>
     </div>
   </section>
 
@@ -180,13 +303,22 @@
   </section>
 
   <section class="gallery">
-    <div class="text-h6 text-md-h3 text-lg-h4 mb-6 text--bold font-alt">Интернет-магазин “Флора” - флагман флористики</div>
+    <div class="text-h6 text-md-h3 text-lg-h4 mb-6 text--bold font-alt">Интернет-магазин “Флора” - флагман флористики
+    </div>
     <div class="gallery__text text-body-1 mb-10">
-      Наш магазин создавался в 2000 году – Миллениум. В новый век мы вошли имея огромное желание создавать прекрасное настроение и дарить минуты счастья, используя прекрасные творения природы – цветы. Также наш коллектив имел в своем составе флористов и дизайнеров. По прошествии времени, наша команда не только не утратила своих возможностей творить красоту, но и набрала большой опыт.<br>
+      Наш магазин создавался в 2000 году – Миллениум. В новый век мы вошли имея огромное желание создавать прекрасное
+      настроение и дарить минуты счастья, используя прекрасные творения природы – цветы. Также наш коллектив имел в
+      своем составе флористов и дизайнеров. По прошествии времени, наша команда не только не утратила своих возможностей
+      творить красоту, но и набрала большой опыт.<br>
       <br>
-      В каталоге вы можете сами убедиться в профессионализме флористов и их умении делать прекрасные и неповторимые цветочные композиции и букеты. Вашему вниманию представлены подборки букетов на 8 марта и День рождения.<br>
+      В каталоге вы можете сами убедиться в профессионализме флористов и их умении делать прекрасные и неповторимые
+      цветочные композиции и букеты. Вашему вниманию представлены подборки букетов на 8 марта и День рождения.<br>
       <br>
-      Особенное отношение у нас к разделу свадебных букетов. В такой праздник наши творения радуют самых счастливых людей в мире – жениха и невесту. Невесты с различными вкусами смогут найти тот индивидуальный букет, который подарит им счастье и удовольствие в этот важный день. Если все же вы не нашли  в каталоге того что искали, мы сделаем для вас индивидуальный букет, учтя в нем все ваши пожелания. Для нас нет границ, мы готовы радовать наших клиентов – ведь ради этого наш магазин и создавался.    
+      Особенное отношение у нас к разделу свадебных букетов. В такой праздник наши творения радуют самых счастливых
+      людей в мире – жениха и невесту. Невесты с различными вкусами смогут найти тот индивидуальный букет, который
+      подарит им счастье и удовольствие в этот важный день. Если все же вы не нашли в каталоге того что искали, мы
+      сделаем для вас индивидуальный букет, учтя в нем все ваши пожелания. Для нас нет границ, мы готовы радовать наших
+      клиентов – ведь ради этого наш магазин и создавался.
     </div>
     <div class="gallery__items grid grid-spacing-4">
       <div class="gallery__elem gallery__elem--1 grid-col-12 grid-col-lg-6">

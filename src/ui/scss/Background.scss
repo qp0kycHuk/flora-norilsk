@@ -66,6 +66,10 @@
   &-primary {
     background: var(--color-primary);
 
+    &-10 {
+      background: var(--color-primary-10);
+    }
+
     &-20 {
       background: var(--color-primary-20);
     }
