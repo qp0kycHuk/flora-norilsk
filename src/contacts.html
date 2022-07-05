@@ -17,8 +17,8 @@
   </section>
 
   <section class="page-title">
-    <div class="page-title__block flex flex-align-center flex-justify-between bg-white py-4 px-10">
-      <div class="page-title__name text-h1 text--demibold font-alt">Контакты</div>
+    <div class="page-title__block flex flex-align-center flex-justify-between bg-l3 py-4 px-10">
+      <div class="page-title__name text-h1 text--demibold font-alt">Оплата</div>
       <div class="page-title__bell flex flex-align-center">
         <div class="page-title__tel bg-l2 py-3 px-2 brs-2 flex flex-align-center flex-justify-center mr-3 text-h6">
           <svg class="icon color-icon">
@@ -103,25 +103,35 @@
       </div>
       <div class="grid-col-12 grid-col-lg-8">
         <div class="contacts__feedback py-10 px-8 h-100">
+          <picture>
+            <source srcset="img/pictures/contacts-bg-mob.png" media="(max-width: 768px)">
+            <img class="contacts__bg" src="img/pictures/contacts-bg.png" alt="">
+          </picture>
           <div class="contacts__title text-h4 font-alt mb-6 mb-lg-8">Свяжитесь с нами!</div>
           <form class="contacts__form h-100">
             <div class="grid grid-spacing-8">
               <div class="grid-col-12 grid-col-lg-5">
                 <div class="contacts__labels flex w-100">
-                  <label class="contacts__label mb-3 flex">
-                    <span class="text-body-1 text--demibold mb-2">Ваше имя</span>
-                    <input class="contacts__input form-input w-100" type="text">
+                  <label class="contacts__label mb-3 mb-lg-5 flex form-field">
+                    <div class="text-body-1 text--demibold mb-2">Ваше имя</div>
+                    <div class="form-input-cover">
+                      <input class="contacts__input form-input w-100" type="text">
+                    </div>
                   </label>
-                  <label class="contacts__label flex">
-                    <span class="text-body-1 text--demibold mb-2">Ваш телефон или e-mail</span>
-                    <input class="contacts__input input input--white w-100" type="text">
+                  <label class="contacts__label form-field">
+                    <div class="text-body-1 text--demibold mb-2">Ваш телефон или e-mail</div>
+                    <div class="form-input-cover">
+                      <input class="contacts__input form-input w-100" type="text">
+                    </div>
                   </label>
                 </div>
               </div>
               <div class="grid-col-12 grid-col-lg-7">
-                <label class="contacts__label flex h-100">
-                  <span class="text-body-1 text--demibold mb-2">Ваш вопрос</span>
-                  <textarea class="contacts__input contacts__input--textarea input input--white h-100"></textarea>
+                <label class="contacts__label flex form-field h-100">
+                  <div class="text-body-1 text--demibold mb-2">Ваш вопрос</div>
+                  <div class="form-input-cover">
+                    <textarea class="contacts__input contacts__input--textarea form-input h-100"></textarea>
+                  </div>
                 </label>
               </div>
               <div class="grid-col-12 grid-col-lg-4">
