@@ -383,10 +383,10 @@ body {
 			border-radius: 20px;
 		}
 
-		&__label {
-			display       : flex;
-			flex-direction: column;
-		}
+		// &__label {
+		// 	display       : flex;
+		// 	flex-direction: column;
+		// }
 
 		&__input {
 			&--textarea {
@@ -1469,8 +1469,18 @@ body {
 		overflow     : hidden;
 	}
 
-	&__labels,
-	&__label {
+	&__bg {
+		position: absolute;
+		top     : -50px;
+		right   : 0;
+		width   : 330px;
+	}
+
+	&__title {
+		position: relative;
+	}
+
+	&__labels {
 		flex-direction: column;
 	}
 
@@ -1479,6 +1489,12 @@ body {
 		&__content,
 		&__feedback {
 			padding: 24px 16px;
+		}
+
+		&__bg {
+			top  : 0;
+			right: -25px;
+			width: 180px;
 		}
 
 		&__title {
@@ -1912,6 +1928,50 @@ body:not(.categories-search-open) .categories-shadow {
 	&:not(.toggle-active)+&-shadow {
 		opacity       : 0;
 		pointer-events: none;
+	}
+}
+
+.error-page {
+	&__block {
+		width         : 100%;
+		max-width     : 640px;
+		flex-direction: column;
+	}
+
+	&__pic {
+		position: relative;
+	}
+
+	&__img {
+		position: absolute;
+		top     : 0;
+		left    : 0;
+		right   : 0;
+		width   : 100%;
+	}
+
+	&__number {
+		background             : linear-gradient(180deg, rgba(13, 243, 80, 0.8) 0%, rgba(0, 156, 45, 0) 100%), #009C2D;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip        : text;
+		text-fill-color        : transparent;
+		font-size              : 228px;
+	}
+
+	&__btns {
+		width    : 100%;
+		max-width: 350px;
+	}
+
+	&__btn {
+		width: 156px;
+	}
+
+	@media(max-width: $md) {
+		&__number {
+			font-size: 148px;
+		}
 	}
 }
 

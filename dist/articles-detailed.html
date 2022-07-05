@@ -9,6 +9,249 @@
 <link href="css/style.css" rel="stylesheet"><script src="js/index.js"></script></head>
 
 <body>
+  <!-- Search menu -->
+  <div class="menu -menu-" id="search">
+    <div class="flex flex-align-center px-3 pt-3">
+      <button class="btn btn--primary btn-icon btn-small mr-1" data-toggle-link="search">
+        <svg class="icon text-subtitle-1">
+          <use xlink:href="img/icons.svg#arrow-left"/>
+        </svg>
+      </button>
+      <label class="form-field flex-grow">
+        <div class="form-input-cover">
+          <input type="text" class="form-input bg-l1" placeholder="Поиск">
+        </div>
+      </label>
+    </div>
+    <div class="py-3">
+      <a href="" class="py-4 px-5 flex flex-align-center waved">
+        <svg class="icon text-body-0 fade-40 mr-4">
+          <use xlink:href="img/icons.svg#search"/>
+        </svg>
+        <div class="fade-40">Розы</div>
+      </a>
+      <a href="" class="py-4 px-5 flex flex-align-center waved">
+        <svg class="icon text-body-0 fade-40 mr-4">
+          <use xlink:href="img/icons.svg#search"/>
+        </svg>
+        <div class="fade-40">Хризантемы</div>
+      </a>
+      <a href="" class="py-4 px-5 flex flex-align-center waved">
+        <svg class="icon text-body-0 fade-40 mr-4">
+          <use xlink:href="img/icons.svg#search"/>
+        </svg>
+        <div class="fade-40">Цитрус Лимон</div>
+      </a>
+      <a href="" class="py-4 px-5 flex flex-align-center waved">
+        <svg class="icon text-body-0 fade-40 mr-4">
+          <use xlink:href="img/icons.svg#search"/>
+        </svg>
+        <div class="fade-40">Паслен</div>
+      </a>
+    </div>
+  </div>
+  <div class="menu-shadow"></div>
+
+  <header class="mobile-header">
+    <div class="flex">
+      <button class="btn btn--primary btn-icon btn-small" data-toggle-link="menu">
+        <svg class="icon text-subtitle-1">
+          <use xlink:href="img/icons.svg#arrow-left"/>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-header-logo">
+      <img src="img/logo.png" alt="">
+    </div>
+  
+  </header>
+
+  <section class="nav">
+    <div class="nav-list">
+      <a href="javascript:;" class="nav-item btn btn--primary btn--link link-hover">
+        <span class="fade-80"> Главная </span>
+      </a>
+      <a href="javascript:;" class="nav-item btn btn--primary btn--link link-hover">
+        <span class="fade-80"> Доставка </span>
+      </a>
+      <a href="javascript:;" class="nav-item btn btn--primary btn--link link-hover">
+        <span class="fade-80"> Оплата </span>
+      </a>
+      <a href="javascript:;" class="nav-item btn btn--primary btn--link link-hover">
+        <span class="fade-80"> О магазине </span>
+      </a>
+      <a href="javascript:;" class="nav-item btn btn--primary btn--link link-hover">
+        <span class="fade-80"> Статьи </span>
+      </a>
+      <a href="javascript:;" class="nav-item btn btn--primary btn--link link-hover">
+        <span class="fade-80"> Вакансии </span>
+      </a>
+      <a href="javascript:;" class="nav-item btn btn--primary btn--link link-hover">
+        <span class="fade-80"> Отзывы </span>
+      </a>
+      <a href="javascript:;" class="nav-item btn btn--primary btn--link link-hover">
+        <span class="fade-80"> Контакты </span>
+      </a>
+    </div>
+
+    <label class="form-field form-checkbox mx-5">
+      <input type="checkbox" class="form-input-checkbox -theme-changer-">
+      <div class="form-toggle-target"> </div>
+      <div class="text-body-2 ml-2"> Темная тема </div>
+    </label>
+
+    <button class="nav-lk btn btn--primary btn--link link-hover ml-auto">
+      <svg class="icon mr-3">
+        <use xlink:href="img/icons.svg#user"/>
+      </svg>
+      <div class="color-text">Личный кабинет</div>
+    </button>
+  </section>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="header-logo">
+        <img src="img/logo.png" alt="">
+      </a>
+      <button class="header-address btn btn--sec btn--light">
+        <div>
+          <div class="text-body-2 fade-60 color-text mb-2">Город доставки</div>
+          <div class="flex flex-align-center">
+            <svg class="icon mr-2">
+              <use xlink:href="img/icons.svg#send-address"/>
+            </svg>
+            <div class="text-body-1 text--demibold color-text">Норильск</div>
+          </div>
+        </div>
+
+      </button>
+      <div class="header-contacts flex flex-align-start">
+
+        <a href="javascript:;" class="header-contact link-hover-wrapper color-text btn btn--sec btn--link">
+          <div>
+            <div class="text-body-1 text--demibold link-hover">8 (800) 234-80-90</div>
+            <div class="text-small fade-60 mt-1">
+              Узнать о наличии, стоимости, <br>
+              сроках поставки
+            </div>
+          </div>
+        </a>
+        <a href="javascript:;" class="header-contact link-hover-wrapper color-text btn btn--sec btn--link">
+          <div>
+            <div class="text-body-1 text--demibold link-hover">+7 (902) 550-00-99 </div>
+            <div class="text-small fade-60 mt-1">
+              По вопросам сопровождения <br>
+              вашего заказа
+            </div>
+          </div>
+        </a>
+        <a href="javascript:;" class="header-contact link-hover-wrapper color-text btn btn--sec btn--link">
+          <div>
+            <div class="text-body-1 text--demibold link-hover">8 (3919) 33-00-29</div>
+            <div class="text-small fade-60 mt-1">
+              Главный офис
+            </div>
+          </div>
+        </a>
+      </div>
+      <a href="javascript:;" class="header-cart btn btn--sec btn--link color-text ml-auto link-hover-wrapper">
+        <button class="btn btn--sec btn--light btn-icon btn-large mr-4">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#cart"/>
+          </svg>
+        </button>
+        <div>
+          <div class="text--demibold link-hover">20 товаров</div>
+          <div class="text-body-2 fade-60">10000 ₽</div>
+          <button class="btn btn--sec btn--link mt-1">Оформить</button>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <section class="py-3 py-md-4">
+    <div class="d-md-flex">
+      <svg class="icon color-sec mr-2 d-none d-md-block">
+        <use xlink:href="img/icons.svg#clock"/>
+      </svg>
+      <div class="text-small text-md-body-2 text--center text-md--left">
+        <span class="fade-60">Время работы оператора</span>
+        <span class="text--demibold">09:00 - 20:00</span>
+        <br class="d-md-none">
+        <span class="fade-60"><span class="d-none d-md-inline">/</span> Время доставки</span>
+        <span class="text--demibold">09:00 - 20:00</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="categories categories--detail" data-toggle-cover>
+    <div class="container">
+      <button class="btn btn-small btn--primary bg-l1 w-100 d-none d-md-flex d-lg-none" data-toggle-link="search">
+        <svg class="icon text-body-0 mr-3">
+          <use xlink:href="img/icons.svg#search"/>
+        </svg>
+        <div class="text-body-2 color-text mr-auto fade-60">Поиск</div>
+      </button>
+      <div class="categories-inner">
+        <button class="categories-search btn btn-small btn--primary btn--white-bg d-none d-lg-flex" data-toggle-link>
+          <div class="categories-search-inner">
+            <svg class="icon text-body-0 mr-3">
+              <use xlink:href="img/icons.svg#search"/>
+            </svg>
+            <div class="text-body-1 color-text text--demibold">Поиск</div>
+          </div>
+
+        </button>
+        <div class="categories-list">
+          <button class="categories-search btn btn-small btn--primary btn--white-bg d-md-none mr-2" data-toggle-link="search">
+            <div class="categories-search-inner">
+              <svg class="icon text-body-0">
+                <use xlink:href="img/icons.svg#search"/>
+              </svg>
+            </div>
+          </button>
+          <div class="categories-items">
+            <button class="categories-item btn btn-small btn--primary btn--white-bg">
+              <img src="img/pictures/categories-1.png" alt="" class="icon text-body-0 mr-3">
+              <div class="text-lg-body-1 color-text text--demibold">Монобукеты</div>
+            </button>
+            <button class="categories-item btn btn-small btn--primary btn--white-bg">
+              <img src="img/pictures/categories-2.png" alt="" class="icon text-body-0 mr-3">
+              <div class="text-lg-body-1 color-text text--demibold">Букеты</div>
+            </button>
+            <button class="categories-item btn btn-small btn--primary btn--white-bg">
+              <img src="img/pictures/categories-3.png" alt="" class="icon text-body-0 mr-3">
+              <div class="text-lg-body-1 color-text text--demibold">Праздники</div>
+            </button>
+            <button class="categories-item btn btn-small btn--primary btn--white-bg">
+              <img src="img/pictures/categories-4.png" alt="" class="icon text-body-0 mr-3">
+              <div class="text-lg-body-1 color-text text--demibold">Подарки</div>
+            </button>
+            <button class="categories-item btn btn-small btn--primary btn--white-bg">
+              <img src="img/pictures/categories-5.png" alt="" class="icon text-body-0 mr-3">
+              <div class="text-lg-body-1 color-text text--demibold">Горшечные растения</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="categories-form" data-toggle-content id="categories-form">
+      <div class="container">
+        <label class="categories-form-field">
+          <input class="categories-form-input" placeholder="Поиск">
+          <div class="form-input-end">
+            <button type="button" class="btn btn-small btn--red btn-icon" data-toggle-link>
+              <svg class="icon color-text fade-40">
+                <use xlink:href="img/icons.svg#cross"/>
+              </svg>
+            </button>
+          </div>
+        </label>
+      </div>
+
+    </div>
+  </section>
+  <div class="categories-shadow" data-toggle-link="categories-form"></div>
 
   <section class="navigation flex flex-align-center fade-60">
     <a class="navigation__item text-small link-hover mr-1" href="#">Главная</a>
@@ -19,20 +262,23 @@
   </section>
 
   <section class="page-title">
-    <div class="page-title__block flex flex-align-center flex-justify-between bg-white py-4 px-10">
+    <div class="page-title__block flex flex-align-center flex-justify-between bg-l3 py-4 px-10">
       <div class="page-title__name text-h1 text--demibold font-alt">Какие цветы дарить на 14 февраля?</div>
     </div>
   </section>
 
   <section class="articles pt-1">
     <div class="articles__images flex">
-      <a class="articles__elem" href="https://picsum.photos/400/600?random=15" data-fancybox="gallery">
+      <a class="articles__elem card card-action progress-container bg-l1" href="https://picsum.photos/400/600?random=15" data-fancybox="gallery">
+        <div class="progress progress-circle fade-60 text-body-1"></div>
         <img class="articles__img" src="https://picsum.photos/400/600?random=15" alt="">
       </a>
-      <a class="articles__elem" href="https://picsum.photos/400/600?random=6" data-fancybox="gallery">
+      <a class="articles__elem card card-action progress-container bg-l1" href="https://picsum.photos/400/600?random=6" data-fancybox="gallery">
+        <div class="progress progress-circle fade-60 text-body-1"></div>
         <img class="articles__img" src="https://picsum.photos/400/600?random=6" alt="">
       </a>
-      <a class="articles__elem" href="https://picsum.photos/400/600?random=7" data-fancybox="gallery">
+      <a class="articles__elem card card-action progress-container bg-l1" href="https://picsum.photos/400/600?random=7" data-fancybox="gallery">
+        <div class="progress progress-circle fade-60 text-body-1"></div>
         <img class="articles__img" src="https://picsum.photos/400/600?random=7" alt="">
       </a>
     </div>
@@ -42,21 +288,35 @@
     <div class="page-info__text text-body-1 mb-lg-10 mb-5">
       Флористы интернет магазина Флора советуют своим клиентам, какие цветы дарят на 14 февраля.<br>
       <br>
-      Чаще всего в состав букетов включают розы, которые символизируют любовь и восхищение. Стоит лишь правильно подобрать их сорт. Так для уверенной в себе женщине подойдут крупные экземпляры роз или орхидей красного или оранжевого цвета. Молодым девушкам, что бы подчеркнуть их хрупкость и изящность, дарят розы с мелкими соцветиями нежных пастельных тонов.<br>
+      Чаще всего в состав букетов включают розы, которые символизируют любовь и восхищение. Стоит лишь правильно
+      подобрать их сорт. Так для уверенной в себе женщине подойдут крупные экземпляры роз или орхидей красного или
+      оранжевого цвета. Молодым девушкам, что бы подчеркнуть их хрупкость и изящность, дарят розы с мелкими соцветиями
+      нежных пастельных тонов.<br>
       <br>
-      Какие цветы подарить на 14 февраля второй половинке? Спросите у флористов интернет-магазина Флора. У них вы получите ценные рекомендации по выбору букета цветов на день святого Валентина и обязательно восхитите свою девушку или жену.
+      Какие цветы подарить на 14 февраля второй половинке? Спросите у флористов интернет-магазина Флора. У них вы
+      получите ценные рекомендации по выбору букета цветов на день святого Валентина и обязательно восхитите свою
+      девушку или жену.
     </div>
     <div class="text-h6 text-md-h3 text-lg-h4 mb-lg-10 mb-5 text--bold font-alt">Цветы на День святого Валентина</div>
     <div class="page-info__text text-body-1 mb-lg-10 mb-5">
-      Нет лучшего подарка, чем цветы на день святого Валентина. Важно лишь правильно подобрать их вид, чтобы максимально раскрыть свои чувства. Так роза призвана подчеркнуть серьезность ваших намерений, орхидеи указывают на утонченность и невинность чувств, каллы дарят с целью рассказать о восхищении, нежные ромашки символизируют нежности и преданности.<br>
+      Нет лучшего подарка, чем цветы на день святого Валентина. Важно лишь правильно подобрать их вид, чтобы максимально
+      раскрыть свои чувства. Так роза призвана подчеркнуть серьезность ваших намерений, орхидеи указывают на
+      утонченность и невинность чувств, каллы дарят с целью рассказать о восхищении, нежные ромашки символизируют
+      нежности и преданности.<br>
       <br>
-      Букет может быть выполнен только из одного вида цветков или из нескольких, в зависимости от вашего желания. Завершенность ему придаст подарочная упаковка и лента, а так же наличие декоративных элементов. В цветы на день святого Валентина необходимо вложить открытку валентинку, которая расскажет о ваших чувствах.
+      Букет может быть выполнен только из одного вида цветков или из нескольких, в зависимости от вашего желания.
+      Завершенность ему придаст подарочная упаковка и лента, а так же наличие декоративных элементов. В цветы на день
+      святого Валентина необходимо вложить открытку валентинку, которая расскажет о ваших чувствах.
     </div>
-    <div class="text-h6 text-md-h3 text-lg-h4 mb-lg-10 mb-5 text--bold font-alt">Доставка цветов на 14 февраля - интернет-магазин “Флора”</div>
+    <div class="text-h6 text-md-h3 text-lg-h4 mb-lg-10 mb-5 text--bold font-alt">Доставка цветов на 14 февраля -
+      интернет-магазин “Флора”</div>
     <div class="page-info__text text-body-1">
-      Бывают моменты, когда у вас нет возможности быть рядом с любимыми, а так хочется выразить им свои чувства, особенно это важно в День всех влюбленных. Мы предлагаем услугу доставка цветов на 14 февраля.<br>
+      Бывают моменты, когда у вас нет возможности быть рядом с любимыми, а так хочется выразить им свои чувства,
+      особенно это важно в День всех влюбленных. Мы предлагаем услугу доставка цветов на 14 февраля.<br>
       <br>
-      По вашему желанию композицию можно оформить с помощью лент, бусин, небольших игрушек или других декоративных элементов. Обязательно вложить в букет открытку с нежными и теплыми словами. Доставка цветов на 14 февраля производится только компетентными курьерами, которые гарантируют точность и пунктуальность.
+      По вашему желанию композицию можно оформить с помощью лент, бусин, небольших игрушек или других декоративных
+      элементов. Обязательно вложить в букет открытку с нежными и теплыми словами. Доставка цветов на 14 февраля
+      производится только компетентными курьерами, которые гарантируют точность и пунктуальность.
     </div>
   </section>
 

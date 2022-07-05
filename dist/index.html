@@ -9,19 +9,407 @@
 <link href="css/style.css" rel="stylesheet"><script src="js/index.js"></script></head>
 
 <body>
-  <header class="header"> </header>
+  <!-- Mobile menu -->
+  <div class="menu -menu-" id="menu">
+    <header class="menu-header mobile-header px-4">
+      <div class="flex">
+        <button class="btn btn--primary btn-icon btn-small" data-toggle-link="menu">
+          <svg class="icon text-subtitle-1">
+            <use xlink:href="img/icons.svg#arrow-left"/>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-header-logo">
+        <img src="img/logo.png" alt="">
+      </div>
+
+    </header>
+
+    <div class="menu-content py-4">
+      <div class="px-4">
+        <a href="javascript:;" class="btn btn-small btn--primary btn--light mb-3">
+          <svg class="icon mr-3">
+            <use xlink:href="img/icons.svg#user"/>
+          </svg>
+          <div class="color-text">Личный кабинет</div>
+        </a>
+        <div class="grid">
+          <div class="grid-col-6">
+            <button class="header-address w-100 btn btn--sec btn--light">
+              <svg class="icon text-subtitle-1 mr-4">
+                <use xlink:href="img/icons.svg#send-address"/>
+              </svg>
+              <div>
+                <div class="text-body-2 fade-60 color-text mb-2">Город доставки</div>
+                <div class="flex flex-align-center">
+
+                  <div class="text-body-1 text--demibold color-text">Норильск</div>
+                </div>
+              </div>
+
+            </button>
+          </div>
+          <div class="grid-col-6">
+            <a href="javascript:;" class="header-cart h-100 w-100 btn btn--sec btn--light bg-l1 link-hover-wrapper">
+              <svg class="icon text-subtitle-1 mr-4">
+                <use xlink:href="img/icons.svg#cart"/>
+              </svg>
+              <div class="color-text">
+                <div class="text--demibold link-hover">20 товаров</div>
+                <div class="text-body-2 fade-60">10000 ₽</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-2" data-toggle-cover>
+        <button class="w-100 px-4 py-4 waved flex flex-align-center" data-toggle-link>
+          <div class="text-body-0 text--demibold">Каталог товаров</div>
+          <svg class="icon fade-60 ml-auto">
+            <use xlink:href="img/icons.svg#to-right"/>
+          </svg>
+        </button>
+        <div class="px-4" data-toggle-content data-toggle-static="true" data-toggle-height="true">
+          <div class="py-2">
+            <div class="grid">
+              <div class="grid-col-6">
+                <button class="btn w-100 btn-small btn--primary btn--white-bg">
+                  <img src="img/pictures/categories-1.png" alt="" class="icon text-body-0 mr-3">
+                  <div class="text-lg-body-1 color-text text--demibold">Монобукеты</div>
+                </button>
+              </div>
+              <div class="grid-col-6">
+                <button class="btn w-100 btn-small btn--primary btn--white-bg">
+                  <img src="img/pictures/categories-2.png" alt="" class="icon text-body-0 mr-3">
+                  <div class="text-lg-body-1 color-text text--demibold">Букеты</div>
+                </button>
+              </div>
+              <div class="grid-col-6">
+                <button class="btn w-100 btn-small btn--primary btn--white-bg">
+                  <img src="img/pictures/categories-3.png" alt="" class="icon text-body-0 mr-3">
+                  <div class="text-lg-body-1 color-text text--demibold">Праздники</div>
+                </button>
+              </div>
+              <div class="grid-col-6">
+                <button class="btn w-100 btn-small btn--primary btn--white-bg">
+                  <img src="img/pictures/categories-4.png" alt="" class="icon text-body-0 mr-3">
+                  <div class="text-lg-body-1 color-text text--demibold">Подарки</div>
+                </button>
+              </div>
+              <div class="grid-col-12">
+                <button class="btn w-100 btn-small btn--primary btn--white-bg">
+                  <img src="img/pictures/categories-5.png" alt="" class="icon text-body-0 mr-3">
+                  <div class="text-lg-body-1 color-text text--demibold">Горшечные растения</div>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-5 bg-l3">
+        <a class="d-block px-6 py-4 waved text-body-0 w-100"><span>Главная</span></a>
+        <a class="d-block px-6 py-4 waved text-body-0 w-100"><span>Доставка</span></a>
+        <a class="d-block px-6 py-4 waved text-body-0 w-100"><span>Оплата</span></a>
+        <a class="d-block px-6 py-4 waved text-body-0 w-100"><span>О магазине</span></a>
+        <a class="d-block px-6 py-4 waved text-body-0 w-100"><span>Статьи</span></a>
+        <a class="d-block px-6 py-4 waved text-body-0 w-100"><span>Вакансии</span></a>
+        <a class="d-block px-6 py-4 waved text-body-0 w-100"><span>Отзывы</span></a>
+        <a class="d-block px-6 py-4 waved text-body-0 w-100"><span>Контакты</span></a>
+      </div>
+      <div class="py-4">
+        <a href="javascript:;" class="link-hover-wrapper color-text btn btn--sec btn--link flex-justify-start py-2 px-6">
+          <div>
+            <div class="text-body-1 text--demibold link-hover">8 (800) 234-80-90</div>
+            <div class="text-small fade-60 mt-1">
+              Узнать о наличии, стоимости,
+              сроках поставки
+            </div>
+          </div>
+        </a>
+        <a href="javascript:;" class="link-hover-wrapper color-text btn btn--sec btn--link flex-justify-start py-2 px-6">
+          <div>
+            <div class="text-body-1 text--demibold link-hover">+7 (902) 550-00-99 </div>
+            <div class="text-small fade-60 mt-1">
+              По вопросам сопровождения
+              вашего заказа
+            </div>
+          </div>
+        </a>
+        <a href="javascript:;" class="link-hover-wrapper color-text btn btn--sec btn--link flex-justify-start py-2 px-6">
+          <div>
+            <div class="text-body-1 text--demibold link-hover">8 (3919) 33-00-29</div>
+            <div class="text-small fade-60 mt-1">
+              Главный офис
+            </div>
+          </div>
+        </a>
+      </div>
+      <label class="form-field form-checkbox p-4 w-100">
+        <input type="checkbox" class="form-input-checkbox -theme-changer-">
+        <div class="form-toggle-target"> </div>
+        <div class="text-body-2 ml-2"> Темная тема </div>
+      </label>
+    </div>
+  </div>
+  <div class="menu-shadow"></div>
+
+  <!-- Search menu -->
+  <div class="menu -menu-" id="search">
+    <div class="flex flex-align-center px-3 pt-3">
+      <button class="btn btn--primary btn-icon btn-small mr-1" data-toggle-link="search">
+        <svg class="icon text-subtitle-1">
+          <use xlink:href="img/icons.svg#arrow-left"/>
+        </svg>
+      </button>
+      <label class="form-field flex-grow">
+        <div class="form-input-cover">
+          <input type="text" class="form-input bg-l1" placeholder="Поиск">
+        </div>
+      </label>
+    </div>
+    <div class="py-3">
+      <a href="" class="py-4 px-5 flex flex-align-center waved">
+        <svg class="icon text-body-0 fade-40 mr-4">
+          <use xlink:href="img/icons.svg#search"/>
+        </svg>
+        <div class="fade-40">Розы</div>
+      </a>
+      <a href="" class="py-4 px-5 flex flex-align-center waved">
+        <svg class="icon text-body-0 fade-40 mr-4">
+          <use xlink:href="img/icons.svg#search"/>
+        </svg>
+        <div class="fade-40">Хризантемы</div>
+      </a>
+      <a href="" class="py-4 px-5 flex flex-align-center waved">
+        <svg class="icon text-body-0 fade-40 mr-4">
+          <use xlink:href="img/icons.svg#search"/>
+        </svg>
+        <div class="fade-40">Цитрус Лимон</div>
+      </a>
+      <a href="" class="py-4 px-5 flex flex-align-center waved">
+        <svg class="icon text-body-0 fade-40 mr-4">
+          <use xlink:href="img/icons.svg#search"/>
+        </svg>
+        <div class="fade-40">Паслен</div>
+      </a>
+    </div>
+  </div>
+  <div class="menu-shadow"></div>
+
+  <header class="mobile-header">
+    <div class="flex">
+      <button class="btn btn--primary btn-icon btn-small" data-toggle-link="menu">
+        <svg class="icon text-subtitle-1">
+          <use xlink:href="img/icons.svg#menu"/>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-header-logo">
+      <img src="img/logo.png" alt="">
+    </div>
+    <div class="flex">
+      <button class="btn ml-auto btn--sec btn-small px-2">
+        <svg class="icon text-subtitle-1 mr-2">
+          <use xlink:href="img/icons.svg#cart"/>
+        </svg>
+        <div class="text-body-1 color-text text--demibold">20</div>
+      </button>
+    </div>
+  </header>
+
+  <section class="nav">
+    <div class="nav-list">
+      <a href="javascript:;" class="nav-item btn btn--primary btn--link link-hover">
+        <span class="fade-80"> Главная </span>
+      </a>
+      <a href="javascript:;" class="nav-item btn btn--primary btn--link link-hover">
+        <span class="fade-80"> Доставка </span>
+      </a>
+      <a href="javascript:;" class="nav-item btn btn--primary btn--link link-hover">
+        <span class="fade-80"> Оплата </span>
+      </a>
+      <a href="javascript:;" class="nav-item btn btn--primary btn--link link-hover">
+        <span class="fade-80"> О магазине </span>
+      </a>
+      <a href="javascript:;" class="nav-item btn btn--primary btn--link link-hover">
+        <span class="fade-80"> Статьи </span>
+      </a>
+      <a href="javascript:;" class="nav-item btn btn--primary btn--link link-hover">
+        <span class="fade-80"> Вакансии </span>
+      </a>
+      <a href="javascript:;" class="nav-item btn btn--primary btn--link link-hover">
+        <span class="fade-80"> Отзывы </span>
+      </a>
+      <a href="javascript:;" class="nav-item btn btn--primary btn--link link-hover">
+        <span class="fade-80"> Контакты </span>
+      </a>
+    </div>
+
+    <label class="form-field form-checkbox mx-5">
+      <input type="checkbox" class="form-input-checkbox -theme-changer-">
+      <div class="form-toggle-target"> </div>
+      <div class="text-body-2 ml-2"> Темная тема </div>
+    </label>
+
+    <button class="nav-lk btn btn--primary btn--link link-hover ml-auto">
+      <svg class="icon mr-3">
+        <use xlink:href="img/icons.svg#user"/>
+      </svg>
+      <div class="color-text">Личный кабинет</div>
+    </button>
+  </section>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="header-logo">
+        <img src="img/logo.png" alt="">
+      </a>
+      <button class="header-address btn btn--sec btn--light">
+        <div>
+          <div class="text-body-2 fade-60 color-text mb-2">Город доставки</div>
+          <div class="flex flex-align-center">
+            <svg class="icon mr-2">
+              <use xlink:href="img/icons.svg#send-address"/>
+            </svg>
+            <div class="text-body-1 text--demibold color-text">Норильск</div>
+          </div>
+        </div>
+
+      </button>
+      <div class="header-contacts flex flex-align-start">
+
+        <a href="javascript:;" class="header-contact link-hover-wrapper color-text btn btn--sec btn--link">
+          <div>
+            <div class="text-body-1 text--demibold link-hover">8 (800) 234-80-90</div>
+            <div class="text-small fade-60 mt-1">
+              Узнать о наличии, стоимости, <br>
+              сроках поставки
+            </div>
+          </div>
+        </a>
+        <a href="javascript:;" class="header-contact link-hover-wrapper color-text btn btn--sec btn--link">
+          <div>
+            <div class="text-body-1 text--demibold link-hover">+7 (902) 550-00-99 </div>
+            <div class="text-small fade-60 mt-1">
+              По вопросам сопровождения <br>
+              вашего заказа
+            </div>
+          </div>
+        </a>
+        <a href="javascript:;" class="header-contact link-hover-wrapper color-text btn btn--sec btn--link">
+          <div>
+            <div class="text-body-1 text--demibold link-hover">8 (3919) 33-00-29</div>
+            <div class="text-small fade-60 mt-1">
+              Главный офис
+            </div>
+          </div>
+        </a>
+      </div>
+      <a href="javascript:;" class="header-cart btn btn--sec btn--link color-text ml-auto link-hover-wrapper">
+        <button class="btn btn--sec btn--light btn-icon btn-large mr-4">
+          <svg class="icon">
+            <use xlink:href="img/icons.svg#cart"/>
+          </svg>
+        </button>
+        <div>
+          <div class="text--demibold link-hover">20 товаров</div>
+          <div class="text-body-2 fade-60">10000 ₽</div>
+          <button class="btn btn--sec btn--link mt-1">Оформить</button>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <section class="py-3 py-md-4">
+    <div class="d-md-flex">
+      <svg class="icon color-sec mr-2 d-none d-md-block">
+        <use xlink:href="img/icons.svg#clock"/>
+      </svg>
+      <div class="text-small text-md-body-2 text--center text-md--left">
+        <span class="fade-60">Время работы оператора</span>
+        <span class="text--demibold">09:00 - 20:00</span>
+        <br class="d-md-none">
+        <span class="fade-60"><span class="d-none d-md-inline">/</span> Время доставки</span>
+        <span class="text--demibold">09:00 - 20:00</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="categories" data-toggle-cover>
+    <div class="container">
+      <button class="btn btn-small btn--primary bg-l1 w-100 d-lg-none" data-toggle-link="search">
+        <svg class="icon text-body-0 mr-3">
+          <use xlink:href="img/icons.svg#search"/>
+        </svg>
+        <div class="text-body-2 color-text mr-auto fade-60">Поиск</div>
+      </button>
+      <div class="categories-inner">
+        <button class="categories-search btn btn-small btn--primary btn--white-bg d-none d-lg-flex" data-toggle-link>
+          <div class="categories-search-inner">
+            <svg class="icon text-body-0 mr-3">
+              <use xlink:href="img/icons.svg#search"/>
+            </svg>
+            <div class="text-body-1 color-text text--demibold">Поиск</div>
+          </div>
+
+        </button>
+        <div class="categories-list">
+          <div class="categories-items">
+            <button class="categories-item btn btn-small btn--primary btn--white-bg">
+              <img src="img/pictures/categories-1.png" alt="" class="icon text-body-0 mr-3">
+              <div class="text-lg-body-1 color-text text--demibold">Монобукеты</div>
+            </button>
+            <button class="categories-item btn btn-small btn--primary btn--white-bg">
+              <img src="img/pictures/categories-2.png" alt="" class="icon text-body-0 mr-3">
+              <div class="text-lg-body-1 color-text text--demibold">Букеты</div>
+            </button>
+            <button class="categories-item btn btn-small btn--primary btn--white-bg">
+              <img src="img/pictures/categories-3.png" alt="" class="icon text-body-0 mr-3">
+              <div class="text-lg-body-1 color-text text--demibold">Праздники</div>
+            </button>
+            <button class="categories-item btn btn-small btn--primary btn--white-bg">
+              <img src="img/pictures/categories-4.png" alt="" class="icon text-body-0 mr-3">
+              <div class="text-lg-body-1 color-text text--demibold">Подарки</div>
+            </button>
+            <button class="categories-item btn btn-small btn--primary btn--white-bg">
+              <img src="img/pictures/categories-5.png" alt="" class="icon text-body-0 mr-3">
+              <div class="text-lg-body-1 color-text text--demibold">Горшечные растения</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="categories-form" data-toggle-content id="categories-form">
+      <div class="container">
+        <label class="categories-form-field">
+          <input class="categories-form-input" placeholder="Поиск">
+          <div class="form-input-end">
+            <button type="button" class="btn btn-small btn--red btn-icon" data-toggle-link>
+              <svg class="icon color-text fade-40">
+                <use xlink:href="img/icons.svg#cross"/>
+              </svg>
+            </button>
+          </div>
+        </label>
+      </div>
+
+    </div>
+  </section>
+  <div class="categories-shadow" data-toggle-link="categories-form"></div>
+
 
   <section class="banners">
     <div class="grid grid-spacing-3">
       <a class="grid-col-6" href="#">
-        <div class="banners__item bg-yellow-light h-100">
+        <div class="banners__item banners__item--yellow h-100">
           <div class="banners__bg">
             <img class="banners__image" src="img/pictures/banner-1.png" alt="">
           </div>
           <div class="banners__content h-100">
             <div class="banners__title text-h1 mb-1">Акция 1+1=3</div>
             <div class="banners__subtitle text-body-1 mb-6">
-              Суккуленты 250 ₽ за 1 шт, 
+              Суккуленты 250 ₽ за 1 шт,
               ТРЕТИЙ В ПОДАРОК
             </div>
             <button class="banners__btn btn btn--primary btn--fill px-10 py-3 px-9 mt-auto">Подробнее</button>
@@ -29,7 +417,7 @@
         </div>
       </a>
       <a class="grid-col-6" href="#">
-        <div class="banners__item bg-purple h-100">
+        <div class="banners__item banners__item--purple h-100">
           <div class="banners__bg">
             <img class="banners__image" src="img/pictures/banner-2.png" alt="">
           </div>
@@ -45,9 +433,10 @@
     </div>
   </section>
 
+  <!-- Популярные букеты -->
   <section class="index-product-list">
     <div class="text-h6 text-md-h3 text-lg-h1 text-md--center mb-4 mb-lg-10 font-alt">Популярные букеты</div>
-    <div class="grid grid-spacing-7">
+    <div class="grid grid-spacing-lg-7">
       <div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
         <div class="product-card card card-action p-1 p-md-2 link-hover-wrapper h-100">
           <div class="product-card-img card-img mb-md-4 mb-3 brs-2 bg-l2 progress-container">
@@ -56,9 +445,9 @@
           </div>
           <div class="card-content px-1 pb-1 px-md-2 pb-md-2">
             <div class="text-body-2 text-md-body-1 mb-md-4 mb-3 link-hover">Букет №7104</div>
-            <button class="btn btn-small btn-lg-middle btn--primary btn--light mt-auto w-100">
+            <button class="btn btn-small btn-lg-middle btn--primary btn--contur mt-auto w-100">
               <svg class="icon text-lg-subtitle-2 mr-2">
-                <use xlink:href="img/icons.svg#cart-contur"/>
+                <use xlink:href="img/icons.svg#gal-ochka-1-contur"/>
               </svg>
               <div class="text-md-body-0 text-lg-h6 font-alt text--demibold">1 400 ₽</div>
             </button>
@@ -159,30 +548,38 @@
     </div>
 
     <div class="flex">
-      <a href="javascript:;" class="btn btn--primary btn--fill px-10 mt-5 mt-lg-10 mx-auto w-100 w-md-auto">Показать еще букеты</a>
+      <a href="javascript:;" class="btn btn--primary btn--fill px-10 mt-5 mt-lg-10 mx-auto w-100 w-md-auto">Показать еще
+        букеты</a>
     </div>
   </section>
 
+  <!-- Хотите подарить цветы? Повод всегда найдется! -->
   <div class="holiday py-7">
-    <div class="text-h6 text-md-h3 text-lg-h1 text-md--center mb-4 mb-lg-10 font-alt px-4">Хотите подарить цветы? Повод всегда найдется!</div>
-    <section class="holiday__block flex flex-align-center flex-justify-between bg-light mx-4 py-4">
+    <div class="text-h6 text-md-h3 text-lg-h1 text-md--center mb-4 mb-lg-10 font-alt px-4">
+      Хотите подарить цветы? Повод всегда найдется!
+    </div>
+    <section class="holiday__block flex flex-align-center flex-justify-between mx-4 py-4">
       <div class="holiday__content">
         <div class="text-body-1 text--demibold mb-5">Сегодня 18 декабря</div>
-        <div class="holiday__day flex flex-align-center bg-white mb-7 py-4 px-5">
+        <div class="holiday__day flex flex-align-center bg-l3 mb-7 py-4 px-5">
           <img class="icon text-h4 mr-2" src="img/pictures/smile.png" alt="">
           <span class="text-lg-h6 text-body-2 text--demibold font-alt">День признательности снежинкам</span>
         </div>
         <p class="holiday__text text-lg-body-1 mb-7">
-          Каждый год 18 декабря празднуется день признательности снежинкам. Это очень актуально в преддверии Нового Года. Если Вы любите снег или у Вас есть дети, которые без ума от зимы, устройте им праздник. Тем самым Вы настроитесь на праздничный лад. Сходите слепите веселого снеговичка или покатайтесь на катке и будет у Вас отличное настроение!
+          Каждый год 18 декабря празднуется день признательности снежинкам. Это очень актуально в преддверии Нового
+          Года. Если Вы любите снег или у Вас есть дети, которые без ума от зимы, устройте им праздник. Тем самым Вы
+          настроитесь на праздничный лад. Сходите слепите веселого снеговичка или покатайтесь на катке и будет у Вас
+          отличное настроение!
         </p>
         <div class="holiday__items">
-          <div class="text-body-1 mb-6 text--demibold mb-5">Хотите выбрать цветы сами? У нас есть что вам предложить!</div>
+          <div class="text-body-1 mb-6 text--demibold mb-5">Хотите выбрать цветы сами? У нас есть что вам предложить!
+          </div>
           <a href="javascript:;" class="holiday__btn btn btn--primary btn--fill px-7">Посмотреть весь каталог</a>
         </div>
       </div>
       <div class="holiday__info p-5">
         <div class="text-body-1 text--demibold mb-5">Что подарить</div>
-        <div class="holiday__card card p-8">
+        <div class="holiday__card card card-action p-8">
           <div class="holiday__card-img card-img mb-md-4 mb-3 brs-2 bg-l2 progress-container">
             <div class="progress progress-circle fade-60 text-body-1"></div>
             <img src="img/pictures/flowers.png" alt="">
@@ -192,15 +589,18 @@
         </div>
       </div>
       <div class="holiday__mobile mt-3">
-        <div class="text-body-1 mb-6 text--demibold mb-5">Хотите выбрать цветы сами? У нас есть что вам предложить!</div>
+        <div class="text-body-1 mb-6 text--demibold mb-5">Хотите выбрать цветы сами? У нас есть что вам предложить!
+        </div>
         <a href="javascript:;" class="holiday__btn btn btn--primary btn--fill px-7">Посмотреть весь каталог</a>
       </div>
     </section>
   </div>
 
+  <!-- Для любителей создавать домашний уют -->
   <section class="index-product-list">
-    <div class="text-h6 text-md-h3 text-lg-h1 text-md--center mb-4 mb-lg-10 font-alt">Для любителей создавать домашний уют</div>
-    <div class="grid grid-spacing-7">
+    <div class="text-h6 text-md-h3 text-lg-h1 text-md--center mb-4 mb-lg-10 font-alt">Для любителей создавать домашний
+      уют</div>
+    <div class="grid grid-spacing-lg-7">
       <div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
         <div class="product-card card card-action p-1 p-md-2 link-hover-wrapper h-100">
           <div class="product-card-img card-img mb-md-4 mb-3 brs-2 bg-l2 progress-container">
@@ -312,10 +712,12 @@
     </div>
 
     <div class="flex">
-      <a href="javascript:;" class="btn btn--primary btn--fill px-10 mt-5 mt-lg-10 mx-auto w-100 w-md-auto">Показать больше</a>
+      <a href="javascript:;" class="btn btn--primary btn--fill px-10 mt-5 mt-lg-10 mx-auto w-100 w-md-auto">Показать
+        больше</a>
     </div>
   </section>
 
+  <!-- Мы к вашим услугам! -->
   <section class="services bg-sec mx-4 my-10">
     <div class="services__bg">
       <div class="services__bg-icon services__bg-icon--1">
@@ -344,7 +746,7 @@
           Мы предлагаем доставку любого букета из каталога
           «Флора» в короткие сроки!
         </div>
-        <button class="btn btn--white-bg">О магазине</button>
+        <button class="btn btn--sec btn--white-bg color-text">О магазине</button>
       </div>
       <div class="services__pic">
         <img class="services__img" src="img/pictures/services.png" alt="">
@@ -352,9 +754,11 @@
     </div>
   </section>
 
+  <!-- У нас очень уютно - посмотрите сами -->
   <section class="video">
-    <div class="text-h6 text-md-h3 text-lg-h1 text-md--center mb-4 mb-lg-10 font-alt">У нас очень уютно - посмотрите сами</div>
-    <a class="video__card card p-2" href="" data-fancybox>
+    <div class="text-h6 text-md-h3 text-lg-h1 text-md--center mb-4 mb-lg-10 font-alt">У нас очень уютно - посмотрите
+      сами</div>
+    <a class="video__card card p-2" href="https://youtu.be/YAmkIt70RtU" data-fancybox>
       <div class="video__card-img image image--rect brs-2 bg-l2 progress-container">
         <div class="progress progress-circle fade-60 text-body-1"></div>
         <img src="https://picsum.photos/400/600?random=13" alt="">
@@ -369,13 +773,15 @@
     </a>
   </section>
 
+  <!-- Клиент доволен - мы спим спокойно -->
   <section class="reviews">
-    <div class="text-h6 text-md-h3 text-lg-h1 text-md--center mb-4 mb-lg-10 font-alt">Клиент доволен - мы спим спокойно</div>
+    <div class="text-h6 text-md-h3 text-lg-h1 text-md--center mb-4 mb-lg-10 font-alt">Клиент доволен - мы спим спокойно
+    </div>
     <div class="slider reviews-slider slider--overwrap">
       <div class="swiper grid-wrap grid-spacing-4">
         <div class="swiper-wrapper">
           <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
-             <div class="reviews__item bg-green-light py-6 px-4">
+            <div class="reviews__item bg-green-light py-6 px-4">
               <div class="reviews__head flex flex-align-center flex-justify-between mb-5">
                 <div class="flex flex-align-center">
                   <div class="reviews__pic card flex flex-align-center flex-justify-center mr-3">
@@ -405,151 +811,160 @@
                 <div class="reviews__date text-body-1 fade-60">17.12.21</div>
               </div>
               <div class="reviews__text text-body-1">
-                Добрый день! Хочу выразить огромную благодарность, салону цветов Флора в р-не Кайеркан, а именно Юлии, большая молодец, быстро и очень достойно оформила букет, все это в телефонном режиме, так как дорога была закрыта.Доставили очень-очень быстро, мамочка довольна. Благодаря таким людям как Юлия, хочется вас рекомендовать и обращаться к вам снова. Вам процветания, всех благ. С уважением, Татьяна.
+                Добрый день! Хочу выразить огромную благодарность, салону цветов Флора в р-не Кайеркан, а именно Юлии,
+                большая молодец, быстро и очень достойно оформила букет, все это в телефонном режиме, так как дорога
+                была закрыта.Доставили очень-очень быстро, мамочка довольна. Благодаря таким людям как Юлия, хочется вас
+                рекомендовать и обращаться к вам снова. Вам процветания, всех благ. С уважением, Татьяна.
               </div>
-             </div>
+            </div>
           </div>
           <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
             <div class="reviews__item bg-sec py-6 px-4">
-             <div class="reviews__head flex flex-align-center flex-justify-between mb-5">
-               <div class="flex flex-align-center">
-                 <div class="reviews__pic card flex flex-align-center flex-justify-center mr-3">
-                   <img class="reviews__icon icon" src="img/pictures/men-4.png" alt="">
-                 </div>
-                 <div class="reviews__info">
-                   <span class="reviews__name text-body-1 text--demibold">Владимир</span>
-                   <div class="reviews__stars flex flex-align-center color-yellow text--small">
-                     <svg class="icon">
-                       <use xlink:href="img/icons.svg#star"/>
-                     </svg>
-                     <svg class="icon">
-                       <use xlink:href="img/icons.svg#star"/>
-                     </svg>
-                     <svg class="icon">
-                       <use xlink:href="img/icons.svg#star"/>
-                     </svg>
-                     <svg class="icon">
-                       <use xlink:href="img/icons.svg#star"/>
-                     </svg>
-                     <svg class="icon">
-                       <use xlink:href="img/icons.svg#star"/>
-                     </svg>
-                   </div>
-                 </div>
-               </div>
-               <div class="reviews__date text-body-1 fade-60">17.12.21</div>
-             </div>
-             <div class="reviews__text text-body-1">
-              Спасибо девочкам с Талнахской 72, несмотря на усталость они были приветливы и улыбчивы. Работая на 8 марта в свой праздник и слушая хамство покупателей (я лично был этому свидетель) они были терпеливыми.
-             </div>
+              <div class="reviews__head flex flex-align-center flex-justify-between mb-5">
+                <div class="flex flex-align-center">
+                  <div class="reviews__pic card flex flex-align-center flex-justify-center mr-3">
+                    <img class="reviews__icon icon" src="img/pictures/men-4.png" alt="">
+                  </div>
+                  <div class="reviews__info">
+                    <span class="reviews__name text-body-1 text--demibold">Владимир</span>
+                    <div class="reviews__stars flex flex-align-center color-yellow text--small">
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__date text-body-1 fade-60">17.12.21</div>
+              </div>
+              <div class="reviews__text text-body-1">
+                Спасибо девочкам с Талнахской 72, несмотря на усталость они были приветливы и улыбчивы. Работая на 8
+                марта в свой праздник и слушая хамство покупателей (я лично был этому свидетель) они были терпеливыми.
+              </div>
             </div>
-         </div>
-         <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
-          <div class="reviews__item bg-yellow-light py-6 px-4">
-           <div class="reviews__head flex flex-align-center flex-justify-between mb-5">
-             <div class="flex flex-align-center">
-               <div class="reviews__pic card flex flex-align-center flex-justify-center mr-3">
-                 <img class="reviews__icon icon" src="img/pictures/men-2.png" alt="">
-               </div>
-               <div class="reviews__info">
-                 <span class="reviews__name text-body-1 text--demibold">Михаил</span>
-                 <div class="reviews__stars flex flex-align-center color-yellow text--small">
-                   <svg class="icon">
-                     <use xlink:href="img/icons.svg#star"/>
-                   </svg>
-                   <svg class="icon">
-                     <use xlink:href="img/icons.svg#star"/>
-                   </svg>
-                   <svg class="icon">
-                     <use xlink:href="img/icons.svg#star"/>
-                   </svg>
-                   <svg class="icon">
-                     <use xlink:href="img/icons.svg#star"/>
-                   </svg>
-                   <svg class="icon">
-                     <use xlink:href="img/icons.svg#star"/>
-                   </svg>
-                 </div>
-               </div>
-             </div>
-             <div class="reviews__date text-body-1 fade-60">17.12.21</div>
-           </div>
-           <div class="reviews__text text-body-1">
-            Спасибо девочкам с Талнахской 72, несмотря на усталость они были приветливы и улыбчивы. Работая на 8 марта в свой праздник и слушая хамство покупателей (я лично был этому свидетель) они были терпеливыми. Терпения вам девочки и здоровья. Спасибо за красивую корзину которую я у вас купил!
-           </div>
           </div>
-       </div>
-       <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
-        <div class="reviews__item bg-purple py-6 px-4">
-         <div class="reviews__head flex flex-align-center flex-justify-between mb-5">
-           <div class="flex flex-align-center">
-             <div class="reviews__pic card flex flex-align-center flex-justify-center mr-3">
-               <img class="reviews__icon icon" src="img/pictures/men-3.png" alt="">
-             </div>
-             <div class="reviews__info">
-               <span class="reviews__name text-body-1 text--demibold">Алиса</span>
-               <div class="reviews__stars flex flex-align-center color-yellow text--small">
-                 <svg class="icon">
-                   <use xlink:href="img/icons.svg#star"/>
-                 </svg>
-                 <svg class="icon">
-                   <use xlink:href="img/icons.svg#star"/>
-                 </svg>
-                 <svg class="icon">
-                   <use xlink:href="img/icons.svg#star"/>
-                 </svg>
-                 <svg class="icon">
-                   <use xlink:href="img/icons.svg#star"/>
-                 </svg>
-                 <svg class="icon">
-                   <use xlink:href="img/icons.svg#star"/>
-                 </svg>
-               </div>
-             </div>
-           </div>
-           <div class="reviews__date text-body-1 fade-60">17.12.21</div>
-         </div>
-         <div class="reviews__text text-body-1">
-          Спасибо Флоре! Цветы  свежие,
-          доставка своевременная!
-         </div>
-        </div>
-     </div>
-     <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
-      <div class="reviews__item bg-green-light py-6 px-4">
-       <div class="reviews__head flex flex-align-center flex-justify-between mb-5">
-         <div class="flex flex-align-center">
-           <div class="reviews__pic card flex flex-align-center flex-justify-center mr-3">
-             <img class="reviews__icon icon" src="img/pictures/men-1.png" alt="">
-           </div>
-           <div class="reviews__info">
-             <span class="reviews__name text-body-1 text--demibold">Татьяна</span>
-             <div class="reviews__stars flex flex-align-center color-yellow text--small">
-               <svg class="icon">
-                 <use xlink:href="img/icons.svg#star"/>
-               </svg>
-               <svg class="icon">
-                 <use xlink:href="img/icons.svg#star"/>
-               </svg>
-               <svg class="icon">
-                 <use xlink:href="img/icons.svg#star"/>
-               </svg>
-               <svg class="icon">
-                 <use xlink:href="img/icons.svg#star"/>
-               </svg>
-               <svg class="icon">
-                 <use xlink:href="img/icons.svg#star"/>
-               </svg>
-             </div>
-           </div>
-         </div>
-         <div class="reviews__date text-body-1 fade-60">17.12.21</div>
-       </div>
-       <div class="reviews__text text-body-1">
-         Добрый день! Хочу выразить огромную благодарность, салону цветов Флора в р-не Кайеркан, а именно Юлии, большая молодец, быстро и очень достойно оформила букет, все это в телефонном режиме, так как дорога была закрыта.Доставили очень-очень быстро, мамочка довольна. Благодаря таким людям как Юлия, хочется вас рекомендовать и обращаться к вам снова. Вам процветания, всех благ. С уважением, Татьяна.
-       </div>
-      </div>
-   </div>
+          <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
+            <div class="reviews__item bg-yellow-light py-6 px-4">
+              <div class="reviews__head flex flex-align-center flex-justify-between mb-5">
+                <div class="flex flex-align-center">
+                  <div class="reviews__pic card flex flex-align-center flex-justify-center mr-3">
+                    <img class="reviews__icon icon" src="img/pictures/men-2.png" alt="">
+                  </div>
+                  <div class="reviews__info">
+                    <span class="reviews__name text-body-1 text--demibold">Михаил</span>
+                    <div class="reviews__stars flex flex-align-center color-yellow text--small">
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__date text-body-1 fade-60">17.12.21</div>
+              </div>
+              <div class="reviews__text text-body-1">
+                Спасибо девочкам с Талнахской 72, несмотря на усталость они были приветливы и улыбчивы. Работая на 8
+                марта в свой праздник и слушая хамство покупателей (я лично был этому свидетель) они были терпеливыми.
+                Терпения вам девочки и здоровья. Спасибо за красивую корзину которую я у вас купил!
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
+            <div class="reviews__item bg-purple py-6 px-4">
+              <div class="reviews__head flex flex-align-center flex-justify-between mb-5">
+                <div class="flex flex-align-center">
+                  <div class="reviews__pic card flex flex-align-center flex-justify-center mr-3">
+                    <img class="reviews__icon icon" src="img/pictures/men-3.png" alt="">
+                  </div>
+                  <div class="reviews__info">
+                    <span class="reviews__name text-body-1 text--demibold">Алиса</span>
+                    <div class="reviews__stars flex flex-align-center color-yellow text--small">
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__date text-body-1 fade-60">17.12.21</div>
+              </div>
+              <div class="reviews__text text-body-1">
+                Спасибо Флоре! Цветы свежие,
+                доставка своевременная!
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
+            <div class="reviews__item bg-green-light py-6 px-4">
+              <div class="reviews__head flex flex-align-center flex-justify-between mb-5">
+                <div class="flex flex-align-center">
+                  <div class="reviews__pic card flex flex-align-center flex-justify-center mr-3">
+                    <img class="reviews__icon icon" src="img/pictures/men-1.png" alt="">
+                  </div>
+                  <div class="reviews__info">
+                    <span class="reviews__name text-body-1 text--demibold">Татьяна</span>
+                    <div class="reviews__stars flex flex-align-center color-yellow text--small">
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#star"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__date text-body-1 fade-60">17.12.21</div>
+              </div>
+              <div class="reviews__text text-body-1">
+                Добрый день! Хочу выразить огромную благодарность, салону цветов Флора в р-не Кайеркан, а именно Юлии,
+                большая молодец, быстро и очень достойно оформила букет, все это в телефонном режиме, так как дорога
+                была закрыта.Доставили очень-очень быстро, мамочка довольна. Благодаря таким людям как Юлия, хочется вас
+                рекомендовать и обращаться к вам снова. Вам процветания, всех благ. С уважением, Татьяна.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -562,6 +977,7 @@
     })
   </script>
 
+  <!-- Подписывайтесь на наш ВК! -->
   <section class="network">
     <div class="network__block">
       <div class="network__bg">
@@ -598,10 +1014,11 @@
     </div>
   </section>
 
+  <!-- Полезно знать -->
   <section class="information">
     <div class="text-h6 text-md-h3 text-lg-h1 text-md--center mb-4 mb-lg-10 font-alt">Полезно знать</div>
     <div class="information__items">
-      <div class="information__item mb-4 bg-green-light brs-2" data-toggle-cover>
+      <div class="information__item mb-4 bg-primary-10 brs-2" data-toggle-cover>
         <div class="information__head flex flex-align-center flex-justify-between px-6 py-8" data-toggle-link>
           <div class="flex flex-align-center">
             <span class="information__circle bg-sec mr-4"></span>
@@ -615,11 +1032,13 @@
         </div>
         <div data-toggle-content data-toggle-height data-toggle-static>
           <div class="information__body px-10 py-6 text-body-1 fade-80 bd-top bd-white">
-            Уже прошло 14 февраля и женщины получили подарки от любимых теперь нужно готовить букет своему мужчине на 23 февраля. Начинается волнительное время выбора подарков для сильной половины человечества на их законный праздник. Одним из оптимальных вариантов решения вопроса подарка станет букет мужчине на 23 февраля.
+            Уже прошло 14 февраля и женщины получили подарки от любимых теперь нужно готовить букет своему мужчине на 23
+            февраля. Начинается волнительное время выбора подарков для сильной половины человечества на их законный
+            праздник. Одним из оптимальных вариантов решения вопроса подарка станет букет мужчине на 23 февраля.
           </div>
         </div>
       </div>
-      <div class="information__item mb-4 bg-green-light brs-2" data-toggle-cover>
+      <div class="information__item mb-4 bg-primary-10 brs-2" data-toggle-cover>
         <div class="information__head flex flex-align-center flex-justify-between px-6 py-8" data-toggle-link>
           <div class="flex flex-align-center">
             <span class="information__circle bg-sec mr-4"></span>
@@ -633,11 +1052,13 @@
         </div>
         <div data-toggle-content data-toggle-height data-toggle-static>
           <div class="information__body px-10 py-6 text-body-1 fade-80 bd-top bd-white">
-            Уже прошло 14 февраля и женщины получили подарки от любимых теперь нужно готовить букет своему мужчине на 23 февраля. Начинается волнительное время выбора подарков для сильной половины человечества на их законный праздник. Одним из оптимальных вариантов решения вопроса подарка станет букет мужчине на 23 февраля.
+            Уже прошло 14 февраля и женщины получили подарки от любимых теперь нужно готовить букет своему мужчине на 23
+            февраля. Начинается волнительное время выбора подарков для сильной половины человечества на их законный
+            праздник. Одним из оптимальных вариантов решения вопроса подарка станет букет мужчине на 23 февраля.
           </div>
         </div>
       </div>
-      <div class="information__item mb-4 bg-green-light brs-2" data-toggle-cover>
+      <div class="information__item mb-4 bg-primary-10 brs-2" data-toggle-cover>
         <div class="information__head flex flex-align-center flex-justify-between px-6 py-8" data-toggle-link>
           <div class="flex flex-align-center">
             <span class="information__circle bg-sec mr-4"></span>
@@ -651,7 +1072,9 @@
         </div>
         <div data-toggle-content data-toggle-height data-toggle-static>
           <div class="information__body px-10 py-6 text-body-1 fade-80 bd-top bd-white">
-            Уже прошло 14 февраля и женщины получили подарки от любимых теперь нужно готовить букет своему мужчине на 23 февраля. Начинается волнительное время выбора подарков для сильной половины человечества на их законный праздник. Одним из оптимальных вариантов решения вопроса подарка станет букет мужчине на 23 февраля.
+            Уже прошло 14 февраля и женщины получили подарки от любимых теперь нужно готовить букет своему мужчине на 23
+            февраля. Начинается волнительное время выбора подарков для сильной половины человечества на их законный
+            праздник. Одним из оптимальных вариантов решения вопроса подарка станет букет мужчине на 23 февраля.
           </div>
         </div>
       </div>
