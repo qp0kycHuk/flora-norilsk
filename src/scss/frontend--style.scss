@@ -214,7 +214,7 @@ body {
 		border-radius: 20px;
 
 		&-img::before {
-			padding-bottom: 55%;
+			padding-bottom: calc(100% * 242 / 418);
 		}
 	}
 
@@ -1698,7 +1698,7 @@ body {
 		}
 
 		&-inner {
-			background     : rgba(239, 241, 242, 0.3);
+			background     : var(--bg1);
 			border-radius  : inherit;
 			display        : flex;
 			align-items    : center;
