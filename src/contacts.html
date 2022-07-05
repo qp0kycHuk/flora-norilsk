@@ -110,7 +110,7 @@
                 <div class="contacts__labels flex w-100">
                   <label class="contacts__label mb-3 flex">
                     <span class="text-body-1 text--demibold mb-2">Ваше имя</span>
-                    <input class="contacts__input input input--white w-100" type="text">
+                    <input class="contacts__input form-input w-100" type="text">
                   </label>
                   <label class="contacts__label flex">
                     <span class="text-body-1 text--demibold mb-2">Ваш телефон или e-mail</span>
@@ -142,7 +142,7 @@
 
   <section class="contacts-address pt-1">
     <div class="text-h4 font-alt mb-6 mb-lg-8">Адреса наших магазинов</div>
-    <div class="slider contacts-address-slider slider--overwrap">
+    <div class="slider contacts-address-slider">
       <div class="swiper grid-wrap grid-spacing-4">
         <div class="swiper-wrapper">
           <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
@@ -157,13 +157,184 @@
                 </div>
               </div>
               <div class="contacts-address__items">
-                <div class="contacts-address__item flex flex-align-center">
-                  <span class="color-sec">
-                    <svg class="icon">
-                      <use xlink:href="img/icons.svg#geo" />
-                    </svg>
-                  </span>
-                  <span class="">Адрес</span>
+                <div class="contacts-address__item flex mb-8">
+                  <div class="flex flex-align-center mb-1">
+                    <span class="color-sec text-body-1 mr-2">
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#geo" />
+                      </svg>
+                    </span>
+                    <span class="text-body-1  text--demibold">Адрес</span>
+                  </div>
+                  <span class="text-body-1 fade-60">ул.Талнахская, 72</span>
+                </div>
+                <div class="contacts-address__item flex mb-8">
+                  <div class="flex flex-align-center mb-1">
+                    <span class="color-sec text-body-1 mr-2">
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#tel" />
+                      </svg>
+                    </span>
+                    <span class="text-body-1  text--demibold">Телефон</span>
+                  </div>
+                  <a class="text-body-1 fade-60 mb-1" href="tel: +7 (3919) 38-13-13">+7 (3919) 38-13-13</a>
+                  <a class="text-body-1 fade-60" href="tel: +7 (3919) 22-12-26">+7 (3919) 22-12-26</a>
+                </div>
+                <div class="contacts-address__item flex">
+                  <div class="flex flex-align-center mb-1">
+                    <span class="color-sec text-body-1 mr-2">
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#clock" />
+                      </svg>
+                    </span>
+                    <span class="text-body-1  text--demibold">Время работы</span>
+                  </div>
+                  <span class="text-body-1 fade-60">c 8:00 до 22:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
+            <div class="contacts-address__slide card py-4 px-5">
+              <div class="contacts-address__head flex flex-align-center flex-justify-between pb-4 bd-bottom mb-6">
+                <div class="text-body-1 text--demibold">
+                  Магазин «Флора»,<br>
+                  Норильск
+                </div>
+                <div class="contacts-address__pic bd-all flex flex-align-center flex-justify-center bg-white">
+                  <img class="contacts-address__img icon text-h5" src="img/icons/towns-icon-1.svg" alt="">
+                </div>
+              </div>
+              <div class="contacts-address__items">
+                <div class="contacts-address__item flex mb-8">
+                  <div class="flex flex-align-center mb-1">
+                    <span class="color-sec text-body-1 mr-2">
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#geo" />
+                      </svg>
+                    </span>
+                    <span class="text-body-1  text--demibold">Адрес</span>
+                  </div>
+                  <span class="text-body-1 fade-60">ул.Мира, 4Е</span>
+                </div>
+                <div class="contacts-address__item flex mb-8">
+                  <div class="flex flex-align-center mb-1">
+                    <span class="color-sec text-body-1 mr-2">
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#tel" />
+                      </svg>
+                    </span>
+                    <span class="text-body-1  text--demibold">Телефон</span>
+                  </div>
+                  <a class="text-body-1 fade-60" href="tel: +7 (3919) 38-13-13">+7 (3919) 38-13-133</a>
+                </div>
+                <div class="contacts-address__item flex">
+                  <div class="flex flex-align-center mb-1">
+                    <span class="color-sec text-body-1 mr-2">
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#clock" />
+                      </svg>
+                    </span>
+                    <span class="text-body-1  text--demibold">Время работы</span>
+                  </div>
+                  <span class="text-body-1 fade-60">c 8:00 до 22:00 (без выходных)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
+            <div class="contacts-address__slide card py-4 px-5">
+              <div class="contacts-address__head flex flex-align-center flex-justify-between pb-4 bd-bottom mb-6">
+                <div class="text-body-1 text--demibold">
+                  Магазин «Флора»,<br>
+                  р-н Талнах
+                </div>
+                <div class="contacts-address__pic bd-all flex flex-align-center flex-justify-center bg-white">
+                  <img class="contacts-address__img icon text-h5" src="img/icons/towns-icon-3.svg" alt="">
+                </div>
+              </div>
+              <div class="contacts-address__items">
+                <div class="contacts-address__item flex mb-8">
+                  <div class="flex flex-align-center mb-1">
+                    <span class="color-sec text-body-1 mr-2">
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#geo" />
+                      </svg>
+                    </span>
+                    <span class="text-body-1  text--demibold">Адрес</span>
+                  </div>
+                  <span class="text-body-1 fade-60">ул. Маслова, 2</span>
+                </div>
+                <div class="contacts-address__item flex mb-8">
+                  <div class="flex flex-align-center mb-1">
+                    <span class="color-sec text-body-1 mr-2">
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#tel" />
+                      </svg>
+                    </span>
+                    <span class="text-body-1  text--demibold">Телефон</span>
+                  </div>
+                  <a class="text-body-1 fade-60" href="tel: +7 (3919) 33-73-00">+7 (3919) 33-73-00</a>
+                </div>
+                <div class="contacts-address__item flex">
+                  <div class="flex flex-align-center mb-1">
+                    <span class="color-sec text-body-1 mr-2">
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#clock" />
+                      </svg>
+                    </span>
+                    <span class="text-body-1  text--demibold">Время работы</span>
+                  </div>
+                  <span class="text-body-1 fade-60">c 8:00 до 22:00 (без выходных)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
+            <div class="contacts-address__slide card py-4 px-5">
+              <div class="contacts-address__head flex flex-align-center flex-justify-between pb-4 bd-bottom mb-6">
+                <div class="text-body-1 text--demibold">
+                  Магазин «Флора»,<br>
+                  Норильск
+                </div>
+                <div class="contacts-address__pic bd-all flex flex-align-center flex-justify-center bg-white">
+                  <img class="contacts-address__img icon text-h5" src="img/icons/towns-icon-2.svg" alt="">
+                </div>
+              </div>
+              <div class="contacts-address__items">
+                <div class="contacts-address__item flex mb-8">
+                  <div class="flex flex-align-center mb-1">
+                    <span class="color-sec text-body-1 mr-2">
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#geo" />
+                      </svg>
+                    </span>
+                    <span class="text-body-1  text--demibold">Адрес</span>
+                  </div>
+                  <span class="text-body-1 fade-60">ул. Школьная,6</span>
+                </div>
+                <div class="contacts-address__item flex mb-8">
+                  <div class="flex flex-align-center mb-1">
+                    <span class="color-sec text-body-1 mr-2">
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#tel" />
+                      </svg>
+                    </span>
+                    <span class="text-body-1  text--demibold">Телефон</span>
+                  </div>
+                  <a class="text-body-1 fade-60 mb-1" href="tel: +7 (3919) 33-13-19">+7 (3919) 33-13-19</a>
+                  <a class="text-body-1 fade-60" href="tel: +7 (3919) 33-13-22">+7 (3919) 33-13-22</a>
+                </div>
+                <div class="contacts-address__item flex">
+                  <div class="flex flex-align-center mb-1">
+                    <span class="color-sec text-body-1 mr-2">
+                      <svg class="icon">
+                        <use xlink:href="img/icons.svg#clock" />
+                      </svg>
+                    </span>
+                    <span class="text-body-1  text--demibold">Время работы</span>
+                  </div>
+                  <span class="text-body-1 fade-60">c 8:00 до 22:00 (без выходных)</span>
                 </div>
               </div>
             </div>
@@ -179,6 +350,11 @@
       watchSlidesProgress: true,
     })
   </script>
+
+  <section class="map pt-1">
+    <div class="text-h4 font-alt mb-6 mb-lg-8">Наши магазины на карте</div>
+    <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abdb1d05a8ca977cdbbb08bbb3c62a1fda727b3522ca490f179b5f03cdc641bd1&amp;source=constructor" width="100%" height="390" frameborder="0"></iframe>
+  </section>
 
 </body>
 
