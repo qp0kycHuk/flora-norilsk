@@ -761,8 +761,8 @@ body {
 }
 
 .navigation {
-	padding-top   : 0;
-	padding-bottom: 0;
+	padding-top   : 10px;
+	padding-bottom: 10px;
 
 	&__item {
 		&--disabled {
@@ -773,6 +773,9 @@ body {
 
 .page {
 	&-title {
+		padding-top   : 10px;
+		padding-bottom: 10px;
+
 		&__block {
 			border-radius: 20px;
 		}
@@ -844,7 +847,8 @@ body {
 }
 
 .banner {
-	padding-top: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
 
 	&__block {
 		border-radius: 20px;
@@ -1154,7 +1158,8 @@ body {
 }
 
 .payment {
-	padding-top: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
 
 	&__block {
 		border-radius: 20px;
@@ -1214,10 +1219,8 @@ body {
 	}
 
 	@media (hover) {
-
-		&__item:hover &__img,
 		&__elem:hover &__img {
-			transform: scale(1.1);
+			// transform: scale(1.1);
 		}
 	}
 
@@ -1237,9 +1240,7 @@ body {
 		}
 
 		&__elem {
-			flex     : none;
-			min-width: 280px;
-			height   : 210px;
+			height: 210px;
 		}
 	}
 
@@ -1255,6 +1256,20 @@ body {
 		&__text {
 			font-size    : 14px;
 			margin-bottom: 20px;
+		}
+
+		&__images {
+			width        : calc(100% + 30px);
+			margin-left  : -15px;
+			padding-left : 15px;
+			padding-right: 15px;
+		}
+
+		&__elem {
+			flex     : none;
+			width    : 280px;
+			min-width: 280px;
+			height   : 210px;
 		}
 	}
 }
@@ -1625,7 +1640,7 @@ body {
 	@media(max-width:$lg) {
 		position: relative;
 		top     : 0;
-		padding : 8px 0 0;
+		padding : 0 0 0;
 	}
 
 	&.toggle-active {
@@ -1684,7 +1699,7 @@ body {
 			overflow   : auto;
 			width      : calc(100% + 30px);
 			margin-left: -15px;
-			padding    : 15px;
+			padding    : 10px 15px;
 		}
 	}
 

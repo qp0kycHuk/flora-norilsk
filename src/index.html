@@ -9,27 +9,7 @@
 </head>
 
 <body>
-  <header class="mobile-header">
-    <div class="flex">
-      <button class="btn btn--primary btn-icon btn-small" data-toggle-link="menu">
-        <svg class="icon text-subtitle-1">
-          <use xlink:href="img/icons.svg#menu" />
-        </svg>
-      </button>
-    </div>
-    <div class="mobile-header-logo">
-      <img src="img/logo.png" alt="">
-    </div>
-    <div class="flex">
-      <button class="btn ml-auto btn--sec btn-small px-2">
-        <svg class="icon text-subtitle-1 mr-2">
-          <use xlink:href="img/icons.svg#cart" />
-        </svg>
-        <div class="text-body-1 color-text text--demibold">20</div>
-      </button>
-    </div>
-  </header>
-
+  <!-- Mobile menu -->
   <div class="menu -menu-" id="menu">
     <header class="menu-header mobile-header px-4">
       <div class="flex">
@@ -177,6 +157,70 @@
   </div>
   <div class="menu-shadow"></div>
 
+  <!-- Search menu -->
+  <div class="menu -menu-" id="search">
+    <div class="flex flex-align-center px-3 pt-3">
+      <button class="btn btn--primary btn-icon btn-small mr-1" data-toggle-link="search">
+        <svg class="icon text-subtitle-1">
+          <use xlink:href="img/icons.svg#arrow-left" />
+        </svg>
+      </button>
+      <label class="form-field flex-grow">
+        <div class="form-input-cover">
+          <input type="text" class="form-input bg-l1" placeholder="Поиск">
+        </div>
+      </label>
+    </div>
+    <div class="py-3">
+      <a href="" class="py-4 px-5 flex flex-align-center waved">
+        <svg class="icon text-body-0 fade-40 mr-4">
+          <use xlink:href="img/icons.svg#search" />
+        </svg>
+        <div class="fade-40">Розы</div>
+      </a>
+      <a href="" class="py-4 px-5 flex flex-align-center waved">
+        <svg class="icon text-body-0 fade-40 mr-4">
+          <use xlink:href="img/icons.svg#search" />
+        </svg>
+        <div class="fade-40">Хризантемы</div>
+      </a>
+      <a href="" class="py-4 px-5 flex flex-align-center waved">
+        <svg class="icon text-body-0 fade-40 mr-4">
+          <use xlink:href="img/icons.svg#search" />
+        </svg>
+        <div class="fade-40">Цитрус Лимон</div>
+      </a>
+      <a href="" class="py-4 px-5 flex flex-align-center waved">
+        <svg class="icon text-body-0 fade-40 mr-4">
+          <use xlink:href="img/icons.svg#search" />
+        </svg>
+        <div class="fade-40">Паслен</div>
+      </a>
+    </div>
+  </div>
+  <div class="menu-shadow"></div>
+
+  <header class="mobile-header">
+    <div class="flex">
+      <button class="btn btn--primary btn-icon btn-small" data-toggle-link="menu">
+        <svg class="icon text-subtitle-1">
+          <use xlink:href="img/icons.svg#menu" />
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-header-logo">
+      <img src="img/logo.png" alt="">
+    </div>
+    <div class="flex">
+      <button class="btn ml-auto btn--sec btn-small px-2">
+        <svg class="icon text-subtitle-1 mr-2">
+          <use xlink:href="img/icons.svg#cart" />
+        </svg>
+        <div class="text-body-1 color-text text--demibold">20</div>
+      </button>
+    </div>
+  </header>
+
   <section class="nav">
     <div class="nav-list">
       <a href="javascript:;" class="nav-item btn btn--primary btn--link link-hover">
@@ -204,6 +248,13 @@
         <span class="fade-80"> Контакты </span>
       </a>
     </div>
+
+    <label class="form-field form-checkbox mx-5">
+      <input type="checkbox" class="form-input-checkbox -theme-changer-">
+      <div class="form-toggle-target"> </div>
+      <div class="text-body-2 ml-2"> Темная тема </div>
+    </label>
+
     <button class="nav-lk btn btn--primary btn--link link-hover ml-auto">
       <svg class="icon mr-3">
         <use xlink:href="img/icons.svg#user" />
@@ -272,7 +323,6 @@
       </a>
     </div>
   </header>
-
 
   <section class="py-3 py-md-4">
     <div class="d-md-flex">
@@ -351,49 +401,6 @@
   </section>
   <div class="categories-shadow" data-toggle-link="categories-form"></div>
 
-  <div class="menu -menu-" id="search">
-    <div class="flex flex-align-center px-3 pt-3">
-      <button class="btn btn--primary btn-icon btn-small mr-1" data-toggle-link="search">
-        <svg class="icon text-subtitle-1">
-          <use xlink:href="img/icons.svg#arrow-left" />
-        </svg>
-      </button>
-      <label class="form-field flex-grow">
-        <div class="form-input-cover">
-          <input type="text" class="form-input bg-l1" placeholder="Поиск">
-        </div>
-      </label>
-    </div>
-    <div class="py-3">
-      <a href="" class="py-4 px-5 flex flex-align-center waved">
-        <svg class="icon text-body-0 fade-40 mr-4">
-          <use xlink:href="img/icons.svg#search" />
-        </svg>
-        <div class="fade-40">Розы</div>
-      </a>
-      <a href="" class="py-4 px-5 flex flex-align-center waved">
-        <svg class="icon text-body-0 fade-40 mr-4">
-          <use xlink:href="img/icons.svg#search" />
-        </svg>
-        <div class="fade-40">Хризантемы</div>
-      </a>
-      <a href="" class="py-4 px-5 flex flex-align-center waved">
-        <svg class="icon text-body-0 fade-40 mr-4">
-          <use xlink:href="img/icons.svg#search" />
-        </svg>
-        <div class="fade-40">Цитрус Лимон</div>
-      </a>
-      <a href="" class="py-4 px-5 flex flex-align-center waved">
-        <svg class="icon text-body-0 fade-40 mr-4">
-          <use xlink:href="img/icons.svg#search" />
-        </svg>
-        <div class="fade-40">Паслен</div>
-      </a>
-    </div>
-  </div>
-  <div class="menu-shadow"></div>
-
-
 
   <section class="banners">
     <div class="grid grid-spacing-3">
@@ -429,6 +436,7 @@
     </div>
   </section>
 
+  <!-- Популярные букеты -->
   <section class="index-product-list">
     <div class="text-h6 text-md-h3 text-lg-h1 text-md--center mb-4 mb-lg-10 font-alt">Популярные букеты</div>
     <div class="grid grid-spacing-lg-7">
@@ -548,6 +556,7 @@
     </div>
   </section>
 
+  <!-- Хотите подарить цветы? Повод всегда найдется! -->
   <div class="holiday py-7">
     <div class="text-h6 text-md-h3 text-lg-h1 text-md--center mb-4 mb-lg-10 font-alt px-4">
       Хотите подарить цветы? Повод всегда найдется!
@@ -590,6 +599,7 @@
     </section>
   </div>
 
+  <!-- Для любителей создавать домашний уют -->
   <section class="index-product-list">
     <div class="text-h6 text-md-h3 text-lg-h1 text-md--center mb-4 mb-lg-10 font-alt">Для любителей создавать домашний
       уют</div>
@@ -710,6 +720,7 @@
     </div>
   </section>
 
+  <!-- Мы к вашим услугам! -->
   <section class="services bg-sec mx-4 my-10">
     <div class="services__bg">
       <div class="services__bg-icon services__bg-icon--1">
@@ -746,6 +757,7 @@
     </div>
   </section>
 
+  <!-- У нас очень уютно - посмотрите сами -->
   <section class="video">
     <div class="text-h6 text-md-h3 text-lg-h1 text-md--center mb-4 mb-lg-10 font-alt">У нас очень уютно - посмотрите
       сами</div>
@@ -764,6 +776,7 @@
     </a>
   </section>
 
+  <!-- Клиент доволен - мы спим спокойно -->
   <section class="reviews">
     <div class="text-h6 text-md-h3 text-lg-h1 text-md--center mb-4 mb-lg-10 font-alt">Клиент доволен - мы спим спокойно
     </div>
@@ -967,6 +980,7 @@
     })
   </script>
 
+  <!-- Подписывайтесь на наш ВК! -->
   <section class="network">
     <div class="network__block">
       <div class="network__bg">
@@ -1003,6 +1017,7 @@
     </div>
   </section>
 
+  <!-- Полезно знать -->
   <section class="information">
     <div class="text-h6 text-md-h3 text-lg-h1 text-md--center mb-4 mb-lg-10 font-alt">Полезно знать</div>
     <div class="information__items">
