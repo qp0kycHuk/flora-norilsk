@@ -12,7 +12,7 @@ const init = () => {
   Fancybox.bind('[data-fancybox-modal]', {
     dragToClose: false,
     mainClass: 'fancybox-custom-modal',
-    
+    type: 'ajax'
   })
 
 
@@ -24,6 +24,7 @@ const init = () => {
     }], {
       dragToClose: false,
       mainClass: 'fancybox-custom-modal',
+      type: 'ajax',
       ...options
     })
   }

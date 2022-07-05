@@ -70,17 +70,6 @@ body {
 	}
 }
 
-.fancybox__content {
-	padding   : 0;
-	background: none;
-	max-width : 100%;
-
-	&>.carousel__button.is-close {
-		top  : 0;
-		color: var(--color-grey);
-	}
-}
-
 .active-enabled {
 	display: none !important;
 }

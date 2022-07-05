@@ -37,14 +37,13 @@
     animation-delay: .35s !important;
 
     @media(max-width:$sm) {
-      position: absolute;
-      width   : 32px;
-      height  : 32px;
-      top     : 16px;
-      right   : 16px;
+      width   : 40px;
+      height  : 40px;
+      top     : 0;
+      right   : 0;
       padding : 0;
 
-      border-radius: 50%;
+      border-radius: var(--radius-small);
       background   : #F3F3F5;
     }
 

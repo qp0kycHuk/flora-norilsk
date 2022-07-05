@@ -2,7 +2,8 @@
 .dialog {
   &-large {
     width    : var(--section-width);
-    max-width: 100%;
+    max-width: calc(100% - 30px);
+    margin: 0 auto;
 
     @media (max-width:$sm) {
       width: 100%;
@@ -13,12 +14,14 @@
 
   &-small {
     width    : 340px;
-    max-width: 100%;
+    max-width: calc(100% - 30px);
+    margin: 0 auto;
   }
 
   &-middle {
     width    : 620px;
-    max-width: 100%;
+    max-width: calc(100% - 30px);
+    margin: 0 auto;
 
     @media (max-width:$sm) {
       width: 100%;
