@@ -1379,6 +1379,11 @@ body {
 		height      : auto;
 		padding     : 16px 22px;
 		margin-right: 40px;
+
+		@media(max-width:$lg) {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
 	}
 
 	&-contact {
