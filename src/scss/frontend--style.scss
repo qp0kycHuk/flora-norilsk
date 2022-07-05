@@ -1468,6 +1468,18 @@ body {
 			height       : 56px;
 			border-radius: 20px;
 		}
+		&-slider {
+			& .swiper {
+				margin: -15px;
+				padding: 15px;
+			}
+		}
+		&__slide {
+			min-height: 360px;
+		}
+		&__item {
+			flex-direction: column;
+		}
 	}
 }
 
