@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Контакты</title>
+<link href="css/style.css" rel="stylesheet"><script src="js/index.js"></script></head>
+
+<body>
+
+  <section class="navigation flex flex-align-center fade-60">
+    <a class="navigation__item text-small link-hover mr-1" href="#">Главная</a>
+    <span class="text-small mr-1">></span>
+    <a class="navigation__item navigation__item--disabled text-small" href="#">Контакты</a>
+  </section>
+
+  <section class="page-title">
+    <div class="page-title__block flex flex-align-center flex-justify-between bg-white py-4 px-10">
+      <div class="page-title__name text-h1 text--demibold font-alt">Контакты</div>
+      <div class="page-title__bell flex flex-align-center">
+        <div class="page-title__tel bg-l1 py-3 px-2 brs-2 flex flex-align-center flex-justify-center mr-3 text-h6">
+          <svg class="icon color-icon">
+            <use xlink:href="img/icons.svg#tel-2"/>
+          </svg>
+        </div>
+        <div class="page-title__text text-body-1">
+          <span class="fade-60">
+            Если есть вопросы по наличию, стоимости, сроках <br>
+            поставки звоните
+          </span>
+          <br class="page-title__br">
+          <a class="text--demibold link-hover" href="tel: +7 (902) 550-00-99">+7 (902) 550-00-99</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner">
+    <div class="banner__block px-8 py-10">
+      <div class="banner__bg">
+        <picture>
+          <source srcset="img/pictures/banner-mob.png" media="(max-width: 1199px)">
+          <img class="banner__bg-img" src="img/pictures/banner.png" alt="">
+        </picture>
+      </div>
+      <div class="banner__content color-white">
+        <div class="banner__title text-h5 mb-2">Удивить близкого человека - это легко!</div>
+        <div class="banner__subtitle text-body-1">
+          Заказывайте букеты и подарки на нашем сайте и дарите<br>
+          позитивные эмоции людям, которые вам дороги!
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="contacts pt-1">
+    <div class="grid grid-spacing-6">
+      <div class="grid-col-12 grid-col-lg-4">
+        <div class="contacts__content py-10 px-8 bg-white">
+          <div class="contacts__title text-h4 font-alt mb-6 mb-lg-8">Свяжитесь с нами!</div>
+          <div class="contacts__items">
+            <div class="contacts__item mb-6 mb-lg-8 flex flex-align-center">
+              <div class="contacts__pic brs-2 flex flex-align-center flex-justify-center text-body-1 mr-4 color-sec">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#tel"/>
+                </svg>
+              </div>
+              <div class="contacts__info flex">
+                <span class="text-body-1 fade-60">Главный офис:</span>
+                <a class="text-body-1 text--demibold link-hover" href="tel: +7 (800) 234-80-90">+7 (800) 234-80-90</a>
+              </div>
+            </div>
+            <div class="contacts__item mb-6 mb-lg-8 flex flex-align-center">
+              <div class="contacts__pic brs-2 flex flex-align-center flex-justify-center text-body-1 mr-4 color-sec">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#mail"/>
+                </svg>
+              </div>
+              <div class="contacts__info flex">
+                <span class="text-body-1 fade-60">Электронная почта:</span>
+                <a class="text-body-1 text--demibold link-hover" href="mailto: floranor@mail.ru">floranor@mail.ru</a>
+              </div>
+            </div>
+            <div class="contacts__item mb-6 mb-lg-8 flex flex-align-center">
+              <div class="contacts__pic brs-2 flex flex-align-center flex-justify-center text-body-1 mr-4 color-sec">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#user-2"/>
+                </svg>
+              </div>
+              <div class="contacts__info flex">
+                <span class="text-body-1 fade-60">ИП Ворохов Александр Валерьевич</span>
+                <span class="text-body-1 text--demibold">ИНН 245700167710</span>
+              </div>
+            </div>
+          </div>
+          <a class="contacts__vk link-hover btn btn--blue btn--link color-text" href="#">
+            <img class="icon mr-5 text-h3" src="img/icons/vk.svg" alt="">
+            <span class="text-body-1 fade-60">Flora_Norilsk</span>
+          </a>
+        </div>
+      </div>
+      <div class="grid-col-12 grid-col-lg-8">
+        <div class="contacts__feedback py-10 px-8 h-100">
+          <div class="contacts__title text-h4 font-alt mb-6 mb-lg-8">Свяжитесь с нами!</div>
+          <form class="contacts__form h-100">
+            <div class="grid grid-spacing-8">
+              <div class="grid-col-12 grid-col-lg-5">
+                <div class="contacts__labels flex w-100">
+                  <label class="contacts__label mb-3 flex">
+                    <span class="text-body-1 text--demibold mb-2">Ваше имя</span>
+                    <input class="contacts__input input input--white w-100" type="text">
+                  </label>
+                  <label class="contacts__label flex">
+                    <span class="text-body-1 text--demibold mb-2">Ваш телефон или e-mail</span>
+                    <input class="contacts__input input input--white w-100" type="text">
+                  </label>
+                </div>
+              </div>
+              <div class="grid-col-12 grid-col-lg-7">
+                <label class="contacts__label flex h-100">
+                  <span class="text-body-1 text--demibold mb-2">Ваш вопрос</span>
+                  <textarea class="contacts__input contacts__input--textarea input input--white h-100"></textarea>
+                </label>
+              </div>
+              <div class="grid-col-12 grid-col-lg-4">
+                <button class="btn btn--primary btn--fill px-8 w-100">Отправить</button>
+              </div>
+              <div class="grid-col-12 grid-col-lg-8">
+                <div class="contacts__politics text-body-2 fade-40">
+                  Отправляя форму Вы даете согласие на обработку<br class="contacts__br">
+                  Ваших персональных данных
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts-address pt-1">
+    <div class="text-h4 font-alt mb-6 mb-lg-8">Адреса наших магазинов</div>
+    <div class="slider contacts-address-slider slider--overwrap">
+      <div class="swiper grid-wrap grid-spacing-4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
+            <div class="contacts-address__slide card py-4 px-5">
+              <div class="contacts-address__head flex flex-align-center flex-justify-between pb-4 bd-bottom mb-6">
+                <div class="text-body-1 text--demibold">
+                  Магазин «Флора»,<br>
+                  Норильск
+                </div>
+                <div class="contacts-address__pic bd-all flex flex-align-center flex-justify-center bg-white">
+                  <img class="contacts-address__img icon text-h5" src="img/icons/towns-icon-1.svg" alt="">
+                </div>
+              </div>
+              <div class="contacts-address__items">
+                <div class="contacts-address__item flex flex-align-center">
+                  <span class="color-sec">
+                    <svg class="icon">
+                      <use xlink:href="img/icons.svg#geo"/>
+                    </svg>
+                  </span>
+                  <span class="">Адрес</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    new Swiper('.contacts-address .swiper', {
+      slidesPerView: 'auto',
+      watchSlidesProgress: true,
+    })
+  </script>
+
+</body>
+
+</html>
