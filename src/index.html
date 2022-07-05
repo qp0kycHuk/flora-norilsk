@@ -401,11 +401,76 @@
   </section>
   <div class="categories-shadow" data-toggle-link="categories-form"></div>
 
+  <section class="started started--index">
+    <div class="started-slider swiper">
+      <div class="swiper-wrapper">
+        <a href="javascript:;" class="started-slide swiper-slide waved" style="color:#121713">
+          <div class="started-background">
+            <picture>
+              <source media="(min-width: 425.98px)" srcset="img/started-banner-1.jpg">
+              <img src="img/started-banner-1-mobile.jpg" alt="">
+            </picture>
+          </div>
+          <div class="container">
+            <div class="started-content">
+              <div class="started__title text-md-h4 text-h6 mb-2 font-alt">
+                В ПРОДАЖЕ ИМЕЕТСЯ <br>
+                МИКРОЗЕЛЕНЬ И РАССАДА
+              </div>
+              <div class="started__desc text-lg-subtitle-2 fade-80 text--regular font-alt">для выращивания в комнатных
+                условиях
+              </div>
+              <button class="started__btn btn btn--primary btn--fill mt-10">Подробнее</button>
+            </div>
+          </div>
+        </a>
+        <a href="javascript:;" class="started-slide swiper-slide waved" style="color:#fff">
+          <div class="started-background">
+            <picture>
+              <source media="(min-width: 425.98px)" srcset="img/started-banner-2.png">
+              <img src="img/started-banner-2-mobile.png" alt="">
+            </picture>
+          </div>
+          <div class="container">
+            <div class="started-content">
+              <div class="started__title text-md-h4 text-h6 mb-2 font-alt">
+                В ПРОДАЖЕ ИМЕЕТСЯ <br>
+                МИКРОЗЕЛЕНЬ И РАССАДА
+              </div>
+              <div class="started__desc text-lg-subtitle-2 fade-80 text--regular font-alt">для выращивания в комнатных
+                условиях
+              </div>
+              <button class="started__btn btn btn--primary btn--fill mt-10">Подробнее</button>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="started-slider-pagination ">
+        <div class="container">
+          <div class="started-slider-pagination-bullets"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    new Swiper('.started-slider', {
+      spaceBetween: 8,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.started-slider-pagination-bullets',
+        clickable: true,
+      }
+    })
+  </script>
 
   <section class="banners">
     <div class="grid grid-spacing-3">
-      <a class="grid-col-6" href="#">
-        <div class="banners__item banners__item--yellow h-100">
+      <div class="grid-col-6">
+        <a class="banners__item banners__item--yellow h-100 waved" href="javascript:;">
           <div class="banners__bg">
             <img class="banners__image" src="img/pictures/banner-1.png" alt="">
           </div>
@@ -417,10 +482,10 @@
             </div>
             <button class="banners__btn btn btn--primary btn--fill px-10 py-3 px-9 mt-auto">Подробнее</button>
           </div>
-        </div>
-      </a>
-      <a class="grid-col-6" href="#">
-        <div class="banners__item banners__item--purple h-100">
+        </a>
+      </div>
+      <div class="grid-col-6">
+        <a class="banners__item banners__item--purple h-100 waved" href="javascript:;">
           <div class="banners__bg">
             <img class="banners__image" src="img/pictures/banner-2.png" alt="">
           </div>
@@ -431,8 +496,8 @@
             </div>
             <button class="banners__btn btn btn--primary btn--fill px-10 py-3 px-9 mt-auto">Подробнее</button>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -781,10 +846,10 @@
     <div class="text-h6 text-md-h3 text-lg-h1 text-md--center mb-4 mb-lg-10 font-alt">Клиент доволен - мы спим спокойно
     </div>
     <div class="slider reviews-slider slider--overwrap">
-      <div class="swiper grid-wrap grid-spacing-4">
+      <div class="swiper grid-wrap grid-spacing-4 pb-3">
         <div class="swiper-wrapper">
           <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
-            <div class="reviews__item bg-green-light py-6 px-4">
+            <div class="reviews__item reviews__item--red py-6 px-4 card">
               <div class="reviews__head flex flex-align-center flex-justify-between mb-5">
                 <div class="flex flex-align-center">
                   <div class="reviews__pic card flex flex-align-center flex-justify-center mr-3">
@@ -822,7 +887,7 @@
             </div>
           </div>
           <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
-            <div class="reviews__item bg-sec py-6 px-4">
+            <div class="reviews__item reviews__item--orange py-6 px-4 card">
               <div class="reviews__head flex flex-align-center flex-justify-between mb-5">
                 <div class="flex flex-align-center">
                   <div class="reviews__pic card flex flex-align-center flex-justify-center mr-3">
@@ -858,7 +923,7 @@
             </div>
           </div>
           <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
-            <div class="reviews__item bg-yellow-light py-6 px-4">
+            <div class="reviews__item reviews__item--green py-6 px-4 card">
               <div class="reviews__head flex flex-align-center flex-justify-between mb-5">
                 <div class="flex flex-align-center">
                   <div class="reviews__pic card flex flex-align-center flex-justify-center mr-3">
@@ -895,7 +960,7 @@
             </div>
           </div>
           <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
-            <div class="reviews__item bg-purple py-6 px-4">
+            <div class="reviews__item reviews__item--blue py-6 px-4 card">
               <div class="reviews__head flex flex-align-center flex-justify-between mb-5">
                 <div class="flex flex-align-center">
                   <div class="reviews__pic card flex flex-align-center flex-justify-center mr-3">
@@ -931,7 +996,7 @@
             </div>
           </div>
           <div class="swiper-slide grid-col-10 grid-col-md-6 grid-col-lg-3">
-            <div class="reviews__item bg-green-light py-6 px-4">
+            <div class="reviews__item reviews__item--red py-6 px-4 card">
               <div class="reviews__head flex flex-align-center flex-justify-between mb-5">
                 <div class="flex flex-align-center">
                   <div class="reviews__pic card flex flex-align-center flex-justify-center mr-3">
@@ -970,6 +1035,16 @@
           </div>
         </div>
       </div>
+      <button class="d-none d-md-flex slider-prev btn btn-fab btn--primary btn--white-bg">
+        <svg class="icon color-text">
+          <use xlink:href="img/icons.svg#to-left" />
+        </svg>
+      </button>
+      <button class="d-none d-md-flex slider-next btn btn-fab btn--primary btn--white-bg">
+        <svg class="icon color-text">
+          <use xlink:href="img/icons.svg#to-right" />
+        </svg>
+      </button>
     </div>
   </section>
 
@@ -977,6 +1052,11 @@
     new Swiper('.reviews-slider .swiper', {
       slidesPerView: 'auto',
       watchSlidesProgress: true,
+      loop: true,
+      navigation: {
+        nextEl: '.reviews-slider .slider-next',
+        prevEl: '.reviews-slider .slider-prev'
+      }
     })
   </script>
 
