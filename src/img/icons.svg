@@ -114,6 +114,9 @@
 		<symbol id="heart" width="100%" height="100%" viewBox="0 0 20 18">
 			<path d="M2.31802 2.31802C0.56066 4.07538 0.56066 6.92462 2.31802 8.68198L10.0001 16.364L17.682 8.68198C19.4393 6.92462 19.4393 4.07538 17.682 2.31802C15.9246 0.56066 13.0754 0.56066 11.318 2.31802L10.0001 3.63609L8.68198 2.31802C6.92462 0.56066 4.07538 0.56066 2.31802 2.31802Z" fill="currentColor" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 		</symbol>
+		<symbol id="note" width="100%" height="100%" viewBox="0 0 18 18">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9ZM10 13C10 12.4477 9.55229 12 9 12C8.44771 12 8 12.4477 8 13C8 13.5523 8.44771 14 9 14C9.55229 14 10 13.5523 10 13ZM10 4V10H8V4H10Z" fill="currentColor"/>
+		</symbol>
 		<symbol id="heart-contur" width="100%" height="100%" viewBox="0 0 20 18">
 			<path d="M2.31802 2.31802C0.56066 4.07538 0.56066 6.92462 2.31802 8.68198L10.0001 16.364L17.682 8.68198C19.4393 6.92462 19.4393 4.07538 17.682 2.31802C15.9246 0.56066 13.0754 0.56066 11.318 2.31802L10.0001 3.63609L8.68198 2.31802C6.92462 0.56066 4.07538 0.56066 2.31802 2.31802Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
 		</symbol>
