@@ -1079,10 +1079,11 @@ body {
 		height       : 310px;
 		position     : relative;
 
-		@media (hover) {
-			&:hover .gallery__img {
-				transform: scale(1.1);
-			}
+	}
+
+	@media (hover) {
+		&:hover &__img {
+			// transform: scale(1.1);
 		}
 	}
 
