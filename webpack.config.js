@@ -10,7 +10,7 @@ const htmlWebpackPluginDefaults = {
   inject: 'head'
 }
 
-const pages = ['index.html', 'about-us.html', 'delivery.html', 'payment.html', 'articles.html', 'articles-detail.html', 'job.html', 'reviews.html', 'contacts.html', '404.html', 'lk.html', 'ui.html', 'catalog.html']
+const pages = ['index.html', 'about-us.html', 'delivery.html', 'payment.html', 'articles.html', 'articles-detail.html', 'job.html', 'reviews.html', 'contacts.html', '404.html', 'lk.html', 'ui.html', 'catalog.html', 'catalog-empty.html']
 const dialogs = ['dialog-large.html', 'dialog-middle.html', 'dialog-small.html', 'dialog-reviews.html', 'dialog-shipped.html']
 
 module.exports = {
