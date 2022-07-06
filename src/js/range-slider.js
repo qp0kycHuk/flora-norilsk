@@ -1,44 +1,17 @@
+import getSupportedEvents from './functions/getSupportedEvents';
+
 function Range(selector, params) {
   const covers = document.querySelectorAll(selector);
-
-  const support = {
-    pointer: !!("PointerEvent" in window || ("msPointerEnabled" in window.navigator)),
-    touch: !!(typeof window.orientation !== "undefined" || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || "ontouchstart" in window || navigator.msMaxTouchPoints || "maxTouchPoints" in window.navigator > 1 || "msMaxTouchPoints" in window.navigator > 1)
-  };
-  const getSupportedEvents = function () {
-    let events
-    switch (true) {
-
-      case support.touch:
-        events = {
-          type: "touch",
-          start: "touchstart",
-          move: "touchmove",
-          end: "touchend",
-          cancel: "touchcancel"
-        };
-        break;
-      default:
-        events = {
-          type: "mouse",
-          start: "mousedown",
-          move: "mousemove",
-          end: "mouseup",
-          leave: "mouseleave"
-        };
-        break;
-    }
-    return events;
-  };
 
   Array.from(covers).map((cover) => {
     const options = {}
     options.$el = cover
-    options.min = +cover.getAttribute('data-min') || 0
-    options.max = +cover.getAttribute('data-max') || 100
-    options.from = +cover.getAttribute('data-from') || options.min
-    options.to = +cover.getAttribute('data-to') || options.max
-    options.type = cover.getAttribute('data-type') || 'single'
+    options.min = +cover.getAttribute('data-min') ?? 0
+    options.max = +cover.getAttribute('data-max') ?? 100
+    options.from = +cover.getAttribute('data-from') ?? options.min
+    options.to = +cover.getAttribute('data-to') ?? options.max
+    options.type = cover.getAttribute('data-type') ?? 'single'
+    options.floor = +cover.getAttribute('data-floor') ?? 2
     options.inner = cover.querySelector('.range-inner') || cover
     options.renderValue = cover.querySelector('.range-value')
     options.renderSign = cover.querySelector('.range-sign')
@@ -56,6 +29,7 @@ function Range(selector, params) {
 
     addElements(options)
     addListeners(options)
+    setFromTo(options)
     render(options)
 
     if (options.onChange) {
@@ -126,7 +100,8 @@ function Range(selector, params) {
         const moveValue = ((event.clientX - left) / options.inner.getBoundingClientRect().width) * (options.max - options.min) + options.min
 
         setFromTo(options, moveValue, key)
-        render(options)
+        requestAnimationFrame(() => render(options))
+
 
 
         options.progress && (options.progress.style.transition = '0s')
@@ -146,30 +121,46 @@ function Range(selector, params) {
 
         document.removeEventListener(getSupportedEvents().move, moveHandler)
       })
+    })
 
+    options.inputFrom?.addEventListener('input', (event) => {
+      if (!event.target.value || isNaN(parseFloat(event.target.value))) {
+        return
+      }
+      const key = setFromTo(options, event.target.value, 'from')
+      render(options)
+    })
 
-
+    options.inputTo?.addEventListener('input', (event) => {
+      if (!event.target.value || isNaN(parseFloat(event.target.value))) {
+        return
+      }
+      const key = setFromTo(options, event.target.value, 'to')
+      render(options)
     })
   }
 
   function setFromTo(options, value, key) {
     let result = ''
-    if (key) {
-      options[key] = value
-      result = key
-    } else if (value >= options.to || options.type == 'single') {
-      options.to = value
-      result = 'to'
-    } else if (value <= options.from) {
-      options.from = value
-      result = 'from'
-    } else {
-      if ((options.to - value) < -(options.from - value)) {
+
+    if (value ?? false) {
+      if (key) {
+        options[key] = value
+        result = key
+      } else if (value >= options.to || options.type == 'single') {
         options.to = value
         result = 'to'
-      } else {
+      } else if (value <= options.from) {
         options.from = value
         result = 'from'
+      } else {
+        if ((options.to - value) < -(options.from - value)) {
+          options.to = value
+          result = 'to'
+        } else {
+          options.from = value
+          result = 'from'
+        }
       }
     }
 
@@ -183,21 +174,18 @@ function Range(selector, params) {
     let fromValue = options.from
     let toValue = options.to
 
+
     fromValue = parseFloat(fromValue)
     toValue = parseFloat(toValue)
 
-    if (options.$el.getAttribute('data-round')) {
-      fromValue = +fromValue.toFixed(options.$el.getAttribute('data-round'))
-      toValue = +toValue.toFixed(options.$el.getAttribute('data-round'))
-    }
+    fromValue = +fromValue.toFixed(options.floor)
+    toValue = +toValue.toFixed(options.floor)
+
     options.from = fromValue
     options.to = toValue
 
     options.inputFrom.value = options.from
     options.inputTo.value = options.to
-
-
-
 
     if (options.onChange) {
       options.onChange({
@@ -264,12 +252,6 @@ const init = () => {
 
       fromValue = parseInt(fromValue)
       toValue = parseInt(toValue)
-
-      // if (options.target.getAttribute('data-round')) {
-      //   fromValue = +fromValue.toFixed(options.target.getAttribute('data-round'))
-      //   toValue = +toValue.toFixed(options.target.getAttribute('data-round'))
-      // }
-
 
       if (from) from.innerHTML = formatter.format(fromValue)
       if (to) to.innerHTML = formatter.format(toValue)
