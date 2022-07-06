@@ -46,10 +46,10 @@
 	color: var(--btn-color);
 
 
-	&:focus:not(:active) {
-		background: var(--btn-color-light);
+	// &:focus:not(:active) {
+	// 	background: var(--btn-color-light);
 
-	}
+	// }
 
 	&:focus {
 		z-index: 2;
@@ -59,8 +59,8 @@
 
 	@media (hover) {
 		&:hover {
-			--btn-color      : var(--color-text--dark);
-			--btn-color-light: var(--color-text-40);
+			// --btn-color      : var(--color-text--dark);
+			// --btn-color-light: var(--color-text-40);
 		}
 	}
 
@@ -122,17 +122,6 @@
 			&:hover {
 				--btn-color      : rgba(49, 49, 49, 0.6);
 				--btn-color-light: #eef0f5;
-			}
-		}
-	}
-
-
-
-	&:not(&--fill):not(&--light):not(&--contur):not(&--link):not(&--white-bg) {
-		@media(hover) {
-			&:hover {
-				background: var(--btn-color-light);
-
 			}
 		}
 	}

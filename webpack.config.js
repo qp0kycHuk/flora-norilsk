@@ -10,7 +10,7 @@ const htmlWebpackPluginDefaults = {
   inject: 'head'
 }
 
-const pages = ['index.html', 'about-us.html', 'delivery.html', 'payment.html', 'articles.html', 'articles-detail.html', 'job.html', 'reviews.html', 'contacts.html', '404.html', 'lk.html', 'ui.html']
+const pages = ['index.html', 'about-us.html', 'delivery.html', 'payment.html', 'articles.html', 'articles-detail.html', 'job.html', 'reviews.html', 'contacts.html', '404.html', 'lk.html', 'ui.html', 'catalog.html']
 const dialogs = ['dialog-large.html', 'dialog-middle.html', 'dialog-small.html', 'dialog-reviews.html', 'dialog-shipped.html']
 
 module.exports = {
@@ -33,7 +33,7 @@ module.exports = {
         type: 'asset/resource',
         generator: {
           filename: 'img/pictures/[name][ext]'
-      }
+        }
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
