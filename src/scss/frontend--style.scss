@@ -1464,7 +1464,7 @@ body {
 	}
 
 	&__feedback {
-		background   : linear-gradient(253.71deg, rgba(255, 255, 255, 0.213) 0%, rgba(255, 255, 255, 0) 100%), #EFF1F2;
+		background   : linear-gradient(253.71deg, rgba(255, 255, 255, 0.213) 0%, rgba(255, 255, 255, 0) 100%), var(--bg1);
 		border-radius: 20px;
 		position     : relative;
 		overflow     : hidden;
