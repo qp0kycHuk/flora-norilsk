@@ -3,6 +3,7 @@ import fancybox from "./js/fancybox";
 import listing from './js/listing';
 import rangeSlider from './js/range-slider';
 import theme from './js/theme';
+import slideEvent from './js/slide-event';
 import tab from 'npm-kit-tab';
 import toggle from 'npm-kit-toggle';
 import ripple from 'npm-kit-ripple';
@@ -31,6 +32,7 @@ function loadHandler() {
 	toggle.init();
 	ripple.init();
 	theme.init();
+	slideEvent.init();
 
 	ripple.attach('.btn')
 	ripple.attach('.card-action')
@@ -73,3 +75,78 @@ window.addEventListener('toggleclose', (event) => {
 		document.body.classList.remove('filter-open')
 	}
 })
+
+
+if (!!('ontouchstart' in window)) {
+	window.addEventListener('swipemove', swipemoveHandler)
+	window.addEventListener('swipeend', swipeendHandler)
+}
+
+function swipemoveHandler(event) {
+
+
+	const menu = document.getElementById('menu')
+	const shadow = document.getElementById('menu-shadow')
+
+	if ((event.detail.startX > document.body.clientWidth * 0.25) && !menu.classList.contains('toggle-active')) {
+		return
+	}
+
+	if (event.detail.startX < document.body.clientWidth * 0.75 && menu.classList.contains('toggle-active')) {
+		return
+	}
+
+	let percent = 100 * event.detail.distX / document.body.clientWidth
+
+
+	if (percent >= 100) {
+		percent = 100
+	}
+	if (percent <= -100) {
+		percent = -100
+	}
+
+	menu.style.transition = '0s';
+	menu.style.setProperty('--transform', `translateX(${percent}%)`)
+	if (percent > 0) {
+		shadow.style.opacity = percent + '%';
+	}
+
+}
+
+function swipeendHandler(event) {
+
+	const menu = document.getElementById('menu')
+	const shadow = document.getElementById('menu-shadow')
+
+	if ((event.detail.startX > document.body.clientWidth * 0.25) && !menu.classList.contains('toggle-active')) {
+		return
+	}
+
+	if (event.detail.startX < document.body.clientWidth * 0.75 && menu.classList.contains('toggle-active')) {
+		return
+	}
+
+	if (event.detail.distX > 100) {
+		setTimeout(() => {
+			if (!menu.classList.contains('toggle-active')) {
+				toggle.toggle('menu')
+			}
+		})
+	}
+
+	if (event.detail.distX < -100) {
+		setTimeout(() => {
+			if (menu.classList.contains('toggle-active')) {
+				toggle.toggle('menu')
+			}
+
+		})
+	}
+
+	menu.style.transition = '';
+	menu.style.setProperty('--transform', '')
+	shadow.style.opacity = '';
+
+}
+
