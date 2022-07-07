@@ -2171,6 +2171,24 @@ body:not(.categories-search-open) .categories-shadow {
 	}
 }
 
+.lk {
+	&__item {
+		display      : block;
+		border-radius: 20px;
+
+		&--1 {
+			background: linear-gradient(248.95deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), #7CA659;
+		}
+
+		&--2 {
+			background: radial-gradient(100% 259.88% at 100% 0%, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), #ECA340;
+		}
+
+		&--3 {
+			background: linear-gradient(248.95deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), #C76D72;
+		}
+	}
+}
 
 .accordion {
 	&-toggler {
@@ -2540,5 +2558,4 @@ body.filter-open {
 			transform: var(--base-pop-transform);
 		}
 	}
-
 }
