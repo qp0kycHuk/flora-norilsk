@@ -10,126 +10,10 @@
 
 <body>
 
-  <section class="navigation flex flex-align-center fade-60">
-    <a class="navigation__item text-small link-hover mr-1" href="#">Главная</a>
-    <span class="text-small mr-1">></span>
-    <a class="navigation__item navigation__item--disabled text-small" href="#">О компании</a>
-  </section>
-
-  <section class="categories categories--detail" data-toggle-cover>
-    <div class="container">
-      <button class="btn btn-small btn--primary bg-l1 w-100 d-none d-md-flex d-lg-none" data-toggle-link="search">
-        <svg class="icon text-body-0 mr-3">
-          <use xlink:href="img/icons.svg#search" />
-        </svg>
-        <div class="text-body-2 color-text mr-auto fade-60">Поиск</div>
-      </button>
-      <div class=" categories-inner">
-        <button class="categories-search btn btn-small btn--primary btn--white-bg d-none d-lg-flex" data-toggle-link>
-          <div class="categories-search-inner">
-            <svg class="icon text-body-0 mr-3">
-              <use xlink:href="img/icons.svg#search" />
-            </svg>
-            <div class="text-body-1 color-text text--demibold">Поиск</div>
-          </div>
-
-        </button>
-        <div class="categories-list">
-          <button class="categories-search btn btn-small btn--primary btn--white-bg d-md-none mr-2"
-            data-toggle-link="search">
-            <div class="categories-search-inner">
-              <svg class="icon text-body-0">
-                <use xlink:href="img/icons.svg#search" />
-              </svg>
-            </div>
-          </button>
-          <div class="categories-items">
-            <button class="categories-item btn btn-small btn--primary btn--white-bg">
-              <img src="img/pictures/categories-1.png" alt="" class="icon text-body-0 mr-3">
-              <div class="text-lg-body-1 color-text text--demibold">Монобукеты</div>
-            </button>
-            <button class="categories-item btn btn-small btn--primary btn--white-bg">
-              <img src="img/pictures/categories-2.png" alt="" class="icon text-body-0 mr-3">
-              <div class="text-lg-body-1 color-text text--demibold">Букеты</div>
-            </button>
-            <button class="categories-item btn btn-small btn--primary btn--white-bg">
-              <img src="img/pictures/categories-3.png" alt="" class="icon text-body-0 mr-3">
-              <div class="text-lg-body-1 color-text text--demibold">Праздники</div>
-            </button>
-            <button class="categories-item btn btn-small btn--primary btn--white-bg">
-              <img src="img/pictures/categories-4.png" alt="" class="icon text-body-0 mr-3">
-              <div class="text-lg-body-1 color-text text--demibold">Подарки</div>
-            </button>
-            <button class="categories-item btn btn-small btn--primary btn--white-bg">
-              <img src="img/pictures/categories-5.png" alt="" class="icon text-body-0 mr-3">
-              <div class="text-lg-body-1 color-text text--demibold">Горшечные растения</div>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="categories-form" data-toggle-content id="categories-form">
-      <div class="container">
-        <label class="categories-form-field">
-          <input class="categories-form-input" placeholder="Поиск" />
-          <div class="form-input-end">
-            <button type="button" class="btn btn-small btn--red btn-icon" data-toggle-link>
-              <svg class="icon color-text fade-40">
-                <use xlink:href="img/icons.svg#cross" />
-              </svg>
-            </button>
-          </div>
-        </label>
-      </div>
-
-    </div>
-  </section>
-  <div class="categories-shadow" data-toggle-link="categories-form"></div>
-
-  <div class="menu -menu-" id="search">
-    <div class="flex flex-align-center px-3 pt-3">
-      <button class="btn btn--primary btn-icon btn-small mr-1" data-toggle-link="search">
-        <svg class="icon text-subtitle-1">
-          <use xlink:href="img/icons.svg#arrow-left" />
-        </svg>
-      </button>
-      <label class="form-field flex-grow">
-        <div class="form-input-cover">
-          <input type="text" class="form-input bg-l1" placeholder="Поиск">
-        </div>
-      </label>
-    </div>
-    <div class="py-3">
-      <a href="" class="py-4 px-5 flex flex-align-center waved">
-        <svg class="icon text-body-0 fade-40 mr-4">
-          <use xlink:href="img/icons.svg#search" />
-        </svg>
-        <div class="fade-40">Розы</div>
-      </a>
-      <a href="" class="py-4 px-5 flex flex-align-center waved">
-        <svg class="icon text-body-0 fade-40 mr-4">
-          <use xlink:href="img/icons.svg#search" />
-        </svg>
-        <div class="fade-40">Хризантемы</div>
-      </a>
-      <a href="" class="py-4 px-5 flex flex-align-center waved">
-        <svg class="icon text-body-0 fade-40 mr-4">
-          <use xlink:href="img/icons.svg#search" />
-        </svg>
-        <div class="fade-40">Цитрус Лимон</div>
-      </a>
-      <a href="" class="py-4 px-5 flex flex-align-center waved">
-        <svg class="icon text-body-0 fade-40 mr-4">
-          <use xlink:href="img/icons.svg#search" />
-        </svg>
-        <div class="fade-40">Паслен</div>
-      </a>
-    </div>
-  </div>
-  <div class="menu-shadow"></div>
+  <%= _.template(require('./includes/header.html').default)({isIndex: false}) %>
 
   <section class="page-title">
-    <div class="page-title__block flex flex-align-center flex-justify-between bg-white py-4 px-10">
+    <div class="page-title__block flex flex-align-center flex-justify-between bg-l3 py-4 px-10">
       <div class="page-title__name text-h1 text--demibold font-alt">О компании</div>
       <div class="page-title__bell flex flex-align-center">
         <div class="page-title__tel bg-l2 py-3 px-2 brs-2 flex flex-align-center flex-justify-center mr-3 text-h6">
@@ -182,7 +66,7 @@
 
   <section class="video">
     <div class="text-h6 text-md-h3 text-lg-h4 mb-4 mb-lg-10 font-alt">У нас очень уютно - посмотрите сами</div>
-    <a class="video__card card p-2" href="" data-fancybox>
+    <a class="video__card card card-action p-2" href="https://youtu.be/YAmkIt70RtU" data-fancybox>
       <div class="video__card-img image image--rect brs-2 bg-l2 progress-container">
         <div class="progress progress-circle fade-60 text-body-1"></div>
         <img src="https://picsum.photos/400/600?random=13" alt="">
@@ -322,32 +206,32 @@
     </div>
     <div class="gallery__items grid grid-spacing-4">
       <div class="gallery__elem gallery__elem--1 grid-col-12 grid-col-lg-6">
-        <a class="gallery__item" href="img/pictures/gallery-1.png" data-fancybox="gallery">
+        <a class="gallery__item card card-action" href="img/pictures/gallery-1.png" data-fancybox="gallery">
           <img class="gallery__img" src="img/pictures/gallery-1.png" alt="">
         </a>
       </div>
       <div class="gallery__elem gallery__elem--2 grid-col-6 grid-col-lg-3">
-        <a class="gallery__item" href="img/pictures/gallery-2.png" data-fancybox="gallery">
+        <a class="gallery__item card card-action" href="img/pictures/gallery-2.png" data-fancybox="gallery">
           <img class="gallery__img" src="img/pictures/gallery-2.png" alt="">
         </a>
       </div>
       <div class="gallery__elem gallery__elem--3 grid-col-6 grid-col-lg-3">
-        <a class="gallery__item" href="img/pictures/gallery-3.png" data-fancybox="gallery">
+        <a class="gallery__item card card-action" href="img/pictures/gallery-3.png" data-fancybox="gallery">
           <img class="gallery__img" src="img/pictures/gallery-3.png" alt="">
         </a>
       </div>
       <div class="gallery__elem gallery__elem--4 grid-col-6 grid-col-lg-3">
-        <a class="gallery__item" href="img/pictures/gallery-5.png" data-fancybox="gallery">
+        <a class="gallery__item card card-action" href="img/pictures/gallery-5.png" data-fancybox="gallery">
           <img class="gallery__img" src="img/pictures/gallery-5.png" alt="">
         </a>
       </div>
       <div class="gallery__elem gallery__elem--5 grid-col-12 grid-col-lg-6">
-        <a class="gallery__item" href="img/pictures/gallery-4.png" data-fancybox="gallery">
+        <a class="gallery__item card card-action" href="img/pictures/gallery-4.png" data-fancybox="gallery">
           <img class="gallery__img" src="img/pictures/gallery-4.png" alt="">
         </a>
       </div>
       <div class="gallery__elem gallery__elem--6 grid-col-6 grid-col-lg-3">
-        <a class="gallery__item" href="img/pictures/gallery-6.png" data-fancybox="gallery">
+        <a class="gallery__item card card-action" href="img/pictures/gallery-6.png" data-fancybox="gallery">
           <img class="gallery__img" src="img/pictures/gallery-6.png" alt="">
         </a>
       </div>

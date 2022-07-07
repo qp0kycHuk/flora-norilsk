@@ -57,6 +57,9 @@ window.addEventListener('toggleopen', (event) => {
 	if (event.detail.target.classList.contains('-menu-')) {
 		document.body.classList.add('menu-open')
 	}
+	if (event.detail.target.classList.contains('filter')) {
+		document.body.classList.add('filter-open')
+	}
 })
 
 window.addEventListener('toggleclose', (event) => {
@@ -65,5 +68,8 @@ window.addEventListener('toggleclose', (event) => {
 	}
 	if (event.detail.target.classList.contains('-menu-')) {
 		document.body.classList.remove('menu-open')
+	}
+	if (event.detail.target.classList.contains('filter')) {
+		document.body.classList.remove('filter-open')
 	}
 })

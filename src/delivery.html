@@ -10,6 +10,8 @@
 
 <body>
 
+  <%= _.template(require('./includes/header.html').default)({isIndex: false}) %>
+
   <section class="navigation flex flex-align-center fade-60">
     <a class="navigation__item text-small link-hover mr-1" href="#">Главная</a>
     <span class="text-small mr-1">></span>
