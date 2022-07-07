@@ -6,56 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Статьи</title>
+  <% var data = { title: "Статьи" }; %>
 </head>
 
 <body>
   
   <%= _.template(require('./includes/header.html').default)({isIndex: false}) %>
-
-  <section class="navigation flex flex-align-center fade-60">
-    <a class="navigation__item text-small link-hover mr-1" href="#">Главная</a>
-    <span class="text-small mr-1">></span>
-    <a class="navigation__item navigation__item--disabled text-small" href="#">Статьи</a>
-  </section>
-
-  <section class="page-title">
-    <div class="page-title__block flex flex-align-center flex-justify-between bg-l3 py-4 px-10">
-      <div class="page-title__name text-h1 text--demibold font-alt">Статьи</div>
-      <div class="page-title__bell flex flex-align-center">
-        <div class="page-title__tel bg-l2 py-3 px-2 brs-2 flex flex-align-center flex-justify-center mr-3 text-h6">
-          <svg class="icon color-icon">
-            <use xlink:href="img/icons.svg#tel-2" />
-          </svg>
-        </div>
-        <div class="page-title__text text-body-1">
-          <span class="fade-60">
-            Если есть вопросы по наличию, стоимости, сроках <br>
-            поставки звоните
-          </span>
-          <br class="page-title__br">
-          <a class="text--demibold link-hover" href="tel: +7 (902) 550-00-99">+7 (902) 550-00-99</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="banner">
-    <div class="banner__block px-8 py-10">
-      <div class="banner__bg">
-        <picture>
-          <source srcset="img/pictures/banner-mob.png" media="(max-width: 1199px)">
-          <img class="banner__bg-img" src="img/pictures/banner.png" alt="">
-        </picture>
-      </div>
-      <div class="banner__content color-white">
-        <div class="banner__title text-h5 mb-2">Удивить близкого человека - это легко!</div>
-        <div class="banner__subtitle text-body-1">
-          Заказывайте букеты и подарки на нашем сайте и дарите<br>
-          позитивные эмоции людям, которые вам дороги!
-        </div>
-      </div>
-    </div>
-  </section>
+  
+  <%= _.template(require('./includes/navigation.html').default)(data) %>
+  
+  <%= _.template(require('./includes/page-title.html').default)(data) %>
+  
+  <%= _.template(require('./includes/banner.html').default)(data) %>
 
   <section class="articles pt-1">
     <div class="grid grid-spacing-5">

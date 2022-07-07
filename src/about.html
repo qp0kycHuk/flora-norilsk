@@ -1,55 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>О компании</title>
+  <% var data = { title: "О компании" }; %>
 </head>
 
 <body>
 
   <%= _.template(require('./includes/header.html').default)({isIndex: false}) %>
+  
+  <%= _.template(require('./includes/navigation.html').default)(data) %>
+  
+  <%= _.template(require('./includes/page-title.html').default)(data) %>
+  
+  <%= _.template(require('./includes/banner.html').default)(data) %>
 
-  <section class="page-title">
-    <div class="page-title__block flex flex-align-center flex-justify-between bg-l3 py-4 px-10">
-      <div class="page-title__name text-h1 text--demibold font-alt">О компании</div>
-      <div class="page-title__bell flex flex-align-center">
-        <div class="page-title__tel bg-l2 py-3 px-2 brs-2 flex flex-align-center flex-justify-center mr-3 text-h6">
-          <svg class="icon color-icon">
-            <use xlink:href="img/icons.svg#tel-2" />
-          </svg>
-        </div>
-        <div class="page-title__text text-body-1">
-          <span class="fade-60">
-            Если есть вопросы по наличию, стоимости, сроках <br>
-            поставки звоните
-          </span>
-          <br class="page-title__br">
-          <a class="text--demibold link-hover" href="tel: +7 (902) 550-00-99">+7 (902) 550-00-99</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="banner">
-    <div class="banner__block px-8 py-10">
-      <div class="banner__bg">
-        <picture>
-          <source srcset="img/pictures/banner-mob.png" media="(max-width: 1199px)">
-          <img class="banner__bg-img" src="img/pictures/banner.png" alt="">
-        </picture>
-      </div>
-      <div class="banner__content color-white">
-        <div class="banner__title text-h5 mb-2">Удивить близкого человека - это легко!</div>
-        <div class="banner__subtitle text-body-1">
-          Заказывайте букеты и подарки на нашем сайте и дарите<br>
-          позитивные эмоции людям, которые вам дороги!
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section class="page-info py-1">
     <div class="page-info__text text-body-1">
@@ -91,7 +60,7 @@
       живой, благоухающий букет будет подарен от вашего имени. Вы можете добавить к букету открытку, которая будет
       подписана теми словами, что вы укажете.
     </div>
-    <div class="delivery__die bg-white flex flex-align-center py-5 px-6">
+    <div class="delivery__die bg-l3 flex flex-align-center py-5 px-6">
       <div class="delivery__image mr-6 text-h1">
         <img class="icon" src="img/icons/flower.svg" alt="">
       </div>

@@ -10,6 +10,8 @@
 
 <body>
 
+  <%= _.template(require('./includes/header.html').default)({isIndex: false}) %>
+
   <section class="py-3 py-md-4">
     <div class="d-md-flex">
       <svg class="icon color-sec mr-2 d-none d-md-block">
