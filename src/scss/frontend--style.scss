@@ -2433,6 +2433,11 @@ body:not(.categories-search-open) .categories-shadow {
 	&-filter {}
 }
 
+.catalog-empty-note {
+	background   : #FFEBCE url("../img/catalog-empty-note.png") no-repeat center / cover;
+	border-radius: 20px;
+}
+
 .filter {
 	@media(max-width:$md) {
 		position: fixed;

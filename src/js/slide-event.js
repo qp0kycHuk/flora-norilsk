@@ -41,7 +41,6 @@ function swipe(el, settings) {
     };
 
     function checkStart(e) {
-        e.stopPropagation()
         var event = eventsUnify(e);
         if (support.touch && typeof e.touches !== "undefined" && e.touches.length !== 1) return;
         dir = "none";
@@ -96,7 +95,6 @@ function swipe(el, settings) {
 
 
     function checkEnd(e) {
-        e.stopPropagation()
         if (isMouse && !isMouseDown) {
             isMouseDown = false;
 

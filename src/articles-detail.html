@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Какие цветы дарить на 14 февраля?</title>
+  <% var data = { title: "Какие цветы дарить на 14 февраля?" }; %>
 </head>
 
 <body>
@@ -24,19 +25,9 @@
   </header>
 
 
-  <section class="navigation flex flex-align-center fade-60">
-    <a class="navigation__item text-small link-hover mr-1" href="#">Главная</a>
-    <span class="text-small mr-1">></span>
-    <a class="navigation__item text-small" href="#">Статьи</a>
-    <span class="text-small mr-1">></span>
-    <a class="navigation__item navigation__item--disabled text-small" href="#">Какие цветы дарить на 14 февраля?</a>
-  </section>
-
-  <section class="page-title">
-    <div class="page-title__block flex flex-align-center flex-justify-between bg-l3 py-4 px-10">
-      <div class="page-title__name text-h1 text--demibold font-alt">Какие цветы дарить на 14 февраля?</div>
-    </div>
-  </section>
+  <%= _.template(require('./includes/navigation.html').default)(data) %>
+  
+  <%= _.template(require('./includes/page-title.html').default)(data) %>
 
   <section class="articles pt-1">
     <div class="articles__images flex">
@@ -93,6 +84,8 @@
       производится только компетентными курьерами, которые гарантируют точность и пунктуальность.
     </div>
   </section>
+
+  <%= _.template(require('./includes/footer.html').default)() %>
 
 </body>
 
