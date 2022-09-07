@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Статьи</title>
-  
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Каталог - Flora</title>
+	
 <link href="css/style.css" rel="stylesheet"><script src="js/index.js"></script></head>
 
 <body>
-  
-  <!-- Mobile menu -->
+	
+	<!-- Mobile menu -->
 <div class="menu -menu-" id="menu">
     <header class="menu-header mobile-header px-4">
         <div class="flex">
@@ -440,147 +440,392 @@
 </section>
 <div class="categories-shadow" data-toggle-link="categories-form"></div>
   
-  <section class="navigation flex flex-align-center fade-60">
+	<section class="navigation flex flex-align-center fade-60">
     <a class="navigation__item text-small link-hover mr-1" href="#">Главная</a>
     <span class="text-small mr-1">></span>
-    <a class="navigation__item navigation__item--disabled text-small" href="#">Статьи</a>
+    <a class="navigation__item navigation__item--disabled text-small" href="#">Монобукеты</a>
 </section>
-  
-  <section class="page-title">
-    <div class="page-title__block flex flex-align-center flex-justify-between bg-l3 py-4 px-10">
-        <div class="page-title__name text-h1 text--demibold font-alt">Статьи</div>
-        <div class="page-title__bell flex flex-align-center">
-            <div class="page-title__tel bg-l2 py-3 px-2 brs-2 flex flex-align-center flex-justify-center mr-3 text-h6">
-                <svg class="icon color-icon">
-                    <use xlink:href="img/icons.svg#tel-2"/>
-                </svg>
-            </div>
-            <div class="page-title__text text-body-1">
-                <span class="fade-60">
-                    Если есть вопросы по наличию, стоимости, сроках <br>
-                    поставки звоните
-                </span>
-                <br class="page-title__br">
-                <a class="text--demibold link-hover" href="tel: +7 (902) 550-00-99">+7 (902) 550-00-99</a>
-            </div>
-        </div>
-    </div>
-</section>
-  
-  <section class="banner">
-    <div class="banner__block px-8 py-10">
-        <div class="banner__bg">
-            <picture>
-                <source srcset="img/pictures/banner-mob.png" media="(max-width: 1199px)">
-                <img class="banner__bg-img" src="img/pictures/banner.png" alt="">
-            </picture>
-        </div>
-        <div class="banner__content color-white">
-            <div class="banner__title text-h5 mb-2">Удивить близкого человека - это легко!</div>
-            <div class="banner__subtitle text-body-1">
-                Заказывайте букеты и подарки на нашем сайте и дарите<br>
-                позитивные эмоции людям, которые вам дороги!
-            </div>
-        </div>
-    </div>
-</section>
+	
+	<section class="catalog">
+		<div class="catalog-sidebar">
+			<div class="catalog-filter filter" id="filter">
+				<div class="filter-shadow" data-toggle-link="filter"></div>
+				<div class="filter-inner">
+					<div class="filter-mobile-header d-md-none">
+						<div class="text-h6 font-alt text--center">Фильтр</div>
+						<button class="filter-close btn btn-fab btn-small btn--icon" data-toggle-link="filter">
+							<svg class="icon text-subtitle-1"><use xlink:href="img/icons.svg#cross-1"/></svg>
+						</button>
+					</div>
+					<div class="text-h6 font-alt mb-2">Тип</div>
+					<div class="filter-block card mb-2" data-toggle-cover>
+						<button class="filter-block-toggler accordion-toggler btn btn--sec w-100" data-toggle-link>
+							<div class="text--demibold color-text">Цветы</div>
+							<svg class="icon color-sec text-small ml-auto">
+								<use xlink:href="img/icons.svg#triangle-right"/>
+							</svg>
+						</button>
+						<div class="filter-block-content" data-toggle-content data-toggle-static="true" data-toggle-height="true">
+							<div class="filter-block-fields">
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka"/>
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Гвоздика </div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka"/>
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Роза </div>
+								</label>
+								<div data-toggle-cover>
+									<button class="form-field form-checkbox filter-block-field accordion-toggler" data-toggle-link>
+										<label>
+											<input type="checkbox" class="form-input-checkbox">
+											<div class="form-checkbox-target">
+												<svg class="icon">
+													<use xlink:href="./img/icons.svg#gal-ochka"/>
+												</svg>
+											</div>
+										</label>
+										<div class="text-body-1 ml-2"> Хризантема </div>
+										<svg class="icon fade-40 text-small ml-auto">
+											<use xlink:href="img/icons.svg#triangle-right"/>
+										</svg>
+									</button>
+									<div class="filter-block-subfields" data-toggle-content data-toggle-static="true" data-toggle-height="true">
+										<label class="form-field form-checkbox filter-block-field">
+											<input type="checkbox" class="form-input-checkbox">
+											<div class="form-checkbox-target">
+												<svg class="icon">
+													<use xlink:href="./img/icons.svg#gal-ochka"/>
+												</svg>
+											</div>
+											<div class="text-body-1 ml-2"> Тип один </div>
+										</label>
+										<label class="form-field form-checkbox filter-block-field">
+											<input type="checkbox" class="form-input-checkbox">
+											<div class="form-checkbox-target">
+												<svg class="icon">
+													<use xlink:href="./img/icons.svg#gal-ochka"/>
+												</svg>
+											</div>
+											<div class="text-body-1 ml-2"> Тип два </div>
+										</label>
+									</div>
+								</div>
 
-  <section class="articles pt-1">
-    <div class="grid grid-spacing-5">
-      <div class="grid-col-12 grid-col-md-6 grid-col-lg-4">
-        <a class="articles__item card card-action p-2 link-hover-wrapper h-100" href="#">
-          <div class="articles__pic brs-2 progress-container bg-l1">
-            <div class="progress progress-circle fade-60 text-body-1"></div>
-            <img class="articles__img" src="https://picsum.photos/400/600?random=15" alt="">
-          </div>
-          <div class="articles__content p-3">
-            <div class="articles__title link-hover text-subtitle-2 mb-2">Какие цветы дарить на 14 февраля?</div>
-            <div class="articles__text text-body-1 fade-60 mb-5">
-              Чаще всего в состав букетов включают розы, которые символизируют любовь и восхищение. Стоит лишь правильно подобрать их сорт
-            </div>
-            <button class="articles__btn btn btn--primary btn--fill px-10 mt-auto">Читать статью</button>
-          </div>
-        </a>
-      </div>
-      <div class="grid-col-12 grid-col-md-6 grid-col-lg-4">
-        <a class="articles__item card card-action p-2 link-hover-wrapper h-100" href="#">
-          <div class="articles__pic brs-2 progress-container bg-l1">
-            <div class="progress progress-circle fade-60 text-body-1"></div>
-            <img class="articles__img" src="https://picsum.photos/400/600?random=16" alt="">
-          </div>
-          <div class="articles__content p-3">
-            <div class="articles__title link-hover text-subtitle-2 mb-2">Букет мужчине на 23 февраля</div>
-            <div class="articles__text text-body-1 fade-60 mb-5">
-              Уже прошло 14 февраля и женщины получили подарки от любимых теперь нужно готовить букет своему мужчине на 23 февраля. Начинается волнительное время выбора подарков для сильной...
-            </div>
-            <button class="articles__btn btn btn--primary btn--fill px-10 mt-auto">Читать статью</button>
-          </div>
-        </a>
-      </div>
-      <div class="grid-col-12 grid-col-md-6 grid-col-lg-4">
-        <a class="articles__item card card-action p-2 link-hover-wrapper h-100" href="#">
-          <div class="articles__pic brs-2 progress-container bg-l1">
-            <div class="progress progress-circle fade-60 text-body-1"></div>
-            <img class="articles__img" src="https://picsum.photos/400/600?random=12" alt="">
-          </div>
-          <div class="articles__content p-3">
-            <div class="articles__title link-hover text-subtitle-2 mb-2">Какие комнатные цветы должны быть в доме</div>
-            <div class="articles__text text-body-1 fade-60 mb-5">
-              В последнее десятилетие поменялось восприятие горшечных растений. Теперь огромное количество цветов выращивается для красоты, при этом...
-            </div>
-            <button class="articles__btn btn btn--primary btn--fill px-10 mt-auto">Читать статью</button>
-          </div>
-        </a>
-      </div>
-      <div class="grid-col-12 grid-col-md-6 grid-col-lg-4">
-        <a class="articles__item card card-action p-2 link-hover-wrapper h-100" href="#">
-          <div class="articles__pic brs-2 progress-container bg-l1">
-            <div class="progress progress-circle fade-60 text-body-1"></div>
-            <img class="articles__img" src="https://picsum.photos/400/600?random=10" alt="">
-          </div>
-          <div class="articles__content p-3">
-            <div class="articles__title link-hover text-subtitle-2 mb-2">Какие цветы дарить на 8 марта?</div>
-            <div class="articles__text text-body-1 fade-60 mb-5">
-              Всем известно, что дату 8 марта с нетерпение ждут миллионы женщин в нашей стране. В этот день купить цветы в подарок женщине обязан каждый мужч...
-            </div>
-            <button class="articles__btn btn btn--primary btn--fill px-10 mt-auto">Читать статью</button>
-          </div>
-        </a>
-      </div>
-      <div class="grid-col-12 grid-col-md-6 grid-col-lg-4">
-        <a class="articles__item card card-action p-2 link-hover-wrapper h-100" href="#">
-          <div class="articles__pic brs-2 progress-container bg-l1">
-            <div class="progress progress-circle fade-60 text-body-1"></div>
-            <img class="articles__img" src="https://picsum.photos/400/600?random=17" alt="">
-          </div>
-          <div class="articles__content p-3">
-            <div class="articles__title link-hover text-subtitle-2 mb-2">Цветы для мамы</div>
-            <div class="articles__text text-body-1 fade-60 mb-5">
-              Вы хотите порадовать самого дорогого человека, который подарил вам жизнь? Подарите маме букет живых цветов, бережно и с частичкой души собранный нашими флористами...
-            </div>
-            <button class="articles__btn btn btn--primary btn--fill px-10 mt-auto">Читать статью</button>
-          </div>
-        </a>
-      </div>
-      <div class="grid-col-12 grid-col-md-6 grid-col-lg-4">
-        <a class="articles__item card card-action p-2 link-hover-wrapper h-100" href="#">
-          <div class="articles__pic brs-2 progress-container bg-l1">
-            <div class="progress progress-circle fade-60 text-body-1"></div>
-            <img class="articles__img" src="https://picsum.photos/400/600?random=19" alt="">
-          </div>
-          <div class="articles__content p-3">
-            <div class="articles__title link-hover text-subtitle-2 mb-2">Какие цветы подарить на День Рождения</div>
-            <div class="articles__text text-body-1 fade-60 mb-5">
-              День рождения – светлые и радостные мгновения в жизни каждого человека, наполненные всевозможными яркими красками и эмоциями...
-            </div>
-            <button class="articles__btn btn btn--primary btn--fill px-10 mt-auto">Читать статью</button>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <footer class="footer card mx-4 my-4 py-10 flex flex-justify-between">
+							</div>
+						</div>
+					</div>
+					<div class="filter-block card mb-2" data-toggle-cover>
+						<button class="filter-block-toggler accordion-toggler btn btn--sec w-100" data-toggle-link>
+							<div class="text--demibold color-text">Упаковка</div>
+							<svg class="icon color-sec text-small ml-auto">
+								<use xlink:href="img/icons.svg#triangle-right"/>
+							</svg>
+						</button>
+						<div class="filter-block-content" data-toggle-content data-toggle-static="true" data-toggle-height="true">
+							<div class="filter-block-fields">
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka"/>
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Корзины </div>
+								</label>
+								<label class="form-field form-checkbox filter-block-field">
+									<input type="checkbox" class="form-input-checkbox">
+									<div class="form-checkbox-target">
+										<svg class="icon">
+											<use xlink:href="./img/icons.svg#gal-ochka"/>
+										</svg>
+									</div>
+									<div class="text-body-1 ml-2"> Коробка для цветов </div>
+								</label>
+
+							</div>
+						</div>
+					</div>
+					<div class="text-h6 font-alt mb-2 mt-7">Цена</div>
+					<div class="filter-block card mb-2 p-5">
+						<div class="form-field form-range" data-type="double" data-max="800" data-min="0" data-from="0" data-to="800" data-floor="0">
+
+							<div class="grid">
+								<div class="grid-col-6">
+									<div class="text-body-2 fade-80 mb-1">От</div>
+									<div class="form-input-cover">
+										<input type="text" class="form-input range-input-from">
+									</div>
+								</div>
+								<div class="grid-col-6">
+									<div class="text-body-2 fade-80 mb-1">До</div>
+									<div class="form-input-cover">
+										<input type="text" class="form-input range-input-to">
+									</div>
+								</div>
+							</div>
+
+							<!-- <span class="form-range-from"> </span> мм - <span class="form-range-to"> </span> мм -->
+							<div class="range mt-2">
+								<div class="range-inner"> </div>
+							</div>
+						</div>
+					</div>
+					<div class="filter-btns">
+						<button class="btn btn--primary btn--light w-100 mt-7">Показать</button>
+						<button class="btn btn--red btn--link mt-5 mx-auto mx-md-0">Сбросить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="catalog-content">
+			<button class="btn btn--sec btn--fill w-100 mb-4 d-md-none" data-toggle-link="filter">
+				<svg class="icon mr-2"><use xlink:href="img/icons.svg#settings-1"/></svg>
+				Открыть фильтр
+			</button>
+			<div class="catalog-control card mb-7">
+				<div class="catalog-control-item" data-toggle-cover>
+					<button class="catalog-control-btn btn btn--link btn--sec" data-toggle-link>
+						<span>
+							<span class="color-text">Сортировать:</span> сначала популярные
+						</span>
+						<svg class="icon ml-2 text-small">
+							<use xlink:href="img/icons.svg#triangle-bottom"/>
+						</svg>
+					</button>
+					<div class="catalog-control-item-content card py-2" data-toggle-content>
+						<button class="btn btn--sec btn--link color-text px-4 py-1">сначала популярные</button>
+						<button class="btn btn--sec btn--link color-text px-4 py-1">сначала дешевые</button>
+						<button class="btn btn--sec btn--link color-text px-4 py-1">сначала дорогие</button>
+					</div>
+				</div>
+				<div class="catalog-control-item" data-toggle-cover>
+					<button class="catalog-control-btn btn btn--link btn--sec" data-toggle-link>
+						<span>
+							<span class="color-text">В наличии:</span> показать все
+						</span>
+						<svg class="icon ml-2 text-small">
+							<use xlink:href="img/icons.svg#triangle-bottom"/>
+						</svg>
+					</button>
+					<div class="catalog-control-item-content card py-2" data-toggle-content>
+						<button class="btn btn--sec btn--link color-text px-4 py-1">в наличии</button>
+						<button class="btn btn--sec btn--link color-text px-4 py-1">показать все</button>
+					</div>
+				</div>
+			</div>
+			<div class="catalog-touch-control">
+				<div class="catalog-touch-control-item form-field">
+					<div class="form-input-cover">
+						<select class="form-input pl-6">
+							<option value="">Сначала популярные</option>
+							<option value="">Сначала дешевые</option>
+							<option value="">Сначала дорогие</option>
+						</select>
+						<div class="form-input-start">
+							<svg class="icon fade-40">
+								<use xlink:href="img/icons.svg#burger-1"/>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="catalog-touch-control-item form-field">
+					<div class="form-input-cover">
+						<select class="form-input pl-6">
+							<option value="">Есть в наличии</option>
+							<option value="">Нет в наличии</option>
+						</select>
+						<div class="form-input-start">
+							<svg class="icon fade-40">
+								<use xlink:href="img/icons.svg#dashboard"/>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid grid-spacing-lg-7">
+				<div class="grid-col-6 grid-col-lg-4">
+					<div class="product-card card card-action p-1 p-md-2 link-hover-wrapper h-100">
+						<div class="product-card-img card-img mb-md-4 mb-3 brs-2 bg-l2 progress-container">
+							<div class="progress progress-circle fade-60 text-body-1"></div>
+							<img src="https://picsum.photos/400/600?random=10" alt="">
+						</div>
+						<div class="card-content px-1 pb-1 px-md-2 pb-md-2">
+							<div class="text-body-2 text-md-body-1 mb-md-4 mb-3 link-hover">Букет №7104</div>
+							<button class="btn btn-small btn-lg-middle btn--primary btn--contur mt-auto w-100">
+								<svg class="icon text-lg-subtitle-2 mr-2">
+									<use xlink:href="img/icons.svg#gal-ochka-1-contur"/>
+								</svg>
+								<div class="text-md-body-0 text-lg-h6 font-alt text--demibold">1 400 ₽</div>
+							</button>
+						</div>
+
+					</div>
+				</div>
+				<div class="grid-col-6 grid-col-lg-4">
+					<div class="product-card card card-action p-1 p-md-2 link-hover-wrapper h-100">
+						<div class="product-card-img card-img mb-md-4 mb-3 brs-2 bg-l2 progress-container">
+							<div class="progress progress-circle fade-60 text-body-1"></div>
+							<img src="https://picsum.photos/400/600?random=11" alt="">
+						</div>
+						<div class="card-content px-1 pb-1 px-md-2 pb-md-2">
+							<div class="text-body-2 text-md-body-1 mb-md-4 mb-3 link-hover">Букет №7104</div>
+							<button class="btn btn-small btn-lg-middle btn--primary btn--light mt-auto w-100">
+								<svg class="icon text-lg-subtitle-2 mr-2">
+									<use xlink:href="img/icons.svg#cart-contur"/>
+								</svg>
+								<div class="text-md-body-0 text-lg-h6 font-alt text--demibold">1 400 ₽</div>
+							</button>
+						</div>
+
+					</div>
+				</div>
+				<div class="grid-col-6 grid-col-lg-4">
+					<div class="product-card card card-action p-1 p-md-2 link-hover-wrapper h-100">
+						<div class="product-card-img card-img mb-md-4 mb-3 brs-2 bg-l2 progress-container">
+							<div class="progress progress-circle fade-60 text-body-1"></div>
+							<img src="https://picsum.photos/400/600?random=12" alt="">
+						</div>
+						<div class="card-content px-1 pb-1 px-md-2 pb-md-2">
+							<div class="text-body-2 text-md-body-1 mb-md-4 mb-3 link-hover">Букет №7104</div>
+							<button class="btn btn-small btn-lg-middle btn--primary btn--light mt-auto w-100">
+								<svg class="icon text-lg-subtitle-2 mr-2">
+									<use xlink:href="img/icons.svg#cart-contur"/>
+								</svg>
+								<div class="text-md-body-0 text-lg-h6 font-alt text--demibold">1 400 ₽</div>
+							</button>
+						</div>
+
+					</div>
+				</div>
+				<div class="grid-col-6 grid-col-lg-4">
+					<div class="product-card card card-action p-1 p-md-2 link-hover-wrapper h-100">
+						<div class="product-card-img card-img mb-md-4 mb-3 brs-2 bg-l2 progress-container">
+							<div class="progress progress-circle fade-60 text-body-1"></div>
+							<img src="https://picsum.photos/400/600?random=13" alt="">
+						</div>
+						<div class="card-content px-1 pb-1 px-md-2 pb-md-2">
+							<div class="text-body-2 text-md-body-1 mb-md-4 mb-3 link-hover">Букет №7104</div>
+							<button class="btn btn-small btn-lg-middle btn--primary btn--light mt-auto w-100">
+								<svg class="icon text-lg-subtitle-2 mr-2">
+									<use xlink:href="img/icons.svg#cart-contur"/>
+								</svg>
+								<div class="text-md-body-0 text-lg-h6 font-alt text--demibold">1 400 ₽</div>
+							</button>
+						</div>
+
+					</div>
+				</div>
+				<div class="grid-col-6 grid-col-lg-4">
+					<div class="product-card card card-action p-1 p-md-2 link-hover-wrapper h-100">
+						<div class="product-card-img card-img mb-md-4 mb-3 brs-2 bg-l2 progress-container">
+							<div class="progress progress-circle fade-60 text-body-1"></div>
+							<img src="https://picsum.photos/400/600?random=14" alt="">
+						</div>
+						<div class="card-content px-1 pb-1 px-md-2 pb-md-2">
+							<div class="text-body-2 text-md-body-1 mb-md-4 mb-3 link-hover">Букет №7104</div>
+							<button class="btn btn-small btn-lg-middle btn--primary btn--light mt-auto w-100">
+								<svg class="icon text-lg-subtitle-2 mr-2">
+									<use xlink:href="img/icons.svg#cart-contur"/>
+								</svg>
+								<div class="text-md-body-0 text-lg-h6 font-alt text--demibold">1 400 ₽</div>
+							</button>
+						</div>
+
+					</div>
+				</div>
+				<div class="grid-col-6 grid-col-lg-4">
+					<div class="product-card card card-action p-1 p-md-2 link-hover-wrapper h-100">
+						<div class="product-card-img card-img mb-md-4 mb-3 brs-2 bg-l2 progress-container">
+							<div class="progress progress-circle fade-60 text-body-1"></div>
+							<img src="https://picsum.photos/400/600?random=15" alt="">
+						</div>
+						<div class="card-content px-1 pb-1 px-md-2 pb-md-2">
+							<div class="text-body-2 text-md-body-1 mb-md-4 mb-3 link-hover">Букет №7104</div>
+							<button class="btn btn-small btn-lg-middle btn--primary btn--light mt-auto w-100">
+								<svg class="icon text-lg-subtitle-2 mr-2">
+									<use xlink:href="img/icons.svg#cart-contur"/>
+								</svg>
+								<div class="text-md-body-0 text-lg-h6 font-alt text--demibold">1 400 ₽</div>
+							</button>
+						</div>
+
+					</div>
+				</div>
+				<div class="grid-col-6 grid-col-lg-4">
+					<div class="product-card card card-action p-1 p-md-2 link-hover-wrapper h-100">
+						<div class="product-card-img card-img mb-md-4 mb-3 brs-2 bg-l2 progress-container">
+							<div class="progress progress-circle fade-60 text-body-1"></div>
+							<img src="https://picsum.photos/400/600?random=23" alt="">
+						</div>
+						<div class="card-content px-1 pb-1 px-md-2 pb-md-2">
+							<div class="text-body-2 text-md-body-1 mb-md-4 mb-3 link-hover">Букет №7104</div>
+							<button class="btn btn-small btn-lg-middle btn--primary btn--light mt-auto w-100">
+								<svg class="icon text-lg-subtitle-2 mr-2">
+									<use xlink:href="img/icons.svg#cart-contur"/>
+								</svg>
+								<div class="text-md-body-0 text-lg-h6 font-alt text--demibold">1 400 ₽</div>
+							</button>
+						</div>
+
+					</div>
+				</div>
+				<div class="grid-col-6 grid-col-lg-4">
+					<div class="product-card card card-action p-1 p-md-2 link-hover-wrapper h-100">
+						<div class="product-card-img card-img mb-md-4 mb-3 brs-2 bg-l2 progress-container">
+							<div class="progress progress-circle fade-60 text-body-1"></div>
+							<img src="https://picsum.photos/400/600?random=24" alt="">
+						</div>
+						<div class="card-content px-1 pb-1 px-md-2 pb-md-2">
+							<div class="text-body-2 text-md-body-1 mb-md-4 mb-3 link-hover">Букет №7104</div>
+							<button class="btn btn-small btn-lg-middle btn--primary btn--light mt-auto w-100">
+								<svg class="icon text-lg-subtitle-2 mr-2">
+									<use xlink:href="img/icons.svg#cart-contur"/>
+								</svg>
+								<div class="text-md-body-0 text-lg-h6 font-alt text--demibold">1 400 ₽</div>
+							</button>
+						</div>
+
+					</div>
+				</div>
+				<div class="grid-col-6 grid-col-lg-4">
+					<div class="product-card card card-action p-1 p-md-2 link-hover-wrapper h-100">
+						<div class="product-card-img card-img mb-md-4 mb-3 brs-2 bg-l2 progress-container">
+							<div class="progress progress-circle fade-60 text-body-1"></div>
+							<img src="https://picsum.photos/400/600?random=25" alt="">
+						</div>
+						<div class="card-content px-1 pb-1 px-md-2 pb-md-2">
+							<div class="text-body-2 text-md-body-1 mb-md-4 mb-3 link-hover">Букет №7104</div>
+							<button class="btn btn-small btn-lg-middle btn--primary btn--light mt-auto w-100">
+								<svg class="icon text-lg-subtitle-2 mr-2">
+									<use xlink:href="img/icons.svg#cart-contur"/>
+								</svg>
+								<div class="text-md-body-0 text-lg-h6 font-alt text--demibold">1 400 ₽</div>
+							</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="flex">
+				<a href="javascript:;" class="btn btn--primary btn--fill px-10 mt-5 mt-lg-10 w-100 w-md-auto">Показать еще
+					букеты</a>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer card mx-4 my-4 py-10 flex flex-justify-between">
     <a class="footer__logo" href="#">
         <img class="footer__logo-img" src="img/pictures/logo.png" alt="">
         <span class="text-body-2 fade-60">
@@ -658,7 +903,5 @@
         </div>
     </div>
 </footer>
-
-</body>
-
-</html>
+	
+</body></html>

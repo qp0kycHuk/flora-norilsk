@@ -6,54 +6,484 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Вакансии</title>
+  
 <link href="css/style.css" rel="stylesheet"><script src="js/index.js"></script></head>
 
 <body>
 
+  <!-- Mobile menu -->
+<div class="menu -menu-" id="menu">
+    <header class="menu-header mobile-header px-4">
+        <div class="flex">
+            <button class="btn btn--primary btn-icon btn-small" data-toggle-link="menu">
+                <svg class="icon text-subtitle-1">
+                    <use xlink:href="img/icons.svg#arrow-left"/>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-header-logo">
+            <img src="img/logo.png" alt="">
+        </div>
+
+    </header>
+
+    <div class="menu-content py-4">
+        <div class="px-4">
+            <a href="/lk.html" class="btn btn-small btn--primary btn--light mb-3">
+                <svg class="icon mr-3">
+                    <use xlink:href="img/icons.svg#user"/>
+                </svg>
+                <div class="color-text">Личный кабинет</div>
+            </a>
+            <div class="grid">
+                <div class="grid-col-6">
+                    <button class="header-address w-100 btn btn--sec btn--light">
+                        <svg class="icon text-subtitle-1 mr-4">
+                            <use xlink:href="img/icons.svg#send-address"/>
+                        </svg>
+                        <div>
+                            <div class="text-body-2 fade-60 color-text mb-2">Город доставки</div>
+                            <div class="flex flex-align-center">
+
+                                <div class="text-body-1 text--demibold color-text">Норильск</div>
+                            </div>
+                        </div>
+
+                    </button>
+                </div>
+                <div class="grid-col-6">
+                    <a href="javascript:;" class="header-cart h-100 w-100 btn btn--sec btn--light bg-l1 link-hover-wrapper">
+                        <svg class="icon text-subtitle-1 mr-4">
+                            <use xlink:href="img/icons.svg#cart"/>
+                        </svg>
+                        <div class="color-text">
+                            <div class="text-body-2 text--demibold link-hover">20 товаров</div>
+                            <div class="text-body-2 fade-60">10000 ₽</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-2" data-toggle-cover>
+            <button class="w-100 px-4 py-4 waved flex flex-align-center accordion-toggler" data-toggle-link>
+                <div class="text-body-0 text--demibold">Каталог товаров</div>
+                <svg class="icon fade-60 ml-auto">
+                    <use xlink:href="img/icons.svg#to-right"/>
+                </svg>
+            </button>
+            <div class="px-4" data-toggle-content data-toggle-static="true" data-toggle-height="true">
+                <div class="py-2">
+                    <div class="grid">
+                        <div class="grid-col-6">
+                            <button class="btn w-100 btn-small btn--primary btn--white-bg">
+                                <img src="img/pictures/categories-1.png" alt="" class="icon text-body-0 mr-3">
+                                <div class="text-lg-body-1 color-text text--demibold">Монобукеты</div>
+                            </button>
+                        </div>
+                        <div class="grid-col-6">
+                            <button class="btn w-100 btn-small btn--primary btn--white-bg">
+                                <img src="img/pictures/categories-2.png" alt="" class="icon text-body-0 mr-3">
+                                <div class="text-lg-body-1 color-text text--demibold">Букеты</div>
+                            </button>
+                        </div>
+                        <div class="grid-col-6">
+                            <button class="btn w-100 btn-small btn--primary btn--white-bg">
+                                <img src="img/pictures/categories-3.png" alt="" class="icon text-body-0 mr-3">
+                                <div class="text-lg-body-1 color-text text--demibold">Праздники</div>
+                            </button>
+                        </div>
+                        <div class="grid-col-6">
+                            <button class="btn w-100 btn-small btn--primary btn--white-bg">
+                                <img src="img/pictures/categories-4.png" alt="" class="icon text-body-0 mr-3">
+                                <div class="text-lg-body-1 color-text text--demibold">Подарки</div>
+                            </button>
+                        </div>
+                        <div class="grid-col-12">
+                            <button class="btn w-100 btn-small btn--primary btn--white-bg">
+                                <img src="img/pictures/categories-5.png" alt="" class="icon text-body-0 mr-3">
+                                <div class="text-lg-body-1 color-text text--demibold">Горшечные растения</div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-5 bg-l3">
+            <a class="d-block px-6 py-4 waved text-body-0 w-100" href="/"><span>Главная</span></a>
+            <a class="d-block px-6 py-4 waved text-body-0 w-100" href="/delivery.html"><span>Доставка</span></a>
+            <a class="d-block px-6 py-4 waved text-body-0 w-100" href="/payment.html"><span>Оплата</span></a>
+            <a class="d-block px-6 py-4 waved text-body-0 w-100" href="/about.html"><span>О магазине</span></a>
+            <a class="d-block px-6 py-4 waved text-body-0 w-100" href="/articles.html"><span>Статьи</span></a>
+            <a class="d-block px-6 py-4 waved text-body-0 w-100" href="/job.html"><span>Вакансии</span></a>
+            <a class="d-block px-6 py-4 waved text-body-0 w-100" href="/reviews.html"><span>Отзывы</span></a>
+            <a class="d-block px-6 py-4 waved text-body-0 w-100" href="/contacts.html"><span>Контакты</span></a>
+        </div>
+        <div class="py-4">
+            <a href="javascript:;" class="link-hover-wrapper color-text btn btn--sec btn--link flex-justify-start py-2 px-6">
+                <div>
+                    <div class="text-body-1 text--demibold link-hover">8 (800) 234-80-90</div>
+                    <div class="text-small fade-60 mt-1">
+                        Узнать о наличии, стоимости,
+                        сроках поставки
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:;" class="link-hover-wrapper color-text btn btn--sec btn--link flex-justify-start py-2 px-6">
+                <div>
+                    <div class="text-body-1 text--demibold link-hover">+7 (902) 550-00-99 </div>
+                    <div class="text-small fade-60 mt-1">
+                        По вопросам сопровождения
+                        вашего заказа
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:;" class="link-hover-wrapper color-text btn btn--sec btn--link flex-justify-start py-2 px-6">
+                <div>
+                    <div class="text-body-1 text--demibold link-hover">8 (3919) 33-00-29</div>
+                    <div class="text-small fade-60 mt-1">
+                        Главный офис
+                    </div>
+                </div>
+            </a>
+        </div>
+        <label class="form-field form-checkbox p-4 w-100">
+            <input type="checkbox" class="form-input-checkbox -theme-changer-">
+            <div class="form-toggle-target"> </div>
+            <div class="text-body-2 ml-2"> Темная тема </div>
+        </label>
+    </div>
+</div>
+<div class="menu-shadow" id="menu-shadow"></div>
+
+<!-- Search menu -->
+<div class="menu -menu-" id="search">
+    <div class="flex flex-align-center px-3 pt-3">
+        <button class="btn btn--primary btn-icon btn-small mr-1" data-toggle-link="search">
+            <svg class="icon text-subtitle-1">
+                <use xlink:href="img/icons.svg#arrow-left"/>
+            </svg>
+        </button>
+        <label class="form-field flex-grow">
+            <div class="form-input-cover">
+                <input type="text" class="form-input bg-l1" placeholder="Поиск">
+            </div>
+        </label>
+    </div>
+    <div class="py-3">
+        <a href="" class="py-4 px-5 flex flex-align-center waved">
+            <svg class="icon text-body-0 fade-40 mr-4">
+                <use xlink:href="img/icons.svg#search"/>
+            </svg>
+            <div class="fade-40">Розы</div>
+        </a>
+        <a href="" class="py-4 px-5 flex flex-align-center waved">
+            <svg class="icon text-body-0 fade-40 mr-4">
+                <use xlink:href="img/icons.svg#search"/>
+            </svg>
+            <div class="fade-40">Хризантемы</div>
+        </a>
+        <a href="" class="py-4 px-5 flex flex-align-center waved">
+            <svg class="icon text-body-0 fade-40 mr-4">
+                <use xlink:href="img/icons.svg#search"/>
+            </svg>
+            <div class="fade-40">Цитрус Лимон</div>
+        </a>
+        <a href="" class="py-4 px-5 flex flex-align-center waved">
+            <svg class="icon text-body-0 fade-40 mr-4">
+                <use xlink:href="img/icons.svg#search"/>
+            </svg>
+            <div class="fade-40">Паслен</div>
+        </a>
+    </div>
+</div>
+<div class="menu-shadow"></div>
+
+<header class="mobile-header">
+    <div class="flex">
+        <button class="btn btn--primary btn-icon btn-small" data-toggle-link="menu">
+            <svg class="icon text-subtitle-1">
+                <use xlink:href="img/icons.svg#menu"/>
+            </svg>
+        </button>
+    </div>
+    <div class="mobile-header-logo">
+        <img src="img/logo.png" alt="">
+    </div>
+    <div class="flex">
+        <button class="btn ml-auto btn--sec btn-small px-2">
+            <svg class="icon text-subtitle-1 mr-2">
+                <use xlink:href="img/icons.svg#cart"/>
+            </svg>
+            <div class="text-body-1 color-text text--demibold">20</div>
+        </button>
+    </div>
+</header>
+
+<div class="note">
+    <div class="note-item note-item--purple">
+        <div class="note-item__inner container">
+            <div class="flex flex-align-center">
+                <svg class="icon mr-2">
+                    <use xlink:href="img/icons.svg#note"/>
+                </svg>
+                <div class="text-small text-lg-body-1 text--bold font-alt">
+                    Доставка ко Дню защиты детей будет осуществляться 28.05.2022 с 08:00 до 18:00
+                </div>
+            </div>
+            <div class="flex">
+                <button class="note-item__btn btn btn--primary btn--white-bg ml-auto color-text">Ок</button>
+            </div>
+        </div>
+    </div>
+    <div class="note-item note-item--yellow">
+        <div class="note-item__inner container">
+            <div class="flex flex-align-center">
+                <svg class="icon mr-2">
+                    <use xlink:href="img/icons.svg#note"/>
+                </svg>
+                <div class="text-small text-lg-body-1 text--bold font-alt">
+                    Летние акции уже доступны, все подробности по телефону 8 900 020 00 00
+                </div>
+            </div>
+            <div class="flex">
+                <button class="note-item__btn btn btn--primary btn--white-bg ml-auto color-text">Ок</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="nav">
+    <div class="nav-list">
+        <a href="/" class="nav-item btn btn--primary btn--link link-hover">
+            <span class="fade-80"> Главная </span>
+        </a>
+        <a href="/delivery.html" class="nav-item btn btn--primary btn--link link-hover">
+            <span class="fade-80"> Доставка </span>
+        </a>
+        <a href="/payment.html" class="nav-item btn btn--primary btn--link link-hover">
+            <span class="fade-80"> Оплата </span>
+        </a>
+        <a href="/about.html" class="nav-item btn btn--primary btn--link link-hover">
+            <span class="fade-80"> О магазине </span>
+        </a>
+        <a href="/articles.html" class="nav-item btn btn--primary btn--link link-hover">
+            <span class="fade-80"> Статьи </span>
+        </a>
+        <a href="/job.html" class="nav-item btn btn--primary btn--link link-hover">
+            <span class="fade-80"> Вакансии </span>
+        </a>
+        <a href="/reviews.html" class="nav-item btn btn--primary btn--link link-hover">
+            <span class="fade-80"> Отзывы </span>
+        </a>
+        <a href="/contacts.html" class="nav-item btn btn--primary btn--link link-hover">
+            <span class="fade-80"> Контакты </span>
+        </a>
+    </div>
+
+    <label class="form-field form-checkbox mx-5">
+        <input type="checkbox" class="form-input-checkbox -theme-changer-">
+        <div class="form-toggle-target"> </div>
+        <div class="text-body-2 ml-2"> Темная тема </div>
+    </label>
+
+    <a href="/lk.html" class="nav-lk btn btn--primary btn--link link-hover ml-auto">
+        <svg class="text-body-1 icon mr-3">
+            <use xlink:href="img/icons.svg#user"/>
+        </svg>
+        <div class="text-body-1 text--demibold color-text">Личный кабинет</div>
+    </a>
+</section>
+
+<header class="header">
+    <div class="container header-inner">
+        <a href="/" class="header-logo">
+            <img src="img/logo.png" alt="">
+        </a>
+        <button class="header-address btn btn--sec btn--light">
+            <div>
+                <div class="text-body-2 fade-60 color-text mb-2">Город доставки</div>
+                <div class="flex flex-align-center">
+                    <svg class="icon mr-2">
+                        <use xlink:href="img/icons.svg#send-address"/>
+                    </svg>
+                    <div class="text-body-1 text--demibold color-text">Норильск</div>
+                </div>
+            </div>
+
+        </button>
+        <div class="header-contacts flex flex-align-start">
+
+            <a href="javascript:;" class="header-contact link-hover-wrapper color-text btn btn--sec btn--link">
+                <div>
+                    <div class="text-body-1 text--demibold link-hover">8 (800) 234-80-90</div>
+                    <div class="text-small fade-60 mt-1">
+                        Узнать о наличии, стоимости, <br>
+                        сроках поставки
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:;" class="header-contact link-hover-wrapper color-text btn btn--sec btn--link">
+                <div>
+                    <div class="text-body-1 text--demibold link-hover">+7 (902) 550-00-99 </div>
+                    <div class="text-small fade-60 mt-1">
+                        По вопросам сопровождения <br>
+                        вашего заказа
+                    </div>
+                </div>
+            </a>
+            <a href="javascript:;" class="header-contact link-hover-wrapper color-text btn btn--sec btn--link">
+                <div>
+                    <div class="text-body-1 text--demibold link-hover">8 (3919) 33-00-29</div>
+                    <div class="text-small fade-60 mt-1">
+                        Главный офис
+                    </div>
+                </div>
+            </a>
+        </div>
+        <a href="javascript:;" class="header-cart btn btn--sec btn--link color-text ml-auto link-hover-wrapper">
+            <button class="btn btn--sec btn--light btn-icon btn-large mr-4">
+                <svg class="icon">
+                    <use xlink:href="img/icons.svg#cart"/>
+                </svg>
+            </button>
+            <div>
+                <div class="text-body-1 text--demibold link-hover">20 товаров</div>
+                <div class="text-body-2 fade-60">10000 ₽</div>
+                <button class="btn btn--sec btn--link mt-1">Оформить</button>
+            </div>
+        </a>
+    </div>
+</header>
+
+<section class="py-3 py-md-4">
+    <div class="d-md-flex">
+        <svg class="icon color-sec mr-2 d-none d-md-block">
+            <use xlink:href="img/icons.svg#clock"/>
+        </svg>
+        <div class="text-small text-md-body-2 text--center text-md--left">
+            <span class="fade-60">Время работы оператора</span>
+            <span class="text--demibold">09:00 - 20:00</span>
+            <br class="d-md-none">
+            <span class="fade-60"><span class="d-none d-md-inline">/</span> Время доставки</span>
+            <span class="text--demibold">09:00 - 20:00</span>
+        </div>
+    </div>
+</section>
+
+<section class="categories categories--detail" data-toggle-cover>
+    <div class="container">
+        <button class="btn btn-small btn--primary bg-l1 w-100 d-none d-md-flex d-lg-none" data-toggle-link="search">
+            <svg class="icon text-body-0 mr-3">
+                <use xlink:href="img/icons.svg#search"/>
+            </svg>
+            <div class="text-body-2 color-text mr-auto fade-60">Поиск</div>
+        </button>
+        <div class="categories-inner">
+            <button class="categories-search btn btn-small btn--primary btn--white-bg d-none d-lg-flex" data-toggle-link>
+                <div class="categories-search-inner">
+                    <svg class="icon text-body-0 mr-3">
+                        <use xlink:href="img/icons.svg#search"/>
+                    </svg>
+                    <div class="text-body-1 color-text text--demibold">Поиск</div>
+                </div>
+
+            </button>
+            <div class="categories-list">
+                <button class="categories-search btn btn-small btn--primary btn--white-bg d-md-none mr-2" data-toggle-link="search">
+                    <div class="categories-search-inner">
+                        <svg class="icon text-body-0">
+                            <use xlink:href="img/icons.svg#search"/>
+                        </svg>
+                    </div>
+                </button>
+                <div class="categories-items">
+                    <button class="categories-item btn btn-small btn--primary btn--white-bg">
+                        <img src="img/pictures/categories-1.png" alt="" class="icon text-body-0 mr-3">
+                        <div class="text-lg-body-1 color-text text--demibold">Монобукеты</div>
+                    </button>
+                    <button class="categories-item btn btn-small btn--primary btn--white-bg">
+                        <img src="img/pictures/categories-2.png" alt="" class="icon text-body-0 mr-3">
+                        <div class="text-lg-body-1 color-text text--demibold">Букеты</div>
+                    </button>
+                    <button class="categories-item btn btn-small btn--primary btn--white-bg">
+                        <img src="img/pictures/categories-3.png" alt="" class="icon text-body-0 mr-3">
+                        <div class="text-lg-body-1 color-text text--demibold">Праздники</div>
+                    </button>
+                    <button class="categories-item btn btn-small btn--primary btn--white-bg">
+                        <img src="img/pictures/categories-4.png" alt="" class="icon text-body-0 mr-3">
+                        <div class="text-lg-body-1 color-text text--demibold">Подарки</div>
+                    </button>
+                    <button class="categories-item btn btn-small btn--primary btn--white-bg">
+                        <img src="img/pictures/categories-5.png" alt="" class="icon text-body-0 mr-3">
+                        <div class="text-lg-body-1 color-text text--demibold">Горшечные растения</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="categories-form" data-toggle-content id="categories-form">
+        <div class="container">
+            <label class="categories-form-field">
+                <input class="categories-form-input" placeholder="Поиск">
+                <div class="form-input-end">
+                    <button type="button" class="btn btn-small btn--red btn-icon" data-toggle-link>
+                        <svg class="icon color-text fade-40">
+                            <use xlink:href="img/icons.svg#cross"/>
+                        </svg>
+                    </button>
+                </div>
+            </label>
+        </div>
+
+    </div>
+</section>
+<div class="categories-shadow" data-toggle-link="categories-form"></div>
+  
   <section class="navigation flex flex-align-center fade-60">
     <a class="navigation__item text-small link-hover mr-1" href="#">Главная</a>
     <span class="text-small mr-1">></span>
     <a class="navigation__item navigation__item--disabled text-small" href="#">Вакансии</a>
-  </section>
-
+</section>
+  
   <section class="page-title">
     <div class="page-title__block flex flex-align-center flex-justify-between bg-l3 py-4 px-10">
-      <div class="page-title__name text-h1 text--demibold font-alt">Вакансии</div>
-      <div class="page-title__bell flex flex-align-center">
-        <div class="page-title__tel bg-l2 py-3 px-2 brs-2 flex flex-align-center flex-justify-center mr-3 text-h6">
-          <svg class="icon color-icon">
-            <use xlink:href="img/icons.svg#tel-2"/>
-          </svg>
+        <div class="page-title__name text-h1 text--demibold font-alt">Вакансии</div>
+        <div class="page-title__bell flex flex-align-center">
+            <div class="page-title__tel bg-l2 py-3 px-2 brs-2 flex flex-align-center flex-justify-center mr-3 text-h6">
+                <svg class="icon color-icon">
+                    <use xlink:href="img/icons.svg#tel-2"/>
+                </svg>
+            </div>
+            <div class="page-title__text text-body-1">
+                <span class="fade-60">
+                    Если есть вопросы по наличию, стоимости, сроках <br>
+                    поставки звоните
+                </span>
+                <br class="page-title__br">
+                <a class="text--demibold link-hover" href="tel: +7 (902) 550-00-99">+7 (902) 550-00-99</a>
+            </div>
         </div>
-        <div class="page-title__text text-body-1">
-          <span class="fade-60">
-            Если есть вопросы по наличию, стоимости, сроках <br>
-            поставки звоните
-          </span>
-          <br class="page-title__br">
-          <a class="text--demibold link-hover" href="tel: +7 (902) 550-00-99">+7 (902) 550-00-99</a>
-        </div>
-      </div>
     </div>
-  </section>
-
+</section>
+  
   <section class="banner">
     <div class="banner__block px-8 py-10">
-      <div class="banner__bg">
-        <picture>
-          <source srcset="img/pictures/banner-mob.png" media="(max-width: 1199px)">
-          <img class="banner__bg-img" src="img/pictures/banner.png" alt="">
-        </picture>
-      </div>
-      <div class="banner__content color-white">
-        <div class="banner__title text-h5 mb-2">Удивить близкого человека - это легко!</div>
-        <div class="banner__subtitle text-body-1">
-          Заказывайте букеты и подарки на нашем сайте и дарите<br>
-          позитивные эмоции людям, которые вам дороги!
+        <div class="banner__bg">
+            <picture>
+                <source srcset="img/pictures/banner-mob.png" media="(max-width: 1199px)">
+                <img class="banner__bg-img" src="img/pictures/banner.png" alt="">
+            </picture>
         </div>
-      </div>
+        <div class="banner__content color-white">
+            <div class="banner__title text-h5 mb-2">Удивить близкого человека - это легко!</div>
+            <div class="banner__subtitle text-body-1">
+                Заказывайте букеты и подарки на нашем сайте и дарите<br>
+                позитивные эмоции людям, которые вам дороги!
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
   <section class="job pt-1">
     <div class="job__item card p-5 flex flex-align-center">
@@ -107,6 +537,85 @@
       </div>
     </div>
   </section>
+
+  <footer class="footer card mx-4 my-4 py-10 flex flex-justify-between">
+    <a class="footer__logo" href="#">
+        <img class="footer__logo-img" src="img/pictures/logo.png" alt="">
+        <span class="text-body-2 fade-60">
+            Доставка цветов в Норильске, <br>
+            Талнахе и Кайеркане
+        </span>
+    </a>
+    <div class="footer__list">
+        <div class="text-h6 mb-3">Ассортимент</div>
+        <nav class="footer__items">
+            <a class="footer__item btn btn--link mb-4 link-hover" href="">Ассортимент</a>
+            <a class="footer__item btn btn--link mb-4 link-hover" href="">Монобукеты</a>
+            <a class="footer__item btn btn--link mb-4 link-hover" href="">Букеты</a>
+            <a class="footer__item btn btn--link mb-4 link-hover" href="">Праздники</a>
+            <a class="footer__item btn btn--link mb-4 link-hover" href="">Подарки</a>
+            <a class="footer__item btn btn--link mb-4 link-hover" href="">Горшечные растения</a>
+        </nav>
+    </div>
+    <div class="footer__list">
+        <div class="text-h6 mb-3">Навигация</div>
+        <nav class="footer__items">
+            <a class="footer__item btn btn--link mb-4 link-hover" href="">Главная</a>
+            <a class="footer__item btn btn--link mb-4 link-hover" href="">Доставка</a>
+            <a class="footer__item btn btn--link mb-4 link-hover" href="">Оплата</a>
+            <a class="footer__item btn btn--link mb-4 link-hover" href="">О магазине</a>
+            <a class="footer__item btn btn--link mb-4 link-hover" href="">Статьи</a>
+            <a class="footer__item btn btn--link mb-4 link-hover" href="">Вакансии</a>
+            <a class="footer__item btn btn--link mb-4 link-hover" href="">Отзывы</a>
+            <a class="footer__item btn btn--link mb-4 link-hover" href="">Контакты</a>
+        </nav>
+    </div>
+    <div class="footer__list">
+        <div class="text-h6 mb-3">Магазины</div>
+        <nav class="footer__items">
+            <a class="footer__item btn btn--link mb-4 link-hover" href="">Норильск</a>
+            <a class="footer__item btn btn--link mb-4 link-hover" href="">Талнах</a>
+            <a class="footer__item btn btn--link mb-4 link-hover" href="">Кайеркан</a>
+        </nav>
+    </div>
+    <div class="footer__contacts">
+        <div class="text-h6 mb-3">Магазины</div>
+        <div class="footer__items">
+            <a class="footer__tel btn btn--link link-hover mb-1" href="8 (3919) 33-00-29">
+                <svg class="icon mr-1 text-body-2">
+                    <use xlink:href="img/icons.svg#tel"/>
+                </svg>
+                <span class="text-body-1 text--demibold">8 (3919) 33-00-29</span>
+            </a>
+            <span class="text-body-2 fade-60 mb-2">Главный офис</span>
+            <span class="text-body-2 text--demibold color-green mb-5">Звонок бесплатный</span>
+            <a class="footer__tel btn btn--link link-hover mb-1" href="+7 (902) 550-00-99">
+                <svg class="icon mr-1 text-body-2">
+                    <use xlink:href="img/icons.svg#tel"/>
+                </svg>
+                <span class="text-body-1 text--demibold">+7 (902) 550-00-99 </span>
+            </a>
+            <span class="text-body-2 fade-60 mb-5">
+                По вопросам сопровождения <br>
+                вашего заказа
+            </span>
+            <a class="footer__tel btn btn--link link-hover mb-1" href="8 (800) 234-80-90">
+                <svg class="icon mr-1 text-body-2">
+                    <use xlink:href="img/icons.svg#tel"/>
+                </svg>
+                <span class="text-body-1 text--demibold">8 (800) 234-80-90</span>
+            </a>
+            <span class="text-body-2 fade-60 mb-7">
+                Узнать о наличии, стоимости,<br>
+                сроках поставки
+            </span>
+            <a class="footer__vk link-hover btn btn--blue btn--link color-text" href="#">
+                <img class="icon mr-2 text-h6" src="img/icons/vk.svg" alt="">
+                <span class="text-body-2 fade-60">Flora_Norilsk</span>
+            </a>
+        </div>
+    </div>
+</footer>
 
 </body>
 
