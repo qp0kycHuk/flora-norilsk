@@ -25,16 +25,17 @@
   <section class="card-detail pt-0 pb-0">
     <div class="card-detail__block card py-5 px-5 py-lg-10 px-lg-7">
       <div class="card-detail__title flex flex-align-center mb-3">
-        <div class="card-detail__title-text text-lg-h3 text-h6 font-alt mr-5">Горшок «Орион» с вкладышем, желтый, 1л</div>
-        <img class="card-detail__shild" src="img/pictures/shild-1.svg" alt="">
+        <div class="card-detail__title-text text-lg-h3 text-h6 font-alt mr-5">(488) КОНФЕТЫ RAFFAELLO 150ГР</div>
+        <img class="card-detail__shild" src="img/pictures/shild-3.svg" alt="">
       </div>
       <div class="card-detail__elems flex flex-align-center mb-8">
         <div class="card-detail__elem text-body-1 mr-5">
           Артикул: <span class="fade-70">2102</span>
         </div>
-        <div class="card-detail__elem text-body-1">
+        <div class="card-detail__elem text-body-1 mr-5">
           Сейчас в магазине: <span class="fade-70">3 шт</span>
         </div>
+        <a class="text-body-1 color-sec" href="#">Уточнить у оператора</a>
       </div>
       <div class="card-detail__content flex">
         <div class="card-detail__sliders flex flex-align-stretch mr-10">
@@ -81,37 +82,41 @@
         </div>
         <div class="card-detail__info">
           <div class="flex flex-align-start color-sec font-alt mb-5">
-            <div class="text-h1 mr-4">330 ₽</div>
-            <div class="flex flex-align-center">
-              <div class="card-detail__price text-h4 fade-50 mr-2">430 ₽</div>
-              <div class="card-detail__discount color-text text-body-2 text--bold py-1 px-2">-20 %</div>
+            <div class="text-h1">670 ₽</div>
+          </div>
+
+          <div class="card-detail__info-bullets flex mb-5 mb-lg-10">
+            <div class="card-detail__info-bullet flex flex-align-center p-3 brs-1">
+              <span class="color-icon text-h6 mr-3">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#town" />
+                </svg>
+              </span>
+              <span class="text-body-2 ">Работаем в <span class="text--bold">трех городах</span></span>
+            </div>
+            <div class="card-detail__info-bullet flex flex-align-center p-3 brs-1">
+              <span class="color-icon text-h6 mr-3">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#timer" />
+                </svg>
+              </span>
+              <span class="text-body-2 "><span class="text--bold">98%</span> доставок вовремя</span>
+            </div>
+            <div class="card-detail__info-bullet flex flex-align-center p-3 brs-1">
+              <span class="color-icon text-h6 mr-3">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#sms" />
+                </svg>
+              </span>
+              <span class="text-body-2 "><span class="text--bold">865 человек</span> оставили свой отзыв</span>
             </div>
           </div>
-          <div class="text-body-2 text--bold mb-3">Выберите размер</div>
-          <div class="card-detail__items flex flex-align-center flex-wrap mb-5">
-            <% for (let i = 0; i < 5; i++) { %>
-              <label>
-                <input class="card-detail__input d-none" type="radio" name="l">
-                <div class="card-detail__item text-body-2 flex flex-align-center flex-justify-center brs-1 p-2 bd-all text--demibold"><%= i %> л</div>
-              </label>
-            <% } %>
-          </div>
-          <div class="text-body-2 text--bold mb-3">Выберите цвет</div>
-          <div class="card-detail__items flex flex-align-center flex-wrap mb-6">
-            <% for (let i = 0; i < 5; i++) { %>
-              <label>
-                <input class="card-detail__input d-none" type="radio" name="l">
-                <div class="card-detail__item text-body-2 flex flex-align-center flex-justify-center brs-1 p-2 bd-all text--demibold">
-                  <img src="img/pictures/pots.png" alt="">
-                </div>
-              </label>
-            <% } %>
-          </div>
-          <button class="btn btn--primary btn--fill mb-10">
+
+          <button class="btn btn--primary btn--contur mb-10">
             <svg class="icon mr-2">
-              <use xlink:href="img/icons.svg#bag" />
+              <use xlink:href="img/icons.svg#check-2" />
             </svg>
-            <span>В корзину</span>
+            <span>В корзине</span>
           </button>
           <div class="flex flex-align-center text-body-1 mb-3">
             <span class="fade-60 mr-2">
