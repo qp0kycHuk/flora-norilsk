@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О компании</title>
+  <% var data = { title: "О компании" }; %>
+</head>
+
+<body>
+
+  <%= _.template(require('./includes/header.html').default)({isIndex: false}) %>
+  
+  <%= _.template(require('./includes/navigation.html').default)(data) %>
+
+  <section>
+    <div class="banner-tel flex flex-align-center flex-justify-center p-3 text-body-1 text--center">
+      <span class="fade-70 mr-2">Если есть вопросы по наличию, стоимости, сроках поставки звоните:</span>
+      <a class="text--bold" href="tel: +7 (902) 550-00-99">+7 (902) 550-00-99</a>
+    </div>
+  </section>
+
+  <section class="card-detail pt-0 pb-0">
+    <div class="card-detail__block card py-5 px-5 py-lg-10 px-lg-7">
+      <div class="card-detail__title flex flex-align-center mb-3">
+        <div class="card-detail__title-text text-lg-h3 text-h6 font-alt mr-5">Горшок «Орион» с вкладышем, желтый, 1л</div>
+        <img class="card-detail__shild" src="img/pictures/shild-1.svg" alt="">
+      </div>
+      <div class="card-detail__elems flex flex-align-center mb-8">
+        <div class="card-detail__elem text-body-1 mr-5">
+          Артикул: <span class="fade-70">2102</span>
+        </div>
+        <div class="card-detail__elem text-body-1">
+          Сейчас в магазине: <span class="fade-70">3 шт</span>
+        </div>
+      </div>
+      <div class="card-detail__content flex">
+        <div class="card-detail__sliders flex flex-align-stretch mr-10">
+          <div class="card-detail-bullets slider w-100 py-8 mr-3">
+            <div class="swiper grid-wrap grid-spacing-4 pb-3">
+              <div class="swiper-wrapper">
+                <% for (let i = 0; i < 6; i++) { %>
+                  <div class="swiper-slide grid-col-4 grid-col-md-12">
+                    <div class="card-detail-bullets__slide flex flex-align-center flex-justify-center bd-all">
+                      <img src="img/pictures/pots.png" alt="">
+                    </div>
+                  </div>
+                <% } %>
+              </div>
+            </div>
+            <button class="card-detail-bullets__btn card-detail-bullets__btn--prev slider-btn slider-prev">
+              <svg class="icon color-icon">
+                <use xlink:href="img/icons.svg#to-left" />
+              </svg>
+            </button>
+            <button class="card-detail-bullets__btn card-detail-bullets__btn--next slider-btn slider-next">
+              <svg class="icon color-icon">
+                <use xlink:href="img/icons.svg#to-right" />
+              </svg>
+            </button>
+          </div>
+          <div class="card-detail-slider slider bd-all w-100">
+            <div class="swiper grid-wrap grid-spacing-4 pb-3 h-100">
+              <div class="swiper-wrapper">
+                <% for (let i = 0; i < 6; i++) { %>
+                  <div class="swiper-slide grid-col-12">
+                    <div class="card-detail-slider__slide flex flex-align-center flex-justify-center h-100 p-10">
+                      <img src="img/pictures/pots.png" alt="">
+                    </div>
+                  </div>
+                <% } %>
+              </div>
+            </div>
+            <div class="card-detail__vk flex flex-align-center flex-justify-center p-2">
+              <img class="text-subtitle-1 mr-2" src="img/icons/vk.svg" alt="">
+              <span class="text-body-1 text--demibold">Оставить реакцию в ВК!</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-detail__info">
+          <div class="flex flex-align-start color-sec font-alt mb-5">
+            <div class="text-h1 mr-4">330 ₽</div>
+            <div class="flex flex-align-center">
+              <div class="card-detail__price text-h4 fade-50 mr-2">430 ₽</div>
+              <div class="card-detail__discount color-text text-body-2 text--bold py-1 px-2">-20 %</div>
+            </div>
+          </div>
+          <div class="text-body-2 text--bold mb-3">Выберите размер</div>
+          <div class="card-detail__items flex flex-align-center flex-wrap mb-5">
+            <% for (let i = 0; i < 5; i++) { %>
+              <label>
+                <input class="card-detail__input d-none" type="radio" name="l">
+                <div class="card-detail__item text-body-2 flex flex-align-center flex-justify-center brs-1 p-2 bd-all text--demibold"><%= i %> л</div>
+              </label>
+            <% } %>
+          </div>
+          <div class="text-body-2 text--bold mb-3">Выберите цвет</div>
+          <div class="card-detail__items flex flex-align-center flex-wrap mb-6">
+            <% for (let i = 0; i < 5; i++) { %>
+              <label>
+                <input class="card-detail__input d-none" type="radio" name="l">
+                <div class="card-detail__item text-body-2 flex flex-align-center flex-justify-center brs-1 p-2 bd-all text--demibold">
+                  <img src="img/pictures/pots.png" alt="">
+                </div>
+              </label>
+            <% } %>
+          </div>
+          <button class="btn btn--primary btn--fill mb-10">
+            <svg class="icon mr-2">
+              <use xlink:href="img/icons.svg#bag" />
+            </svg>
+            <span>В корзину</span>
+          </button>
+          <div class="flex flex-align-center text-body-1 mb-3">
+            <span class="fade-60 mr-2">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#geolocation" />
+              </svg>
+            </span>
+            <div class="text--demibold">Самовывоз: <span class="fade-60">через 15 минут, бесплатно</span></div>
+          </div>
+          <div class="flex flex-align-center text-body-1">
+            <span class="fade-60 mr-2">
+              <svg class="icon">
+                <use xlink:href="img/icons.svg#car" />
+              </svg>
+            </span>
+            <div class="text--demibold">Доставка: <span class="fade-60">послезавтра</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const cardDetailBullets = new Swiper('.card-detail-bullets .swiper', {
+      slidesPerView: 'auto',
+      watchSlidesProgress: true,
+      navigation: {
+        nextEl: '.card-detail-bullets .slider-next',
+        prevEl: '.card-detail-bullets .slider-prev'
+      },
+
+      breakpoints: {
+        
+          0: {
+            direction: 'horizontal',
+          },
+
+          768: {
+            direction: 'vertical',
+          },
+        
+      }
+
+    })
+
+    const cardDetailSlider = new Swiper('.card-detail-slider .swiper', {
+      slidesPerView: 'auto',
+      watchSlidesProgress: true,
+      thumbs: {
+        swiper: cardDetailBullets,
+      }
+    })
+  </script>
+
+  <section>
+    <div class="text-md-h4 text-subtitle-1 mb-4 mb-lg-8">Наш флорист Катя считает, что вам может быть интересно это</div>
+    <div class="grid grid-spacing-lg-7">
+      <% for (let i = 0; i < 4; i++) { %>
+        <div class="grid-col-6 grid-col-md-4 grid-col-lg-3">
+          <div class="product-card card card-action p-1 p-md-2 link-hover-wrapper h-100">
+            <div class="product-card-img card-img mb-md-4 mb-3 brs-2 bg-l2 progress-container">
+              <div class="progress progress-circle fade-60 text-body-1"></div>
+              <img src="https://picsum.photos/400/600?random=10" alt="">
+            </div>
+            <div class="card-content px-1 pb-1 px-md-2 pb-md-2">
+              <div class="text-body-2 text-md-body-1 mb-md-4 mb-3 link-hover">Букет №7104</div>
+              <button class="btn btn-small btn-lg-middle btn--primary btn--light mt-auto w-100">
+                <svg class="icon text-lg-subtitle-2 mr-2">
+                  <use xlink:href="img/icons.svg#cart-contur" />
+                </svg>
+                <div class="text-md-body-0 text-lg-h6 font-alt text--demibold">1 400 ₽</div>
+              </button>
+            </div>
+  
+          </div>
+        </div>
+      <% } %>
+    </div>
+  </section>
+
+  <%= _.template(require('./includes/footer.html').default)() %>
+
+</body>
+
+</html>
