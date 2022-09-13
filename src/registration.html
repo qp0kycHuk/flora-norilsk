@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+  <% var data = { title: "Регистрация" }; %>
+</head>
+
+<body>
+
+  <%= _.template(require('./includes/header.html').default)({isIndex: false}) %>
+  
+  <%= _.template(require('./includes/navigation.html').default)(data) %>
+  
+  <%= _.template(require('./includes/page-title.html').default)(data) %>
+
+  <section class="registration">
+    <div class="registration__block py-5 py-lg-10">
+      <div class="registration__info bg-white mx-auto">
+        <form class="registration__form bd-bottom p-5 p-lg-10">
+          <label class="d-block mb-4">
+            <div class="text-body-1 text--demibold mb-2">Имя</div>
+            <div class="registration__cover form-input-cover">
+              <input class="form-input w-100" type="text">
+            </div>
+          </label>
+          <label class="d-block mb-4">
+            <div class="text-body-1 text--demibold mb-2">Фамилия</div>
+            <div class="registration__cover form-input-cover">
+              <input class="form-input w-100" type="text">
+            </div>
+          </label>
+          <label class="d-block mb-4">
+            <div class="text-body-1 text--demibold mb-2">*Логин (минимум 3 символа)</div>
+            <div class="registration__cover form-input-cover">
+              <input class="form-input w-100" type="text">
+            </div>
+          </label>
+          <label class="d-block mb-4">
+            <div class="text-body-1 text--demibold mb-2">*Пароль</div>
+            <div class="registration__cover form-input-cover">
+              <input class="form-input w-100" type="password">
+            </div>
+          </label>
+          <label class="d-block mb-4">
+            <div class="text-body-1 text--demibold mb-2">*Подтверждение пароля</div>
+            <div class="registration__cover form-input-cover">
+              <input class="form-input w-100" type="password">
+            </div>
+          </label>
+          <label class="d-block mb-8">
+            <div class="text-body-1 text--demibold mb-2">E-Mail</div>
+            <div class="registration__cover form-input-cover">
+              <input class="form-input w-100" type="email">
+            </div>
+          </label>
+          <button class="btn btn--primary btn--fill mb-5">Зарегистрироваться</button>
+          <div class="text-body-2 fade-60">
+            Пароль должен быть не менее 6 символов длиной <br>
+            *Обязательные поля
+          </div>
+        </form>
+        <div class="registration__links flex flex-align-center flex-justify-center py-4 px-5">
+          <div class="text-body-1 text--center text--demibold mb-1">Уже есть аккаунт?</div>
+          <a class="registration__link text-body-1 text--center text--demibold color-primary" href="">Авторизоваться</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%= _.template(require('./includes/footer.html').default)() %>
+
+</body>
+
+</html>

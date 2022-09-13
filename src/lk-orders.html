@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+  <% var data = { title: "Мои заказы" }; %>
+</head>
+
+<body>
+
+  <%= _.template(require('./includes/header.html').default)({isIndex: false}) %>
+  
+  <%= _.template(require('./includes/navigation.html').default)(data) %>
+  
+  <%= _.template(require('./includes/page-title.html').default)(data) %>
+
+  <section class="lk-orders">
+    <nav class="lk-orders__nav flex flex-align-center mb-5 mb-md-9 bd-bottom">
+      <a class="lk-orders__link text-body-1 text--demibold fade-60 mr-5 mr-md-10 pb-4" href="">Текущие заказы</a>
+      <a class="lk-orders__link lk-orders__link--active text-body-1 text--demibold fade-60 mr-5 mr-md-10 pb-4" href="">Выполненные заказы</a>
+      <a class="lk-orders__link text-body-1 text--demibold fade-60 pb-4" href="">Отмененные заказы</a>
+    </nav>
+    <div class="lk-orders__items flex">
+      <div class="lk-orders__item bd-all brs-1">
+        <div class="lk-orders__head flex flex-align-center flex-justify-between flex-wrap py-4 px-6">
+          <div class="text-body-1 text--demibold">Заказ № 11150 от 19.05.2022   03:25:02, 4 товара на сумму 10000 Р</div>
+          <div class="flex flex-align-center">
+            <div class="text-body-1 color-primary mr-2">Заказ выполнен</div>
+            <div class="text-body-1 fade-60">19.05.2022</div>
+          </div>
+        </div>
+        <div class="lk-orders__bottom flex flex-align-center flex-justify-between flex-wrap bg-white py-4 px-6">
+          <a class="text-body-1 color-primary" href="">Подробнее о заказе</a>
+          <a class="text-body-1 color-primary flex flex-align-center" href="">
+            <svg class="icon mr-2">
+              <use xlink:href="img/icons.svg#load" />
+            </svg>
+            <span>Повторить заказ</span>
+          </a>
+        </div>
+      </div>
+      <div class="lk-orders__item bd-all brs-1">
+        <div class="lk-orders__head flex flex-align-center flex-justify-between flex-wrap py-4 px-6">
+          <div class="text-body-1 text--demibold">Заказ № 11150 от 19.05.2022   03:25:02, 4 товара на сумму 10000 Р</div>
+          <div class="flex flex-align-center">
+            <div class="text-body-1 color-primary mr-2">Заказ выполнен</div>
+            <div class="text-body-1 fade-60">19.05.2022</div>
+          </div>
+        </div>
+        <div class="lk-orders__bottom flex flex-align-center flex-justify-between flex-wrap bg-white py-4 px-6">
+          <a class="text-body-1 color-primary" href="">Подробнее о заказе</a>
+          <a class="text-body-1 color-primary flex flex-align-center" href="">
+            <svg class="icon mr-2">
+              <use xlink:href="img/icons.svg#load" />
+            </svg>
+            <span>Повторить заказ</span>
+          </a>
+        </div>
+      </div>
+      <div class="lk-orders__item bd-all brs-1">
+        <div class="lk-orders__head flex flex-align-center flex-justify-between flex-wrap py-4 px-6">
+          <div class="text-body-1 text--demibold">Заказ № 11150 от 19.05.2022   03:25:02, 4 товара на сумму 10000 Р</div>
+          <div class="flex flex-align-center">
+            <div class="text-body-1 color-primary mr-2">Заказ выполнен</div>
+            <div class="text-body-1 fade-60">19.05.2022</div>
+          </div>
+        </div>
+        <div class="lk-orders__bottom flex flex-align-center flex-justify-between flex-wrap bg-white py-4 px-6">
+          <a class="text-body-1 color-primary" href="">Подробнее о заказе</a>
+          <a class="text-body-1 color-primary flex flex-align-center" href="">
+            <svg class="icon mr-2">
+              <use xlink:href="img/icons.svg#load" />
+            </svg>
+            <span>Повторить заказ</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%= _.template(require('./includes/footer.html').default)() %>
+
+
+</body>
+
+</html>

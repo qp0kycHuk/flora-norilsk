@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+  <% var data = { title: "Восстановление пароля" }; %>
+</head>
+
+<body>
+
+  <%= _.template(require('./includes/header.html').default)({isIndex: false}) %>
+  
+  <%= _.template(require('./includes/navigation.html').default)(data) %>
+  
+  <%= _.template(require('./includes/page-title.html').default)(data) %>
+
+  <section class="registration">
+    <div class="registration__block py-5 py-lg-10">
+      <div class="registration__info bg-white mx-auto">
+        <form class="registration__form p-5 p-lg-10">
+          <label class="d-block mb-4">
+            <div class="text-body-1 text--demibold mb-2">Логин или email</div>
+            <div class="registration__cover form-input-cover">
+              <input class="form-input w-100" type="text">
+            </div>
+          </label>
+          <div class="text-body-2 lh-1-5 py-3 px-5 brs-1 bg-l1 mb-8">
+            Контрольная строка для смены пароля, 
+            а также ваши регистрационные данные, 
+            будут высланы вам по e-mail
+          </div>
+          <button class="btn btn--primary btn--fill mb-10">Выслать</button>
+          <div class="text-body-2 lh-1-5 py-3 px-5 brs-1 color-primary bg-primary-10">
+            Контрольная строка, а также ваши
+            регистрационные данные были высланы 
+            на email. Пожалуйста, дождитесь письма, 
+            так как  контрольная строка изменяется 
+            при каждом запросе
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <%= _.template(require('./includes/footer.html').default)() %>
+
+</body>
+
+</html>

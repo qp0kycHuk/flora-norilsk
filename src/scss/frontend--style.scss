@@ -2190,6 +2190,57 @@ body:not(.categories-search-open) .categories-shadow {
 			background: linear-gradient(248.95deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), #C76D72;
 		}
 	}
+
+	&-orders {
+		&__link {
+			&--active {
+				opacity      : 1;
+				border-bottom: 2px solid var(--color-sec);
+			}
+		}
+
+		&__items {
+			flex-direction: column;
+			grid-gap      : 25px;
+		}
+
+		&__head {
+			background-color: #ECEFF1;
+		}
+
+		@media(max-width: $md) {
+
+			&__nav,
+			&__head,
+			&__bottom {
+				align-items    : flex-start;
+				justify-content: flex-start;
+				flex-direction : column;
+				grid-gap       : 20px;
+			}
+
+			&__nav {
+				border-bottom: none;
+				grid-gap     : 0;
+			}
+
+			&__link {
+				margin-right : 0;
+				width        : 100%;
+				max-width    : 100%;
+				text-align   : center;
+				padding      : 10px;
+				opacity      : 1;
+				border-radius: 6px;
+
+				&--active {
+					border-bottom   : none;
+					background-color: var(--color-sec);
+					color           : var(--color-white);
+				}
+			}
+		}
+	}
 }
 
 .accordion {
@@ -2767,6 +2818,84 @@ body.filter-open {
 					}
 				}
 			}
+		}
+	}
+}
+
+.authorization {
+	&__arrow {
+		transition: 0.3s;
+	}
+
+	&__item.toggle-active &__arrow {
+		transform: rotate(90deg);
+	}
+
+	&__elem {
+		max-width: 700px;
+	}
+
+	&__cover {
+		width: 330px;
+	}
+
+	@media(max-width: $md) {
+		&__elem {
+			max-width      : 100%;
+			flex-direction : column;
+			align-items    : flex-start;
+			justify-content: flex-start;
+		}
+
+		&__cover {
+			width     : 100%;
+			margin-top: 20px;
+		}
+	}
+}
+
+.registration {
+	&__block {
+		background     : url('../img/flow.png') no-repeat center bottom, linear-gradient(140.18deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 77.27%), #DBEEE0;
+		background-size: cover;
+		border-radius  : 20px;
+	}
+
+	&__info {
+		border-radius: 20px;
+		max-width    : 430px;
+		box-shadow   : 0px 1px 3px rgba(0, 0, 0, 0.15);
+	}
+
+	&__links {
+		flex-direction: column;
+	}
+
+	&__link {
+		border-bottom: 2px dotted var(--color-primary-50);
+	}
+
+	&-error {
+		& .form-input {
+			border-color: var(--color-red);
+		}
+
+		&__item {
+			position: absolute;
+			right   : 0;
+			bottom  : -16px;
+			display : none;
+		}
+
+		& &__item {
+			display: block;
+		}
+	}
+
+
+	@media(max-width: $md) {
+		&__block {
+			padding: 0;
 		}
 	}
 }
