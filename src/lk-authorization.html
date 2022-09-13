@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+  <% var data = { title: "Изменить данные" }; %>
+</head>
+
+<body>
+
+  <%= _.template(require('./includes/header.html').default)({isIndex: false}) %>
+  
+  <%= _.template(require('./includes/navigation.html').default)(data) %>
+  
+  <%= _.template(require('./includes/page-title.html').default)(data) %>
+
+  <section class="authorization">
+    <form class="authorization__form">
+      <div class="authorization__items">
+        <div class="authorization__item mb-5" data-toggle-cover>
+          <div class="authorization__head flex flex-align-center flex-justify-between bg-l1 brs-1 p-4" data-toggle-link>
+            <div class="authorization__subtitle text-subtitle-2 text-md-h6">Регистрационная информация</div>
+            <div class="authorization__arrow">
+              <svg class="icon text-lg-subtitle-2">
+                <use xlink:href="img/icons.svg#arrow" />
+              </svg>
+            </div>
+          </div>
+          <div data-toggle-content data-toggle-height data-toggle-static>
+            <div class="authorization__body py-5 py-md-10">
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Дата обновления:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text" value="31.05.2022 19:36:24">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4 mb-md-10">
+                <span class="text-body-1">Последняя авторизация:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text" value="01.06.2022 14:16:28">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Обращение:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Имя:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Фмилия:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Отчество:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Логин (мин. 3 символа):*</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">E-Mail:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="email">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Новый пароль:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-10">
+                <span class="text-body-1">Подтверждение нового пароля:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <div class="text-body-1 text--demibold mb-10">Часовые пояса</div>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Автоматически определять часовой пояс:</span>
+                <div class="authorization__cover form-input-cover">
+                  <select class="form-input">
+                    <option value="" disabled="disabled" hidden="" selected="selected">по умолчанию</option>
+                    <option value="1"> 1</option>
+                    <option value="2"> 2</option>
+                  </select>
+                  <div class="form-select-icon">
+                    <svg class="icon">
+                      <use xlink:href="./img/icons.svg#to-right"></use>
+                    </svg>
+                  </div>
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between">
+                <span class="text-body-1">Часовой пояс:</span>
+                <div class="authorization__cover form-input-cover">
+                  <select class="form-input">
+                    <option value="" disabled="disabled" hidden="" selected="selected">локальное время сервера</option>
+                    <option value="1"> 1</option>
+                    <option value="2"> 2</option>
+                  </select>
+                  <div class="form-select-icon">
+                    <svg class="icon">
+                      <use xlink:href="./img/icons.svg#to-right"></use>
+                    </svg>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="authorization__item mb-5" data-toggle-cover>
+          <div class="authorization__head flex flex-align-center flex-justify-between bg-l1 brs-1 p-4" data-toggle-link>
+            <div class="authorization__subtitle text-subtitle-2 text-md-h6">Личные данные</div>
+            <div class="authorization__arrow">
+              <svg class="icon text-lg-subtitle-2">
+                <use xlink:href="img/icons.svg#arrow" />
+              </svg>
+            </div>
+          </div>
+          <div data-toggle-content data-toggle-height data-toggle-static>
+            <div class="authorization__body py-5 py-md-10">
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Профессия:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">WWW-страница:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">ICQ:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Пол:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Дата рождения (DD.MM.YYYY):</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="date">
+                </div>
+              </label>
+              <div class="text-body-1 text--demibold mb-10">Телефоны</div>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Телефон:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="tel">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Факс:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-10">
+                <span class="text-body-1">Мобильный:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <div class="text-body-1 text--demibold mb-10">Почтовый адрес</div>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Страна: </span>
+                <div class="authorization__cover form-input-cover">
+                  <select class="form-input">
+                    <option value="" disabled="disabled" hidden="" selected="selected">Россия</option>
+                    <option value="1"> 1</option>
+                    <option value="2"> 2</option>
+                  </select>
+                  <div class="form-select-icon">
+                    <svg class="icon">
+                      <use xlink:href="./img/icons.svg#to-right"></use>
+                    </svg>
+                  </div>
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Область / край:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Город:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Почтовый индекс:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Улица, дом:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between mb-4">
+                <span class="text-body-1">Почтовый ящик:</span>
+                <div class="authorization__cover form-input-cover">
+                  <input class="form-input w-100" type="text">
+                </div>
+              </label>
+              <label class="authorization__elem flex flex-justify-between">
+                <span class="text-body-1">Дополнительные заметки:</span>
+                <div class="authorization__cover form-input-cover">
+                  <textarea class="form-input w-100"></textarea>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="authorization__item mb-5" data-toggle-cover>
+          <div class="authorization__head flex flex-align-center flex-justify-between bg-l1 brs-1 p-4" data-toggle-link>
+            <div class="authorization__subtitle text-subtitle-2 text-md-h6">Информация о работе</div>
+            <div class="authorization__arrow">
+              <svg class="icon text-lg-subtitle-2">
+                <use xlink:href="img/icons.svg#arrow" />
+              </svg>
+            </div>
+          </div>
+          <div data-toggle-content data-toggle-height data-toggle-static>
+            <div class="authorization__body py-5 py-md-10">
+              ....
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-body-1 fade-60 mb-6">Пароль должен быть не менее 6 символов длиной.</div>
+      <div class="flex flex-align-center flex-wrap">
+        <button class="btn btn--primary btn--fill mr-4" type="submit">Сохранить</button>
+        <button class="btn btn--primary btn--fill btn--light" type="reset">Сбросить</button>
+      </div>
+    </form>
+  </section>
+
+  <%= _.template(require('./includes/footer.html').default)() %>
+
+</body>
+
+</html>
