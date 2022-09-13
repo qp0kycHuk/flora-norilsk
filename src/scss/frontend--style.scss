@@ -2853,3 +2853,49 @@ body.filter-open {
 		}
 	}
 }
+
+.registration {
+	&__block {
+		background     : url('../img/flow.png') no-repeat center bottom, linear-gradient(140.18deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 77.27%), #DBEEE0;
+		background-size: cover;
+		border-radius  : 20px;
+	}
+
+	&__info {
+		border-radius: 20px;
+		max-width    : 430px;
+		box-shadow   : 0px 1px 3px rgba(0, 0, 0, 0.15);
+	}
+
+	&__links {
+		flex-direction: column;
+	}
+
+	&__link {
+		border-bottom: 2px dotted var(--color-primary-50);
+	}
+
+	&-error {
+		& .form-input {
+			border-color: var(--color-red);
+		}
+
+		&__item {
+			position: absolute;
+			right   : 0;
+			bottom  : -16px;
+			display : none;
+		}
+
+		& &__item {
+			display: block;
+		}
+	}
+
+
+	@media(max-width: $md) {
+		&__block {
+			padding: 0;
+		}
+	}
+}
