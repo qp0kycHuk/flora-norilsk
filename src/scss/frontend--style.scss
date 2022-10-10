@@ -1646,10 +1646,35 @@ body {
 		margin-right: 40px;
 	}
 
+	&-town {
+		position: relative;
+
+		&__citys {
+			position     : absolute;
+			top          : 64px;
+			left         : 0;
+			right        : 0;
+			max-width    : 132px;
+			border-radius: 8px;
+			margin       : 0 auto;
+			visibility   : hidden;
+			opacity      : 0;
+			overflow     : hidden;
+			max-height   : 0;
+			transition   : 0.2s;
+			z-index      : 400;
+		}
+
+		&__checkbox:checked+&__citys {
+			visibility: visible;
+			opacity   : 1;
+			max-height: 10em;
+		}
+	}
+
 	&-address {
-		height      : auto;
-		padding     : 16px 22px;
-		margin-right: 40px;
+		height : auto;
+		padding: 16px 22px;
 
 		@media(max-width:$lg) {
 			padding-left : 10px;
