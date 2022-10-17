@@ -1777,10 +1777,7 @@ body {
 	}
 
 	&-items {
-		display          : grid;
-		grid-auto-columns: 1fr;
-		grid-auto-flow   : column;
-		flex-grow        : 1;
+		max-width: 100%;
 
 		@media(max-width:$lg) {
 			grid-gap: 8px;
@@ -1791,6 +1788,7 @@ body {
 	&-item {
 		padding-left : 4px;
 		padding-right: 4px;
+		max-width    : 100%;
 
 		@media(hover) {
 			&:hover {
