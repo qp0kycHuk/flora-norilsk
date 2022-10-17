@@ -1788,7 +1788,7 @@ body {
 	&-item {
 		padding-left : 4px;
 		padding-right: 4px;
-		max-width    : 100%;
+		min-width    : max-content;
 
 		@media(hover) {
 			&:hover {
@@ -1801,7 +1801,7 @@ body {
 			font-size     : 14px;
 			flex-direction: column;
 			height        : 90px;
-			min-width     : 100px;
+			min-width     : 130px;
 			border-radius : 20px;
 			flex-grow     : 1;
 
