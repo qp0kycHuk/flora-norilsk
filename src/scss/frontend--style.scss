@@ -1636,8 +1636,9 @@ body {
 	}
 
 	&-inner {
-		display    : flex;
-		align-items: center;
+		display        : flex;
+		align-items    : center;
+		justify-content: space-between;
 	}
 
 	&-logo {
@@ -2159,6 +2160,7 @@ body:not(.categories-search-open) .categories-shadow {
 		flex-direction : column;
 		align-items    : flex-start;
 		justify-content: center;
+		max-width      : 580px;
 
 		@media (max-width:$lg) {
 			max-width: 60%;
