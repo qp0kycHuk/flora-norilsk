@@ -2924,3 +2924,9 @@ body.filter-open {
 		}
 	}
 }
+
+.back {
+	&__btn {
+		width: max-content;
+	}
+}
