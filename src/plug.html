@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flora</title>
+</head>
+
+<body>
+
+  <div class="d-none">
+    <%= _.template(require('./includes/header.html').default)({isIndex: true}) %>
+  </div>
+
+  <div class="plug flex flex-grow flex-justify-center m-4">
+    <img class="plug__bg" src="img/pictures/plug.png" alt="">
+    <div class="plug__content flex w-100 h-100">
+      <div class="plug__btns flex flex-align-center mb-5">
+        <a class="plug__btn link-hover btn btn--blue btn--link color-text mr-3" href="#">
+          <img class="icon text-h6" src="img/icons/vk.svg" alt="">
+        </a>
+        <a class="plug__btn link-hover btn btn--blue btn--link color-text" href="#">
+          <img class="icon text-h6" src="img/icons/tg.svg" alt="">
+        </a>
+      </div>
+      <h1 class="plug__title font-alt mb-5">
+        Скоро здесь появится <br>новый сайт
+      </h1>
+      <p class="plug__text font-alt text-h6">
+        Ведутся технические работы. Мы постараемся настроить <br>
+        сайт как можно быстрее. Приносим свои извинения <br>
+        за предоставленные неудобства.
+      </p>
+      <div class="flex flex-justify-between flex-wrap">
+        <a href="javascript:;" class="plug__link link-hover-wrapper color-text btn btn--sec btn--link flex-justify-start py-2 px-6">
+          <div>
+            <div class="flex flex-align-center">
+              <svg class="icon text-body-1 mr-2">
+                <use xlink:href="img/icons.svg#tel" />
+              </svg>
+              <div class="text-subtitle-2 text--demibold link-hover">8 (3919) 33-00-29</div>
+            </div>
+            <div class="text-body-1 fade-60 mt-1">
+                Главный офис
+            </div>
+            <div class="text-body-1 text--demibold color-primary mt-2">Звонок бесплатный</div>
+          </div>
+        </a>
+        <a href="javascript:;" class="plug__link link-hover-wrapper color-text btn btn--sec btn--link flex-justify-start py-2 px-6">
+          <div>
+            <div class="flex flex-align-center">
+              <svg class="icon text-body-1 mr-2">
+                <use xlink:href="img/icons.svg#tel" />
+              </svg>
+              <div class="text-subtitle-2 text--demibold link-hover">+7 (902) 550-00-99</div>
+            </div>
+            <div class="text-body-1 fade-60 mt-1">
+              По вопросам сопровождения <br>вашего заказа
+            </div>
+          </div>
+        </a>
+        <a href="javascript:;" class="plug__link link-hover-wrapper color-text btn btn--sec btn--link flex-justify-start py-2 px-6">
+          <div>
+            <div class="flex flex-align-center">
+              <svg class="icon text-body-1 mr-2">
+                <use xlink:href="img/icons.svg#tel" />
+              </svg>
+              <div class="text-subtitle-2 text--demibold link-hover">8 (800) 234-80-90</div>
+            </div>
+            <div class="text-body-1 fade-60 mt-1">
+              Узнать о наличии, стоимости, <br>сроках поставки
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
