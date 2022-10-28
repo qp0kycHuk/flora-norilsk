@@ -23,8 +23,10 @@ window.Swiper = Swiper
 window.ripple = ripple
 window.addEventListener('DOMContentLoaded', () => loadHandler())
 
+fancybox.init();
+
 function loadHandler() {
-	fancybox.init();
+	// fancybox.init();
 	showPass.init();
 	listing.init();
 	rangeSlider.init()
