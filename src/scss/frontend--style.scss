@@ -3031,3 +3031,34 @@ body.filter-open {
 		}
 	}
 }
+
+.pagination {
+	max-width: max-content;
+	grid-gap : 8px;
+
+	&__link {
+		min-width: 36px;
+		width    : 36px;
+		height   : 36px;
+
+		&--left {
+			transform: rotate(180deg);
+		}
+
+		&--active {
+			pointer-events: none;
+		}
+	}
+
+	@media(max-width: $md) {
+		& {
+			grid-gap: 5px;
+		}
+
+		&__link {
+			min-width: 28px;
+			width    : 28px;
+			height   : 28px;
+		}
+	}
+}
