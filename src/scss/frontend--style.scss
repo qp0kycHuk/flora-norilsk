@@ -93,6 +93,23 @@ body {
 
 		}
 	}
+
+	&-availability {
+		font-size    : 13px;
+		line-height  : 1;
+		border       : 1px solid var(--color-text-20);
+		border-radius: 4px;
+		padding      : 8px;
+
+		@media(max-width: $sm) {
+			padding  : 4px;
+			font-size: 12px;
+
+			span {
+				display: block;
+			}
+		}
+	}
 }
 
 .banners {
