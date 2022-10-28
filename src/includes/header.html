@@ -24,19 +24,46 @@
             </a>
             <div class="grid">
                 <div class="grid-col-6">
-                    <button class="header-address w-100 btn btn--sec btn--light">
-                        <svg class="icon text-subtitle-1 mr-4">
-                            <use xlink:href="img/icons.svg#send-address" />
-                        </svg>
-                        <div>
-                            <div class="text-body-2 fade-60 color-text mb-2">Город доставки</div>
-                            <div class="flex flex-align-center">
-
-                                <div class="text-body-1 text--demibold color-text">Норильск</div>
+                    <div class="header-town">
+                        <label class="header-address w-100 btn btn--sec btn--light" for="mobile-town">
+                            <svg class="icon text-subtitle-1 mr-4">
+                                <use xlink:href="img/icons.svg#send-address" />
+                            </svg>
+                            <div>
+                                <div class="text-body-2 fade-60 color-text mb-2">Город доставки</div>
+                                <div class="flex flex-align-center">
+                                    <div class="text-body-1 text--demibold color-text">Норильск</div>
+                                </div>
                             </div>
+                        </label>
+                        <input class="header-town__checkbox d-none" type="checkbox" id="mobile-town">
+                        <div class="header-town__citys bg-l3 py-5 px-4">
+                            <a class="flex flex-align-center mb-4" href="#">
+                                <svg class="icon color-sec mr-2">
+                                    <use xlink:href="img/icons.svg#send-address" />
+                                </svg>
+                                <div class="text-body-1 color-text">Норильск</div>
+                            </a>
+                            <a class="flex flex-align-center mb-4" href="#">
+                                <svg class="icon color-icon mr-2">
+                                    <use xlink:href="img/icons.svg#send-address" />
+                                </svg>
+                                <div class="text-body-1 color-text">Талнах</div>
+                            </a>
+                            <a class="flex flex-align-center mb-4" href="#">
+                                <svg class="icon color-icon mr-2">
+                                    <use xlink:href="img/icons.svg#send-address" />
+                                </svg>
+                                <div class="text-body-1 color-text">Кайеркан</div>
+                            </a>
+                            <a class="flex flex-align-center" href="#">
+                                <svg class="icon color-icon mr-2">
+                                    <use xlink:href="img/icons.svg#send-address" />
+                                </svg>
+                                <div class="text-body-1 color-text">Оганер</div>
+                            </a>
                         </div>
-
-                    </button>
+                    </div>
                 </div>
                 <div class="grid-col-6">
                     <a href="javascript:;"
@@ -291,18 +318,46 @@
         <a href="/" class="header-logo">
             <img src="img/logo.png" alt="">
         </a>
-        <button class="header-address btn btn--sec btn--light">
-            <div>
-                <div class="text-body-2 fade-60 color-text mb-2">Город доставки</div>
-                <div class="flex flex-align-center">
-                    <svg class="icon mr-2">
+        <div class="header-town mr-10">
+            <label class="header-address btn btn--sec btn--light" for="header-town">
+                <div>
+                    <div class="text-body-2 fade-60 color-text mb-2">Город доставки</div>
+                    <div class="flex flex-align-center">
+                        <svg class="icon mr-2">
+                            <use xlink:href="img/icons.svg#send-address" />
+                        </svg>
+                        <div class="text-body-1 text--demibold color-text">Норильск</div>
+                    </div>
+                </div>
+            </label>
+            <input class="header-town__checkbox d-none" type="checkbox" id="header-town">
+            <div class="header-town__citys bg-l3 py-5 px-4">
+                <a class="flex flex-align-center mb-4" href="#">
+                    <svg class="icon color-sec mr-2">
                         <use xlink:href="img/icons.svg#send-address" />
                     </svg>
-                    <div class="text-body-1 text--demibold color-text">Норильск</div>
-                </div>
+                    <div class="text-body-1 color-text">Норильск</div>
+                </a>
+                <a class="flex flex-align-center mb-4" href="#">
+                    <svg class="icon color-icon mr-2">
+                        <use xlink:href="img/icons.svg#send-address" />
+                    </svg>
+                    <div class="text-body-1 color-text">Талнах</div>
+                </a>
+                <a class="flex flex-align-center mb-4" href="#">
+                    <svg class="icon color-icon mr-2">
+                        <use xlink:href="img/icons.svg#send-address" />
+                    </svg>
+                    <div class="text-body-1 color-text">Кайеркан</div>
+                </a>
+                <a class="flex flex-align-center" href="#">
+                    <svg class="icon color-icon mr-2">
+                        <use xlink:href="img/icons.svg#send-address" />
+                    </svg>
+                    <div class="text-body-1 color-text">Оганер</div>
+                </a>
             </div>
-
-        </button>
+        </div>
         <div class="header-contacts flex flex-align-start">
 
             <a href="javascript:;" class="header-contact link-hover-wrapper color-text btn btn--sec btn--link">
@@ -392,24 +447,24 @@
                         </svg>
                     </div>
                 </button>
-                <div class="categories-items">
-                    <button class="categories-item btn btn-small btn--primary btn--white-bg">
+                <div class="categories-items flex flex-align-center flex-justify-between bg-l3 brs-1 w-100">
+                    <button class="categories-item btn btn-small btn--primary btn--white-bg w-100">
                         <img src="img/pictures/categories-1.png" alt="" class="icon text-body-0 mr-3">
                         <div class="text-lg-body-1 color-text text--demibold">Монобукеты</div>
                     </button>
-                    <button class="categories-item btn btn-small btn--primary btn--white-bg">
+                    <button class="categories-item btn btn-small btn--primary btn--white-bg w-100">
                         <img src="img/pictures/categories-2.png" alt="" class="icon text-body-0 mr-3">
                         <div class="text-lg-body-1 color-text text--demibold">Букеты</div>
                     </button>
-                    <button class="categories-item btn btn-small btn--primary btn--white-bg">
+                    <button class="categories-item btn btn-small btn--primary btn--white-bg w-100">
                         <img src="img/pictures/categories-3.png" alt="" class="icon text-body-0 mr-3">
                         <div class="text-lg-body-1 color-text text--demibold">Праздники</div>
                     </button>
-                    <button class="categories-item btn btn-small btn--primary btn--white-bg">
+                    <button class="categories-item btn btn-small btn--primary btn--white-bg w-100">
                         <img src="img/pictures/categories-4.png" alt="" class="icon text-body-0 mr-3">
                         <div class="text-lg-body-1 color-text text--demibold">Подарки</div>
                     </button>
-                    <button class="categories-item btn btn-small btn--primary btn--white-bg">
+                    <button class="categories-item btn btn-small btn--primary btn--white-bg w-100">
                         <img src="img/pictures/categories-5.png" alt="" class="icon text-body-0 mr-3">
                         <div class="text-lg-body-1 color-text text--demibold">Горшечные растения</div>
                     </button>

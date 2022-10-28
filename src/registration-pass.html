@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+  <% var data = { title: "Авторизация" }; %>
+</head>
+
+<body>
+
+  <%= _.template(require('./includes/header.html').default)({isIndex: false}) %>
+  
+  <%= _.template(require('./includes/navigation.html').default)(data) %>
+  
+  <%= _.template(require('./includes/page-title.html').default)(data) %>
+
+  <section class="registration">
+    <div class="registration__block py-5 py-lg-10">
+      <div class="registration__info bg-white mx-auto">
+        <form class="registration__form bd-bottom p-5 p-lg-10">
+          <label class="d-block mb-4">
+            <div class="text-body-1 text--demibold mb-2">Логин</div>
+            <div class="registration__cover form-input-cover">
+              <input class="form-input w-100" type="text">
+            </div>
+          </label>
+          <label class="registration-error d-block mb-6">
+            <div class="text-body-1 text--demibold mb-2">Пароль</div>
+            <div class="registration__cover form-input-cover">
+              <input class="form-input w-100" type="password">
+              <span class="registration-error__item color-red text-small">Некорректное заполнение</span>
+            </div>
+          </label>
+          <label class="form-field form-checkbox mb-6">
+            <input type="checkbox" class="form-input-checkbox">
+            <div class="form-checkbox-target">
+              <svg class="icon">
+                <use xlink:href="./img/icons.svg#gal-ochka"></use>
+              </svg>
+            </div>
+            <div class="text-body-1 fade-60 ml-2">Запомнить меня на этом компьютере</div>
+          </label>
+          <div class="flex flex-align-center flex-justify-between">
+            <button class="btn btn--primary btn--fill px-10">Войти</button>
+            <a class="color-primary text-body-1 text--demibold ml-2" href="">Забыли пароль?</a>
+          </div>
+        </form>
+        <div class="registration__links flex flex-align-center flex-justify-center py-4 px-5">
+          <div class="text-body-1 text--center text--demibold mb-1">Нет аккаунта?</div>
+          <a class="registration__link text-body-1 text--center text--demibold color-primary" href="">Зарегистрироваться</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%= _.template(require('./includes/footer.html').default)() %>
+
+</body>
+
+</html>
