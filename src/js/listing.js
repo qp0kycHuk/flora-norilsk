@@ -7,7 +7,7 @@ const init = () => {
         const listingBtn = el.querySelector('.-list-show-')
         const listingHidden = el.querySelectorAll('.-list-el-hid-')
         
-        listingBtn.addEventListener('click', () => {
+        listingBtn?.addEventListener('click', () => {
         
             for (let i = 0; i < listingHidden.length; i++) {
     
@@ -21,5 +21,7 @@ const init = () => {
     })
 
 }
+
+
 
 export default { init }
