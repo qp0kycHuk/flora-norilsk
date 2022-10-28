@@ -3062,3 +3062,37 @@ body.filter-open {
 		}
 	}
 }
+
+.dialog-info {
+	overflow     : hidden;
+	border-radius: 28px;
+	max-width    : 530px;
+
+	&__line {
+		border-bottom: 1px dashed rgb(0, 0, 0, 0.4);
+	}
+
+	&__pic {
+		position  : relative;
+		background: #F1A889;
+		overflow  : hidden;
+		height    : 370px;
+	}
+
+	&__img {
+		position  : absolute;
+		top       : 0;
+		left      : 0;
+		right     : 0;
+		bottom    : 0;
+		width     : 100%;
+		height    : 100%;
+		object-fit: cover;
+	}
+
+	&__elem {
+		width        : max-content;
+		background   : #FFEEDB;
+		border-radius: 28px;
+	}
+}
