@@ -752,7 +752,6 @@ body {
 .footer {
 	border-radius : 28px;
 	flex-direction: row;
-	background    : url('../img/new-year/footer-bg.png') no-repeat center / cover;
 
 	@media(max-width: $lg) {
 		display: none;
@@ -1667,18 +1666,6 @@ body {
 
 	&-town {
 		position: relative;
-
-		&::after {
-			content       : '';
-			position      : absolute;
-			top           : -5px;
-			left          : -7px;
-			width         : 25px;
-			height        : 25px;
-			transform     : rotate(30deg);
-			pointer-events: none;
-			background    : url('../img/new-year/bant.svg') no-repeat center / cover;
-		}
 
 		&__citys {
 			position     : absolute;
@@ -3107,5 +3094,25 @@ body.filter-open {
 		width        : max-content;
 		background   : #FFEEDB;
 		border-radius: 28px;
+	}
+}
+
+.new-year-theme {
+	& .header-town {
+		&::after {
+			content       : '';
+			position      : absolute;
+			top           : -5px;
+			left          : -7px;
+			width         : 25px;
+			height        : 25px;
+			transform     : rotate(30deg);
+			pointer-events: none;
+			background    : url('../img/new-year/bant.svg') no-repeat center / cover;
+		}
+	}
+
+	& .footer {
+		background: url('../img/new-year/footer-bg.png') no-repeat center / cover;
 	}
 }
