@@ -1,5 +1,6 @@
 import showPass from "./js/show-pass";
 import fancybox from "./js/fancybox";
+import datepicker from "./js/datepicker";
 import listing from './js/listing';
 import rangeSlider from './js/range-slider';
 import theme from './js/theme';
@@ -11,6 +12,7 @@ import Swiper, { Navigation, Pagination, Scrollbar, Autoplay, Grid, Thumbs, Effe
 
 import 'npm-kit-ripple/index.css';
 import 'swiper/css';
+import 'air-datepicker/air-datepicker.css';
 import './ui/ui-reset.scss'
 import './ui/ui-core.scss'
 import './ui/ui-example.scss'
@@ -26,7 +28,7 @@ window.addEventListener('DOMContentLoaded', () => loadHandler())
 fancybox.init();
 
 function loadHandler() {
-	// fancybox.init();
+	datepicker.init();
 	showPass.init();
 	listing.init();
 	rangeSlider.init()
