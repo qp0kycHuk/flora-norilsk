@@ -2315,11 +2315,11 @@ body:not(.categories-search-open) .categories-shadow {
 	}
 
 	&:before {
-		background: url("../img/note-left.png") no-repeat left / auto 100%;
+		background: url("../img/note-left.png") no-repeat left / auto ;
 	}
 
 	&:after {
-		background: url("../img/note-right.png") no-repeat right / auto 100%;
+		background: url("../img/note-right.png") no-repeat right / auto ;
 	}
 
 	@media(max-width:1680px) {
