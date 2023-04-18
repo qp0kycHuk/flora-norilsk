@@ -2323,11 +2323,11 @@ body:not(.categories-search-open) .categories-shadow {
 	}
 
 	&:before {
-		background: url("../img/note-left.png") no-repeat left / auto ;
+		background: url("../img/note-left.png") no-repeat left / auto;
 	}
 
 	&:after {
-		background: url("../img/note-right.png") no-repeat right / auto ;
+		background: url("../img/note-right.png") no-repeat right / auto;
 	}
 
 	@media(max-width:1680px) {
@@ -2476,6 +2476,10 @@ body:not(.categories-search-open) .categories-shadow {
 			align-items   : flex-start;
 		}
 
+		@media(max-width: $md) {
+			padding: 12px 16px;
+		}
+
 		@media (hover: none) and (pointer: coarse) {
 			display: none;
 		}
@@ -2509,6 +2513,12 @@ body:not(.categories-search-open) .categories-shadow {
 				.btn {
 					justify-content: flex-start;
 				}
+			}
+		}
+
+		&-btn {
+			@media(max-width: $md) {
+				font-size: 14px;
 			}
 		}
 	}
