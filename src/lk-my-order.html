@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+  <% var data = { title: "Мой заказ №3, создан 02.08.2022" }; %>
+</head>
+
+<body>
+
+  <%= _.template(require('./includes/header.html').default)({isIndex: false}) %>
+  
+  <%= _.template(require('./includes/navigation.html').default)(data) %>
+  
+  <%= _.template(require('./includes/page-title.html').default)(data) %>
+
+  <%= _.template(require('./includes/back.html').default)() %>
+
+  <section class="lk-my-order">
+    <div class="bg-sec color-white text-body-1 text-md-body-0 text--bold brs-2 py-3 px-3 px-md-6 mb-4">Заказ №3 от 02.08.2022, 2 товара на сумму 4 198 Р</div>
+    <div class="lk-my-order__items flex">
+      <div class="lk-my-order__item bg-l3 brs-2">
+        <div class="lk-my-order__border text-body-1 text-md-body-0 text--bold py-3 px-3 px-md-6">Информаци о заказе</div>
+        <div class="lk-my-order__content flex flex-wrap flex-justify-between py-6 px-3 px-md-6">
+          <div class="text-body-2 text-md-body-1">
+            <div class="fade-60">ФИО</div>
+            <div class="text--demibold mt-1">Администрация сайта</div>
+            <button class="lk-my-order__link d-block fade-60 mt-4">Подробнее</button>
+          </div>
+          <div class="text-body-2 text-md-body-1">
+            <div class="fade-60">Текущий статус от 02.08.2022</div>
+            <div class="text--demibold mt-1">Оплачен, формируется к отправке</div>
+          </div>
+          <div class="text-body-2 text-md-body-1">
+            <div class="fade-60">Сумма</div>
+            <div class="text--demibold mt-1">4 198 Р</div>
+          </div>
+          <div class="text-body-2 text-md-body-1">
+            <button class="lk-my-order___btn btn btn--primary btn--fill">Повторить заказ</button>
+            <button class="lk-my-order__link d-block fade-60 mt-4 mx-auto">Отменить</button>
+          </div>
+        </div>
+      </div>
+      <div class="lk-my-order__item bg-l3 brs-2">
+        <div class="lk-my-order__border text-body-1 text-md-body-0 text--bold py-3 px-3 px-md-6">Параметры отправки</div>
+        <div class="lk-my-order__content flex flex-wrap flex-justify-between py-6 px-3 px-md-6">
+          <div class="lk-my-order__head flex flex-align-center">
+            <svg class="icon fade-30 text-h4 mr-2 mr-md-4">
+              <use xlink:href="img/icons.svg#document" />
+            </svg>
+            <div class="text-body-2 text-md-body-1">
+              <div class="text--demibold">Заказ №3 от 02.08.2022, Оплачен, формируется к отправке</div>
+              <div class="fade-60 mt-1">Сумма заказа: 4 198 Р</div>
+            </div>
+          </div>
+        </div>
+        <div class="lk-my-order__border"></div>
+        <div class="lk-my-order__content flex flex-wrap flex-justify-between py-6 pl-3 pl-md-10 pr-3 pr-md-6">
+          <div class="lk-my-order__head flex flex-align-center">
+            <svg class="icon fade-30 text-h4 mr-2 mr-md-4">
+              <use xlink:href="img/icons.svg#file" />
+            </svg>
+            <div class="text-body-2 text-md-body-1">
+              <div class="lk-my-order__head flex flex-align-center flex-wrap">
+                <div class="text--demibold">Счет №3/1 от 02.08.2022, Внутренний счет</div>
+                <div class="bg-red color-white text-small text--center brs-2 py-2 px-3 ml-md-2 mt-1 mt-md-0">Не оплачено</div>
+              </div>
+              <div class="fade-60 mt-1">Сумма к оплате по счету: 4 198 Р</div>
+              <button class="lk-my-order__link d-block fade-60 mt-4">Сменить способ оплаты +</button>
+            </div>
+          </div>
+          <div>
+            <button class="lk-my-order___btn btn btn--primary btn--fill">Оплатить</button>
+          </div>
+        </div>
+      </div>
+      <div class="lk-my-order__item bg-l3 brs-2">
+        <div class="lk-my-order__border text-body-1 text-md-body-0 text--bold py-3 px-3 px-md-6">Параметры отгрузки</div>
+        <div class="lk-my-order__content flex flex-wrap flex-justify-between py-6 px-3 px-md-6">
+          <div class="lk-my-order__head flex">
+            <svg class="icon fade-30 text-h4 mr-2 mr-md-4 mt-md-5">
+              <use xlink:href="img/icons.svg#transport" />
+            </svg>
+            <div class="text-body-2 text-md-body-1">
+              <div class="text--demibold">Отгрузка №3/2 стоимость доставки 0 Р</div>
+              <div class="fade-60 mt-1">Служба доставки: Без доставки</div>
+              <div class="fade-60 mt-1">Статус отгрузки: Ожидает обработки</div>
+              <div class="mt-4" data-toggle-cover>
+                <div class="flex">
+                  <div class="lk-my-order__link flex flex-align-center fade-60" data-toggle-link>
+                    Показать все
+                    <svg class="icon text-small ml-2">
+                      <use xlink:href="img/icons.svg#arrow-bottom" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="text-body-2 text-md-body-1" data-toggle-content data-toggle-static="true" data-toggle-height="true">
+                  <div class="fade-60 pt-4">
+                    fsfdsfsdfsdfsdffdsfsd <br>
+                    fsfdsfsdfsdfsdffdsfsd <br>
+                    fsfdsfsdfsdfsdffdsfsd <br>
+                    fsfdsfsdfsdfsdffdsfsd <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%= _.template(require('./includes/footer.html').default)() %>
+
+
+</body>
+
+</html>

@@ -15,14 +15,7 @@
   
 	<%= _.template(require('./includes/navigation.html').default)(data) %>
 
-	<section class="back pb-0 pt-6">
-		<a class="back__btn btn btn--sec btn--light btn-small" href="">
-			<span class="text-body-0 mr-2">
-				<svg class="icon text-small"><use xlink:href="img/icons.svg#to-left" /></svg>
-			</span>
-			Назад
-		</a>
-	</section>
+	<%= _.template(require('./includes/back.html').default)() %>
 	
 	<section class="catalog">
 		<div class="catalog-sidebar">

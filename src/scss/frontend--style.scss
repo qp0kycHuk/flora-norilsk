@@ -3202,3 +3202,53 @@ body.filter-open {
 	text-underline-offset: 4px;
 	display: block;
 }
+
+.catalog-search {
+	&__content {
+		max-width: 540px;
+
+		@media(max-width: $lg) {
+			max-width: 100%;
+		}
+	}
+	&__image {
+		max-width: 590px;
+	}
+}
+
+.lk-my-order {
+	&__items {
+		flex-direction: column;
+		gap: 16px;
+	}
+	
+	&__item {
+		border: 1px solid #DADAE1;
+		overflow: hidden;
+	}
+
+	&__border {
+		background-color: #ECEFF1;
+		border-bottom: 1px solid #DADAE1;
+	}
+
+	&__content {
+		gap: 16px;
+	}
+
+	&__link {
+		cursor: pointer;
+		border-bottom: 1px dashed rgba(0, 0, 0, 0.6);
+	}
+
+	&___btn {
+		width: 190px;
+		height: 38px;
+	}
+
+	&__head {
+		@media(max-width: $md) {
+			align-items: flex-start;
+		}
+	}
+}

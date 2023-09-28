@@ -10,7 +10,7 @@ const htmlWebpackPluginDefaults = {
   inject: 'head'
 }
 
-const pages = ['index.html', 'about.html', 'delivery.html', 'payment.html', 'articles.html', 'articles-detail.html', 'job.html', 'reviews.html', 'contacts.html', '404.html', 'lk.html', 'ui.html', 'catalog.html', 'catalog-empty.html', 'card-detail-pots.html', 'card-detail-flow.html', 'card-detail-basket.html', 'lk-authorization.html', 'lk-orders.html', 'registration.html', 'registration-pass.html', 'registration-recovery.html', 'registration-final.html', 'registration-change.html', 'plug.html']
+const pages = ['index.html', 'about.html', 'delivery.html', 'payment.html', 'articles.html', 'articles-detail.html', 'job.html', 'reviews.html', 'contacts.html', '404.html', 'lk.html', 'ui.html', 'catalog.html', 'catalog-empty.html', 'card-detail-pots.html', 'card-detail-flow.html', 'card-detail-basket.html', 'lk-authorization.html', 'lk-orders.html', 'registration.html', 'registration-pass.html', 'registration-recovery.html', 'registration-final.html', 'registration-change.html', 'plug.html', 'catalog-search-empty.html', 'lk-my-order.html']
 const dialogs = ['dialog-large.html', 'dialog-middle.html', 'dialog-small.html', 'dialog-reviews.html', 'dialog-shipped.html', 'dialog-pass.html', 'dialog-info.html']
 
 module.exports = {

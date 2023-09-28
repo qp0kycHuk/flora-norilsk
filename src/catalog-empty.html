@@ -14,6 +14,8 @@
 	<%= _.template(require('./includes/header.html').default)({isIndex: false}) %>
   
 	<%= _.template(require('./includes/navigation.html').default)(data) %>
+
+	<%= _.template(require('./includes/back.html').default)() %>
 	
 	<section class="catalog">
 		<div class="catalog-sidebar">
