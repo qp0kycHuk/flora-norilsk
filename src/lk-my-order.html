@@ -110,6 +110,66 @@
           </div>
         </div>
       </div>
+      <div class="lk-my-order__item bg-l3 brs-2">
+        <div class="lk-my-order__border text-body-1 text-md-body-0 text--bold py-3 px-3 px-md-6">Содержимое заказа</div>
+        <div class="py-6">
+          <div class="lk-my-order__content d-none d-lg-flex flex-wrap flex-align-center flex-justify-between px-3 px-md-6">
+            <div class="lk-my-order__name w-100">
+              <div class="fade-60">Наименование</div>
+            </div>
+            <div class="lk-my-order__detail text--center w-100">
+              <div class="fade-60">Цена</div>
+            </div>
+            <div class="lk-my-order__detail text--center w-100">
+              <div class="fade-60">Скидка</div>
+            </div>
+            <div class="lk-my-order__detail text--center w-100">
+              <div class="fade-60">Количество</div>
+            </div>
+            <div class="lk-my-order__detail text--right w-100">
+              <div class="fade-60">Сумма</div>
+            </div>
+          </div>
+          <div class="lk-my-order__border d-none d-lg-block my-3"></div>
+          <% for(var i = 0; i < 3; i++) { %>
+          <div class="lk-my-order__content flex flex-wrap flex-align-center flex-justify-between px-3 px-md-6">
+            <div class="lk-my-order__name w-100">
+              <div class="flex flex-align-center">
+                <div class="lk-my-order__image brs-2 mr-4 mr-md-8">
+                  <img src="img/pictures/advantages-1.png" alt="">
+                </div>
+                <div class="text--demibold">(072) Букет №5072</div>
+              </div>
+            </div>
+            <div class="lk-my-order__detail text--center w-100">
+              <div class="fade-60 d-lg-none">Цена</div>
+              <div class="text--demibold">3500 ₽</div>
+            </div>
+            <div class="lk-my-order__detail text--center w-100">
+              <div class="fade-60 d-lg-none">Скидка</div>
+              <div class="text--demibold">0</div>
+            </div>
+            <div class="lk-my-order__detail text--center w-100">
+              <div class="fade-60 d-lg-none">Количество</div>
+              <div class="text--demibold">2 шт</div>
+            </div>
+            <div class="lk-my-order__detail text--right w-100">
+              <div class="fade-60 d-lg-none">Сумма</div>
+              <div class="text--demibold">7000 ₽</div>
+            </div>
+          </div>
+          <div class="lk-my-order__border my-3"></div>
+          <% } %>
+          <div class="lk-my-order__result flex flex-align-end px-3 px-md-6 pt-3">
+            <div class="mb-2">
+              <span class="fade-60">Стоимость доставки:</span> <span class="text--demibold">0 ₽</span>
+            </div>
+            <div>
+              <span class="fade-60">Итого:</span> <span class="text--demibold">10 000 ₽</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
