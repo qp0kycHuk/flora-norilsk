@@ -3288,3 +3288,19 @@ body.filter-open {
 		flex-direction: column;
 	}
 }
+
+.stock-item {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: 90px;
+	height: 38px;
+	background-color: #FFEB3C;
+	border-radius: 9999px;
+	font-weight: 800;
+
+	@media (max-width: $md) {
+		top: 4px;
+		left: 4px;
+	}
+}
