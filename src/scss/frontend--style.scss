@@ -3293,7 +3293,7 @@ body.filter-open {
 	position: absolute;
 	top: 8px;
 	left: 8px;
-	width: 90px;
+	width: max-content;
 	height: 38px;
 	background-color: #FFEB3C;
 	border-radius: 9999px;
@@ -3303,4 +3303,8 @@ body.filter-open {
 		top: 4px;
 		left: 4px;
 	}
+}
+
+.line-through {
+	text-decoration: line-through;
 }
