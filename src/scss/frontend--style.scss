@@ -773,6 +773,8 @@ body {
 .footer {
 	flex-direction: row;
 	border-radius: 28px;
+	gap: 20px;
+	flex-wrap: wrap;
 
 
 	&__logo {
@@ -806,17 +808,12 @@ body {
 
 
 	@media(max-width: $lg) {
-		display: none;
-	}
-
-	@media(max-width: $lg) {
 		&__list {
 			display: none;
 		}
 	}
 
 	@media(max-width: $md) {
-		align-items: center;
 		flex-direction: column;
 
 
@@ -1814,7 +1811,7 @@ body {
 			width: calc(100% + 30px);
 			overflow: auto;
 			margin-left: -15px;
-			padding: 10px 15px;
+			padding: 16px 15px;
 		}
 	}
 
@@ -2476,6 +2473,7 @@ body:not(.categories-search-open) .categories-shadow {
 		width: 238px;
 		min-width: 238px;
 		margin-right: 60px;
+		overflow: hidden;
 
 		@media(max-width:$lg) {
 			width: 200px;
@@ -3201,6 +3199,10 @@ body.filter-open {
 	text-decoration: underline;
 	text-underline-offset: 4px;
 	display: block;
+
+	@media(max-width: $lg) {
+		margin-top: 0;
+	}
 }
 
 .catalog-search {
